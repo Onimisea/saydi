@@ -14,9 +14,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      breakpoints: {
-        sm: "640px",
+      screens: {
+        sm: "480px",
+        sm2: "640px",
         md: "768px",
+        md2: "840px",
         lg: "1024px",
         xl: "1280px",
         "2xl": "1440px",

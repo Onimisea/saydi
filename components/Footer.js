@@ -75,8 +75,8 @@ const Footer = () => {
 
         <section className="bg-[#191A8D]">
           <section className="content__container">
-            <section className="w-full flex items-start justify-center gap-6 sm:gap-6 lg:gap-0 lg:justify-between flex-wrap py-[117px]">
-              <section className="w-full flex flex-col items-start justify-start sm:w-[47%] lg:w-[24%] font-normal text-[#C9CDD2] space-y-6">
+            <section className="w-full flex items-start justify-start lg:justify-center flex-wrap space-y-12 lg:space-y-0 lg:gap-6 py-[117px]">
+              <section className="w-full flex flex-col items-start lg:w-[24%] font-normal text-[#C9CDD2] space-y-6">
                 <Link href="/" className="mb-4">
                   <Image src={saydi_logo} width={0} height={0} loading="lazy" />
                 </Link>
@@ -250,17 +250,16 @@ const Footer = () => {
                 </ul>
               </section>
 
-              <section className="w-full bg-white sm:w-[47%] lg:w-[32%] rounded-[16px] flex flex-col items-start px-[48px] py-[32px] gap-[10px]">
+              <section className="w-full bg-white lg:w-[24%] rounded-[16px] flex flex-col items-start px-[48px] py-[32px] gap-[10px]">
                 <h5 className="uppercase font-[600] text-[16px] leading-[24px] text-secondary">
                   subscribe to our newsletter
                 </h5>
                 <p className="text-[#28374B] text-[14px] font-[400] pt-[24px] pb-[16px] leading-[20px]">
-                  By submitting this form, you are giving your consent to receive informational email from us.
+                  By submitting this form, you are giving your consent to
+                  receive informational email from us.
                 </p>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
-                  
-
                   <section className="flex items-center justify-between rounded-[8px] border-[0.5px] border-[#283748] p-1">
                     <input
                       type="text"
@@ -297,15 +296,18 @@ const Footer = () => {
 
       <section className="">
         <section className="content__container ">
-          <section className="flex items-center justify-center h-[70px] shrink-0 text-[#C9CDD2] space-x-4 font-montserrat text-[14px] font-normal">
-            <p className="">
+          <section className="flex flex-col items-center lg:flex-row md2:justify-center shrink-0 text-[#C9CDD2] md2:space-x-4 font-montserrat text-[10px] md2:text-[14px] font-[300] font-normal py-3 gap-2 md2:gap-0 leading-[16px]">
+            <p className="block md2:flex w-full md2:w-fit text-center">
               &copy; Copyright 2023 <span className="mx-3">|</span>{" "}
               <Link href="/" className="hover:text-primary hover:font-bold">
                 saydi.com
               </Link>
-              <span className="mx-3">|</span> Designed by
             </p>
-            <section className="w-fit">
+
+            <span className="hidden text-white md2:flex ">|</span>
+
+            <section className="w-full block md2:flex md2:w-fit text-center">
+              <p className="md2:mx-3">Designed by</p>
               <Link
                 href="#"
                 className="flex items-center justify-center space-x-2 hover:text-primary hover:font-bold"

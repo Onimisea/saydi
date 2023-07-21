@@ -296,7 +296,7 @@ const Footer = () => {
 
       <section className="">
         <section className="content__container ">
-          <section className="flex flex-col items-center lg:flex-row md2:justify-center shrink-0 text-[#C9CDD2] md2:space-x-4 font-montserrat text-[10px] md2:text-[14px] font-[300] font-normal py-3 gap-2 lg:gap-0 leading-[16px]">
+          <section className="flex flex-col items-center lg:flex-row md2:justify-center shrink-0 text-[#C9CDD2] md2:space-x-4 font-montserrat text-[12px] md2:text-[14px] font-[300] font-normal py-3 gap-2 lg:gap-0 leading-[16px]">
             <p className="block md2:flex w-full md2:w-fit text-center">
               &copy; Copyright 2023 <span className="mx-3">|</span>{" "}
               <Link href="/" className="hover:text-primary hover:font-bold">

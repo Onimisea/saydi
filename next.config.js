@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  // Specify font families
+  // webfontLoader: {
+  //   google: {
+  //     families: ["Montserrat", "Inter", "Open Sans"],
+  //   },
+  // },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

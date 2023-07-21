@@ -2,26 +2,131 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Basic CSS Reset */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li,
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+form,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Additional Resets (Optional) */
+
+/* Remove default button styles */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Remove input type="number" arrow */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove textarea resize handle */
+textarea {
+  resize: none;
+}
+
+/* Remove form input autofill background */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+/* Additional Resets (Optional) */
+
+/* Add a global box-sizing rule */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+/* Apply a basic CSS reset to the root element */
+html,
+body {
+  box-sizing: border-box;
+  background: #f0f0f0;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.body__container {
+  display: block;
+  max-width: 1440px;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.content__container {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
 }

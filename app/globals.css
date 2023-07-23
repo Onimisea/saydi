@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "GillSansBold";
+  src: url('../public/fonts/GillSansBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GillSansHeavy";
+  src: url('../public/fonts/GillSansHeavy.otf');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('../public/fonts/Montserrat-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Italic";
+  src: url('../public/fonts/Montserrat-Italic-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -113,6 +138,8 @@ body {
 
 body {
   position: relative;
+  font-family: 'Montserrat' , sans-serif;
+  font-weight: nromal;
 }
 
 .body__container {
@@ -131,3 +158,8 @@ body {
   margin: 0 auto;
 }
 
+.testFont {
+  
+  color: green;
+  font-size: 3rem;
+}

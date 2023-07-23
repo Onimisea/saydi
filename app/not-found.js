@@ -13,7 +13,7 @@ export default function NotFound() {
         <section className="bg-white p-10 rounded-md w-1/2 flex flex-col items-center justify-center gap-4 text-center">
           <p className="text-lg">
             Hello there, the page you're looking for is not available at the
-            moment. Please, check back later
+            moment. Please, check back later!
           </p>
 
           <buttom

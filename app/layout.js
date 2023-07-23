@@ -1,3 +1,4 @@
+import AppProvider from "@/context/AppContext";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -36,7 +37,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${montserrat.variable} ${montserrat_italic.variable} ${gillsans_bold.variable} ${gillsans_heavy.variable}`}
     >
-      <body className="">{children}</body>
+      <AppProvider>
+        <body className="">{children}</body>
+      </AppProvider>
     </html>
   );
 }

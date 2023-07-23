@@ -27,96 +27,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Basic CSS Reset */
-html,
-body,
-div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-img,
-ul,
-ol,
-li,
-table,
-thead,
-tbody,
-tr,
-th,
-td,
-form,
-input,
-textarea,
-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-/* Additional Resets (Optional) */
-
-/* Remove default button styles */
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* Remove input type="number" arrow */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Remove textarea resize handle */
-textarea {
-  resize: none;
-}
-
-/* Remove form input autofill background */
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px white inset !important;
-}
 
 /* Additional Resets (Optional) */
 
@@ -140,6 +50,7 @@ body {
   position: relative;
   font-family: 'Montserrat' , sans-serif;
   font-weight: nromal;
+  background: linear-gradient(90deg, #000180 0%, #950D95 100%);
 }
 
 .body__container {
@@ -148,6 +59,7 @@ body {
   height: auto;
   padding: 0;
   margin: 0 auto;
+  position: relative;
 }
 
 .content__container {
@@ -156,10 +68,5 @@ body {
   height: auto;
   padding: 0;
   margin: 0 auto;
-}
-
-.testFont {
-  
-  color: green;
-  font-size: 3rem;
+  position: relative;
 }

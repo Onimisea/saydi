@@ -20,6 +20,7 @@ module.exports = {
         md: "768px",
         md2: "840px",
         lg: "1024px",
+        lg2: "1156px",
         xl: "1280px",
         "2xl": "1440px",
       },
@@ -27,7 +28,7 @@ module.exports = {
         primary: "#950D95", // Custom primary color
         secondary: "#000180", // Custom secondary color
         // Add more custom colors here
-        tertiary: "#950D95",
+        tertiary: "#14579E",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

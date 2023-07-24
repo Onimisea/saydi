@@ -91,6 +91,14 @@ const Sidebar = () => {
 
   return (
     <AnimatePresence>
+    {navOpen && (
+      <motion.aside className="w-full h-screen z-40 absolute top-0 bg-white py-10 ">
+    Hello There!!!
+    </motion.aside>
+    )}
+    </AnimatePresence>
+    
+/*    <AnimatePresence>
       <motion.aside
         key={navOpen}
         className={`z-40 absolute top-[100px] w-full h-full bg-white py-10 lg2:hidden duration-500 ${
@@ -201,6 +209,7 @@ const Sidebar = () => {
         </ul>
       </motion.aside>
     </AnimatePresence>
+    */
   );
 };
 

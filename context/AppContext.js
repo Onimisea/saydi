@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useState } from "react";
+import { useCycle } from "framer-motion";
 
 export const AppContext = createContext();
 

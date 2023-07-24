@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
     >
       <AppProvider>
         <body className="">{children}</body>
+        
       </AppProvider>
     </html>
   );

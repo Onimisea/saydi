@@ -16,49 +16,73 @@ const Header = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const { navOpen, setNavOpen } = useContext(AppContext);
-
   const navLinks = [
     {
       label: "Home",
       url: "/",
       is_active: pathname === "/" ? true : false,
+      submenu: false,
+      sublinks: [],
     },
     {
       label: "Products",
       url: "/products",
       is_active: pathname === "/products" ? true : false,
+      submenu: false,
+      sublinks: [],
     },
     {
       label: "About",
       url: "/about",
       is_active: pathname === "/about" ? true : false,
+      submenu: true,
+      sublinks: [
+        { label: "About Us", url: "/about/about-us" },
+        { label: "What We Do", url: "/about/what-we-do" },
+      ],
     },
     {
       label: "Opportunities",
       url: "/opportunities",
       is_active: pathname === "/opportunities" ? true : false,
+      submenu: true,
+      sublinks: [
+        { label: "Careers", url: "/opportunities/careers" },
+        { label: "Volunteers", url: "/opportunities/volunteers" },
+      ],
     },
     {
       label: "Our Stories",
       url: "/our-stories",
       is_active: pathname === "/our-stories" ? true : false,
+      submenu: true,
+      sublinks: [
+        { label: "Policy Brief", url: "/our-stories/policy-brief" },
+        { label: "Press Release", url: "/our-stories/press-release" },
+        { label: "Blog Post", url: "/our-stories/blog-post" },
+        { label: "Annual Report", url: "/our-stories/annual-report" },
+        { label: "Financial Report", url: "/our-stories/financial-report" },
+      ],
     },
     {
       label: "Donate",
       url: "/#donate-section",
       is_active: pathname === "/#donate-section" ? true : false,
+      submenu: false,
+      sublinks: [],
     },
     {
       label: "Contact",
       url: "/#contact-section",
       is_active: pathname === "/#contact-section" ? true : false,
+      submenu: false,
+      sublinks: [],
     },
   ];
 
-  useEffect(() => {
-    console.log(pathname);
-  }, [pathname, searchParams]);
+  const { navOpen, setNavOpen } = useContext(AppContext);
+
+  useEffect(() => {}, [pathname, searchParams]);
 
   useEffect(() => {}, []);
 
@@ -91,7 +115,7 @@ const Header = () => {
             <button
               type="button"
               className=""
-              onClick={() => setNavOpen(!navOpen)}
+              onClick={() => setNavOpen((navOpen) => !navOpen)}
             >
               <Image
                 src={

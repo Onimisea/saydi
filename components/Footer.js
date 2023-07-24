@@ -31,8 +31,8 @@ const Footer = () => {
       <section className="space-y-4">
         <section className="bg-[#4C4DA6]">
           <section className="content__container ">
-            <section className="flex flex-col items-center justify-center sm2:flex-row h-[100px] shrink-0 text-white space-y-4 space-x-0 sm2:space-y-0 sm2:space-x-12">
-              <p className="font-montserrat text-[16px] font-normal uppercase leading-[24px]">
+            <section className="flex flex-col items-center justify-center sm2:flex-row py-4 text-white space-y-4 space-x-0 sm2:space-y-0 sm2:space-x-12">
+              <p className="font-montserrat text-[12px] lg2:text-[16px] font-normal uppercase leading-[24px] text-center">
                 Connect with us on social media
               </p>
               <section className="w-fit flex items-center justify-center gap-2">
@@ -296,7 +296,7 @@ const Footer = () => {
 
       <section className="">
         <section className="content__container ">
-          <section className="flex flex-col items-center lg:flex-row md2:justify-center shrink-0 text-[#C9CDD2] md2:space-x-4 font-montserrat text-[12px] md2:text-[14px] font-[300] font-normal py-3 gap-2 lg:gap-0 leading-[16px]">
+          <section className="flex flex-col items-center lg:flex-row md2:justify-center shrink-0 text-[#C9CDD2] md2:space-x-4 font-montserrat text-[12px] md2:text-[14px] font-normal py-3 gap-2 lg:gap-0 leading-[16px]">
             <p className="block md2:flex w-full md2:w-fit text-center">
               &copy; Copyright 2023 <span className="mx-3">|</span>{" "}
               <Link href="/" className="hover:text-primary hover:font-bold">

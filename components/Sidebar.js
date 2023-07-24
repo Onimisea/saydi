@@ -92,7 +92,7 @@ const Sidebar = () => {
   return (
     <AnimatePresence>
     {navOpen && (
-      <motion.aside className="w-full h-full z-40 absolute top-0 bg-white py-10 " 
+      <motion.aside className="w-full h-full z-40 absolute top-100 bg-white py-10 " 
     
 initial={{ x: "-100%", opacity: 0 }}
     animate={{ x: 0, opacity: 1 }}

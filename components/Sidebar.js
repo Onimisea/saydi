@@ -163,29 +163,6 @@ initial={{ x: "-100%", opacity: 0 }}
                 )}
               </section>
 
-    {link.submenu && (
-                  <>
-                    {activeMenu === link.label ? (
-                      <Image
-                        src={chevron_down_icon}
-                        alt="Toggle dropdown"
-                        width={11}
-                        height={6}
-                        className="transform rotate-180 duration-500"
-                      />
-                    ) : (
-                      <Image
-                        src={chevron_down_icon}
-                        alt="Toggle dropdown"
-                        width={11}
-                        height={6}
-                        className="transform rotate-360 duration-500"
-                      />
-                    )}
-                  </>
-                )}
-              </section>
-
               {link.submenu && (
                 <ul
                   className={`list-none w-full px-4 my-2 ${

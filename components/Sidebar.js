@@ -92,14 +92,14 @@ const Sidebar = () => {
   return (
     <AnimatePresence>
     {navOpen && (
-      <motion.aside className="w-full h-full z-40 absolute top-0 bg-white py-10 " variants={{
+      <motion.aside className="w-full h-full z-40 absolute top-0 bg-white py-10 " variants={
           open: {
             x: 0,
           },
           closed: {
             x: "-100%",
           }
-        }}
+        }
 transition: {{
               type: "tween", // Changed to tween easing
               ease: "easeInOut", // Use easeInOut easing

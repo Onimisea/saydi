@@ -44,7 +44,7 @@ const Hero = () => {
         />
 
         <section className="w-full h-fit flex flex-col lg:flex-row items-center lg:justify-between py-8 lg:py-16 z-10">
-          <section className="w-full lg:w-[47%] flex flex-col items-center z-20 text-center">
+          <section className="w-full lg:w-[47%] flex flex-col items-center lg:items-start z-20 text-center lg:text-left">
             <form
               onSubmit={handleSubmit(onSubmit)}
               className="w-[70%] hidden lg:block"

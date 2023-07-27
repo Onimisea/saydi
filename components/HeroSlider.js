@@ -1,3 +1,5 @@
+"use client";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -43,7 +45,7 @@ const HeroSlider = () => {
           "--swiper-pagination-bullet-inactive-opacity": "1",
           "--swiper-pagination-bullet-size": "10px",
           "--swiper-pagination-bullet-horizontal-gap": "10px",
-          "padding-bottom": "35px"
+          "padding-bottom": "35px",
         }}
         className="w-full"
       >

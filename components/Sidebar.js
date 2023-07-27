@@ -85,10 +85,6 @@ const Sidebar = () => {
 
   const [activeMenu, setActiveMenu] = useState("");
 
-  // useEffect(() => {
-  //   console.log(navOpen);
-  // }, [navOpen]);
-
   return (
     <AnimatePresence>
       {navOpen && (

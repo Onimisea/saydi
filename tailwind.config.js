@@ -14,8 +14,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        xs: "0.75rem", // 12px
+        sm: "0.875rem", // 14px
+        base: "1rem", // 16px (root font-size)
+        lg: "1.125rem", // 18px
+        xl: "1.25rem", // 20px
+        "2xl": "1.5rem", // 24px
+        // Add more custom font-sizes as needed
+      },
       screens: {
         sm: "480px",
+        sm3: "568px",
         sm2: "640px",
         md: "768px",
         md2: "840px",
@@ -29,6 +39,7 @@ module.exports = {
         secondary: "#000180", // Custom secondary color
         // Add more custom colors here
         tertiary: "#14579E",
+        tertiary2: "#D65F1B",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
@@ -40,9 +51,16 @@ module.exports = {
         "gradient-primary": "linear-gradient(90deg, #000180 0%, #950D95 100%)",
         "gradient-secondary":
           "linear-gradient(180deg, #D65F1B 0%, #DEB30C 100%)",
-        // "hero-pattern": "url('/path/to/image.jpg')", // Custom background image
-        // Add more custom background images here
+        hero_gf_bg: "url('/public/assets/home/hero_section_gf.png')",
+        hero_bg_bb: "url('/public/assets/home/hero_section_bb.png')",
+        "achievement-ill": "url('/public/assets/home/achievement_ill.png')",
+        "kindly-donate-ill": "url('/public/assets/home/kindly_donate_ill.png')",
+        "our-partners-ill": "url('/public/assets/home/our_partners_ill.png')",
+        "our-partners-gf": "url('../public/assets/home/our_partners_gf.png')",
       },
+      "our-stories-bb": "url('/public/assets/home/our_stories_bb.png')",
+      "our-thematic-bbl": "url('/public/assets/home/our_themaic_bbl.png')",
+      "our-thematic-bbr": "url('/public/assets/home/our_themaic_bbr.png')",
     },
   },
   plugins: [require("tailwind-scrollbar")({ nocompatible: true })],

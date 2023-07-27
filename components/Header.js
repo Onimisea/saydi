@@ -10,6 +10,7 @@ import navbar_toggle_icon_closed from "../public/icons/nav_toggle_icon_closed.sv
 import search_icon from "../public/icons/search_icon.svg";
 import Link from "next/link";
 import { AppContext } from "@/context/AppContext";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const router = useRouter();
@@ -89,13 +90,13 @@ const Header = () => {
   useEffect(() => {}, []);
 
   return (
-    <header className="bg-gradient-primary relative z-[50] ">
+    <header className="sticky top-0 bg-gradient-primary z-[50] ">
       <section className="content__container">
-        <section className="flex items-center justify-between lg2:flex-row-reverse h-[100px] py-[25px] px-0 font-montserrat text-[12px] leading-[16px] uppercase font-[600]">
-          <section className="hidden lg2:flex bg-white px-[20px] rounded-[8px]">
-            <ul className="list-none p-0 m-0 flex items-center justify-center">
+        <section className="flex items-center justify-between lg2:flex-row-reverse h-[55px] lg2:h-[100px] py-[15px] lg2:py-[25px] px-0 font-montserrat text-[12px] leading-[16px] uppercase font-[600]">
+          <section className="hidden lg2:flex bg-white px-[20px] rounded-[8px] relative">
+            <ul className="list-none p-0 m-0 flex items-center justify-center relative">
               {navLinks.map((link, index) => (
-                <li key={index}>
+                <li key={index} className="relative group">
                   <Link
                     href={link.url}
                     className={`px-6 py-3 inline-flex gap-2 items-center justify-center ${
@@ -106,6 +107,36 @@ const Header = () => {
                   >
                     {link.label}
                   </Link>
+
+                  {link.submenu && (
+                    <AnimatePresence>
+                      <section className="absolute hidden group-hover:flex group-hover:flex-col w-[120%] pt-4 ml-[-10px] ">
+                        <section className="flex flex-col items-center relative ">
+                          <motion.span className="w-[25px] h-[25px] bg-white rounded-lg transform rotate-45 absolute top-[-8px] z-10 "></motion.span>
+                          <motion.ul
+                            className={`list-none py-2 bg-white rounded-xl z-20`}
+                          >
+                            {link.sublinks.map((sublink, i) => (
+                              <li
+                                key={i}
+                                className="flex flex-col w-full items-center hover:bg-[#C9CDD2] duration-500"
+                              >
+                                <Link
+                                  href={sublink.url}
+                                  className={`p-3 text-secondary duration-500 uppercase leading-[15px] text-[12px] font-[400] w-full text-center duration-500`}
+                                >
+                                  {sublink.label}
+                                </Link>
+                                {i + 1 !== link.sublinks.length && (
+                                  <span className="block mx-auto bg-[#C9CDD2] h-[1px] w-[70%] duration"></span>
+                                )}
+                              </li>
+                            ))}
+                          </motion.ul>
+                        </section>
+                      </section>
+                    </AnimatePresence>
+                  )}
                 </li>
               ))}
             </ul>

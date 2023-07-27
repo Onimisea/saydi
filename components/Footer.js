@@ -262,7 +262,7 @@ const Footer = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <section className="flex items-center justify-between rounded-[8px] border-[0.5px] border-[#283748] p-1">
                     <input
-                      type="text"
+                      type="email"
                       placeholder="Your Email"
                       {...register("email", {
                         required: "Your email is required",

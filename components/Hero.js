@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 
 import herobbImg from "../public/assets/home/hero_section_bb.png";
-import heroPath from "../public/assets/home/hero_section_gf_png.png";
+import heroPath from "../public/assets/home/hero_path.png";
 import search_icon from "../public/icons/search_icon.svg";
 import cancel_search_icon from "../public/icons/cancel_search_icon.svg";
 import { Button, HeroSlider } from "@/components";
@@ -40,7 +40,7 @@ const Hero = () => {
           width={600}
           height={600}
           className="absolute top-0 lg:right-0 w-full lg:w-[67%] h-full lg:h-auto object-fill z-10"
-          loading="eager"
+          loading="lazy"
         />
 
         <section className="w-full h-fit flex flex-col lg:flex-row items-center lg:justify-between py-8 lg:py-16 z-10">
@@ -121,7 +121,7 @@ const Hero = () => {
         width={1200}
         height={100}
         className="w-full h-[18%] object-fill z-0"
-        loading="eager"
+        loading="lazy"
       />
     </section>
   );

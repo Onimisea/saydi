@@ -1,6 +1,15 @@
 "use client";
 
-import { Footer, Header, Hero, Sidebar } from "@/components";
+import {
+  Footer,
+  Header,
+  Hero,
+  OurPartnersSection,
+  OurStoriesSection,
+  Sidebar,
+  ThematicSection,
+} from "@/components";
+
 // import { AppContext } from "@/context/AppContext";
 import Image from "next/image";
 // import { useContext } from "react";
@@ -14,9 +23,9 @@ export default function Home() {
       <Sidebar />
       <main className={`w-full bg-white flex flex-col flex-1 relative`}>
         <Hero />
-        <section className="font-gillsans_heavy text-4xl flex items-center justify-center py-12">
-          Main Section
-        </section>
+        <ThematicSection />
+        <OurPartnersSection />
+        <OurStoriesSection />
       </main>
       <Footer />
     </section>

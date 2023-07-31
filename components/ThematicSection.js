@@ -26,7 +26,7 @@ const ThematicSection = () => {
 
       <section className="content__container w-full">
         <section className="flex flex-col items-center justify-center text-center">
-          <h1 className="text-secondary font-gillsans_heavy font-[900] uppercase mt-[7%] text-[20px] md:text-[36px] lg:text-[48px]">
+          <h1 className="text-secondary font-gillsans_heavy font-[900] uppercase mt-8 text-[20px] md:text-[36px] lg:text-[48px]">
             Our Thematic Areas
           </h1>
 

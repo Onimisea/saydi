@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  AchievementSection,
   Footer,
   Header,
   Hero,
@@ -26,6 +27,7 @@ export default function Home() {
         <ThematicSection />
         <OurPartnersSection />
         <OurStoriesSection />
+        <AchievementSection />
       </main>
       <Footer />
     </section>

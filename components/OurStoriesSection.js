@@ -23,13 +23,13 @@ const OurStoriesSection = () => {
   };
 
   return (
-    <section className="bg-white w-full h-auto flex flex-col lg:flex-row relative">
+    <section className="bg-white w-full h-auto flex flex-col lg:flex-row relative pt-4 pb-16">
       <Image
         src={ourStoriesBb}
         alt="Our Stories Bubble"
         width={200}
         height={270}
-        className="absolute w-[100px] md:w-[200px] lg2:w-[350px] h-auto top-[1%] md:top-[25%] lg2:top-[50%] right-0 object-fill z-10"
+        className="absolute w-[100px] md:w-[200px] lg2:w-[350px] h-auto top-[1%] md:top-[25%] lg2:top-[10%] right-0 object-fill z-10"
         loading="lazy"
       />
 
@@ -73,7 +73,90 @@ const OurStoriesSection = () => {
 
             <section className="w-full bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center shadow-lg drop-shadow-xl md:w-[46%] lg:w-[30%]">
               <Image
-                src={ourStoriesImg1}
+                src={ourStoriesImg2}
+                alt="Our Stories 1"
+                width={250}
+                height={250}
+                className="w-full h-[235px] object-cover rounded-tl-2xl rounded-tr-2xl rounded-bl-0 rounded-br-0"
+                loading="lazy"
+              />
+
+              <section className="w-full bg-white p-4 flex flex-col items-start justify-start text-left">
+                <span className="text-[#28374B] text-[10px] font-[400] ">
+                  23 July, 2023
+                </span>
+                <p className="uppercase text-[#28374B] text-[16px] font-[500] my-2">
+                  Re: Connected development (code) alleges manipulation of
+                  election results, relocation of local governments, state
+                  collation centres.
+                </p>
+                <Link
+                  href="#"
+                  className="text-[#d65f1b] text-[12px] font-[400]"
+                >
+                  Read more...
+                </Link>
+              </section>
+            </section>
+
+            <section className="w-full bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center shadow-lg drop-shadow-xl md:w-[46%] lg:w-[30%]">
+              <Image
+                src={ourStoriesImg3}
+                alt="Our Stories 1"
+                width={250}
+                height={250}
+                className="w-full h-[235px] object-cover rounded-tl-2xl rounded-tr-2xl rounded-bl-0 rounded-br-0"
+                loading="lazy"
+              />
+
+              <section className="w-full bg-white p-4 flex flex-col items-start justify-start text-left">
+                <span className="text-[#28374B] text-[10px] font-[400] ">
+                  15 June, 2023
+                </span>
+                <p className="uppercase text-[#28374B] text-[16px] font-[500] my-2">
+                  Interim statement on the process and conduct of Nigeria's
+                  presidential and nass elections 2023.
+                </p>
+                <Link
+                  href="#"
+                  className="text-[#d65f1b] text-[12px] font-[400]"
+                >
+                  Read more...
+                </Link>
+              </section>
+            </section>
+
+            <section className="w-full bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center shadow-lg drop-shadow-xl md:w-[46%] lg:w-[30%]">
+              <Image
+                src={ourStoriesImg4}
+                alt="Our Stories 1"
+                width={250}
+                height={250}
+                className="w-full h-[235px] object-cover rounded-tl-2xl rounded-tr-2xl rounded-bl-0 rounded-br-0"
+                loading="lazy"
+              />
+
+              <section className="w-full bg-white p-4 flex flex-col items-start justify-start text-left">
+                <span className="text-[#28374B] text-[10px] font-[400] ">
+                  2 June, 2023
+                </span>
+                <p className="uppercase text-[#28374B] text-[16px] font-[500] my-2">
+                  Re: Connected development (code) alleges manipulation of
+                  election results, relocation of local governments, state
+                  collation centres.
+                </p>
+                <Link
+                  href="#"
+                  className="text-[#d65f1b] text-[12px] font-[400]"
+                >
+                  Read more...
+                </Link>
+              </section>
+            </section>
+
+            <section className="w-full bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center shadow-lg drop-shadow-xl md:w-[46%] lg:w-[30%]">
+              <Image
+                src={ourStoriesImg5}
                 alt="Our Stories 1"
                 width={250}
                 height={250}
@@ -100,7 +183,7 @@ const OurStoriesSection = () => {
 
             <section className="w-full bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center shadow-lg drop-shadow-xl md:w-[46%] lg:w-[30%]">
               <Image
-                src={ourStoriesImg1}
+                src={ourStoriesImg6}
                 alt="Our Stories 1"
                 width={250}
                 height={250}
@@ -113,89 +196,8 @@ const OurStoriesSection = () => {
                   10 March, 2023
                 </span>
                 <p className="uppercase text-[#28374B] text-[16px] font-[500] my-2">
-                  Same currency for violence, troubling election - Pre-election
-                  security assessment report
-                </p>
-                <Link
-                  href="#"
-                  className="text-[#d65f1b] text-[12px] font-[400]"
-                >
-                  Read more...
-                </Link>
-              </section>
-            </section>
-
-            <section className="w-full bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center shadow-lg drop-shadow-xl md:w-[46%] lg:w-[30%]">
-              <Image
-                src={ourStoriesImg1}
-                alt="Our Stories 1"
-                width={250}
-                height={250}
-                className="w-full h-[235px] object-cover rounded-tl-2xl rounded-tr-2xl rounded-bl-0 rounded-br-0"
-                loading="lazy"
-              />
-
-              <section className="w-full bg-white p-4 flex flex-col items-start justify-start text-left">
-                <span className="text-[#28374B] text-[10px] font-[400] ">
-                  10 March, 2023
-                </span>
-                <p className="uppercase text-[#28374B] text-[16px] font-[500] my-2">
-                  Same currency for violence, troubling election - Pre-election
-                  security assessment report
-                </p>
-                <Link
-                  href="#"
-                  className="text-[#d65f1b] text-[12px] font-[400]"
-                >
-                  Read more...
-                </Link>
-              </section>
-            </section>
-
-            <section className="w-full bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center shadow-lg drop-shadow-xl md:w-[46%] lg:w-[30%]">
-              <Image
-                src={ourStoriesImg1}
-                alt="Our Stories 1"
-                width={250}
-                height={250}
-                className="w-full h-[235px] object-cover rounded-tl-2xl rounded-tr-2xl rounded-bl-0 rounded-br-0"
-                loading="lazy"
-              />
-
-              <section className="w-full bg-white p-4 flex flex-col items-start justify-start text-left">
-                <span className="text-[#28374B] text-[10px] font-[400] ">
-                  10 March, 2023
-                </span>
-                <p className="uppercase text-[#28374B] text-[16px] font-[500] my-2">
-                  Same currency for violence, troubling election - Pre-election
-                  security assessment report
-                </p>
-                <Link
-                  href="#"
-                  className="text-[#d65f1b] text-[12px] font-[400]"
-                >
-                  Read more...
-                </Link>
-              </section>
-            </section>
-
-            <section className="w-full bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center shadow-lg drop-shadow-xl md:w-[46%] lg:w-[30%]">
-              <Image
-                src={ourStoriesImg1}
-                alt="Our Stories 1"
-                width={250}
-                height={250}
-                className="w-full h-[235px] object-cover rounded-tl-2xl rounded-tr-2xl rounded-bl-0 rounded-br-0"
-                loading="lazy"
-              />
-
-              <section className="w-full bg-white p-4 flex flex-col items-start justify-start text-left">
-                <span className="text-[#28374B] text-[10px] font-[400] ">
-                  10 March, 2023
-                </span>
-                <p className="uppercase text-[#28374B] text-[16px] font-[500] my-2">
-                  Same currency for violence, troubling election - Pre-election
-                  security assessment report
+                  Interim statement on the process and conduct of Nigeria's
+                  presidential and nass elections 2023.
                 </p>
                 <Link
                   href="#"

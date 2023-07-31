@@ -10,6 +10,7 @@ import HeaderDivider from "./HeaderDivider";
 import ThematicSection from "./ThematicSection";
 import OurPartnersSection from "./OurPartnersSection";
 import OurStoriesSection from "./OurStoriesSection";
+import AchievementSection from "./AchievementSection";
 
 export {
   Header,
@@ -24,4 +25,5 @@ export {
   ThematicSection,
   OurPartnersSection,
   OurStoriesSection,
+  AchievementSection,
 };

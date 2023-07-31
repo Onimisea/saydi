@@ -9,15 +9,18 @@ const Button = ({ type, click, text, style, hasImgIcon }) => {
     <motion.button
       type={type}
       onClick={click}
-      className={`flex items-center justify-center p-[8px] rounded-[12px] font-[700] leading-[24px] font-montserrat capitalise w-fit duration-500 ${
-        style === "primary"
-          ? "bg-white text-primary hover:bg-secondary hover:text-white hover:border-[2px] hover:border-primary"
-          : style === "secondary"
-          ? "bg-secondary text-white hover:bg-white hover:text-primary hover:border-[2px] hover:border-primary"
-          : "bg-gradient-secondary text-white"
+      className={`flex items-center justify-center rounded-[12px] font-[700] leading-[24px] font-montserrat capitalise w-fit duration-500 ${
+        style === "primary" &&
+        "bg-white text-primary hover:bg-secondary hover:text-white hover:border-[2px] hover:border-primary p-[8px]"
+      } ${
+        style === "secondary" &&
+        "bg-secondary text-white hover:bg-white hover:text-primary hover:border-[2px] hover:border-primary px-[24px] py-[14px]"
+      } ${
+        style === "other1" &&
+        "bg-secondary text-white hover:bg-white hover:text-primary hover:border-[2px] hover:border-primary"
       } ${hasImgIcon ? "gap-[15px]" : "gap-0"}`}
     >
-      <span className="ml-2">{text}</span>
+      <span className="">{text}</span>
       {hasImgIcon && (
         <span className="bg-primary p-[8px] rounded-[8px]">
           <Image

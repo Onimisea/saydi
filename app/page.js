@@ -2,6 +2,8 @@
 
 import {
   AchievementSection,
+  ContactSection,
+  DonateSection,
   Footer,
   Header,
   Hero,
@@ -28,6 +30,8 @@ export default function Home() {
         <OurPartnersSection />
         <OurStoriesSection />
         <AchievementSection />
+        <ContactSection />
+        <DonateSection />
       </main>
       <Footer />
     </section>

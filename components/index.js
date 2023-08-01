@@ -11,6 +11,8 @@ import ThematicSection from "./ThematicSection";
 import OurPartnersSection from "./OurPartnersSection";
 import OurStoriesSection from "./OurStoriesSection";
 import AchievementSection from "./AchievementSection";
+import ContactSection from "./ContactSection";
+import DonateSection from "./DonateSection";
 
 export {
   Header,
@@ -26,4 +28,6 @@ export {
   OurPartnersSection,
   OurStoriesSection,
   AchievementSection,
+  ContactSection,
+  DonateSection,
 };

@@ -40,7 +40,7 @@ const OurStoriesSection = () => {
           </h1>
 
           <section className="w-[30%] md:w-[18%]">
-            <HeaderDivider />
+            <HeaderDivider style="primary" />
           </section>
 
           <section className="w-[95%] sm2:w-full flex flex-wrap items-center justify-center my-4 py-6 gap-12 z-20">

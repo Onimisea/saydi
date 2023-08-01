@@ -29,7 +29,7 @@ const OurPartnersSection = () => {
           </h1>
 
           <section className="w-[30%] md:w-[18%]">
-            <HeaderDivider />
+            <HeaderDivider style="primary" />
           </section>
 
           <Image

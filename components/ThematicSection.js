@@ -31,7 +31,7 @@ const ThematicSection = () => {
           </h1>
 
           <section className="w-[50%] md:w-[25%] lg:w-[15%]">
-            <HeaderDivider />
+            <HeaderDivider style="primary" />
           </section>
 
           <section className="w-full flex flex-wrap items-center justify-center mt-10 mb-8 md:mt-14 md:mb-10 md2:mt-16 md2:mb-12 gap-12 md2:gap-6 ">

@@ -12,14 +12,9 @@ import {
   Sidebar,
   ThematicSection,
 } from "@/components";
-
-// import { AppContext } from "@/context/AppContext";
 import Image from "next/image";
-// import { useContext } from "react";
 
 export default function Home() {
-  // const { navOpen } = useContext(AppContext);
-
   return (
     <section className={`body__container`}>
       <Header />

@@ -81,9 +81,15 @@ const Sidebar = () => {
     },
   ];
 
-  const { navOpen } = useContext(AppContext);
+  const { navOpen, setNavOpen } = useContext(AppContext);
 
   const [activeMenu, setActiveMenu] = useState("");
+
+  useEffect(() => {
+    if (navOpen) {
+      setNavOpen(false);
+    }
+  }, [pathname]);
 
   return (
     <AnimatePresence>
@@ -117,6 +123,10 @@ const Sidebar = () => {
                       setActiveMenu(link.label);
                     } else if (activeMenu === link.label) {
                       setActiveMenu("");
+                    } else if (activeMenu === "Contact") {
+                      router.push("/#contact");
+                    } else if (activeMenu === "Donate") {
+                      router.push("/#donate");
                     } else {
                       setActiveMenu(link.label);
                     }

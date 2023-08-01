@@ -40,7 +40,7 @@ const AchievementSection = () => {
               <section className="text-white font-gillsans_heavy font-[700] text-[20px]">
                 <CountUp starts={0} end={16} duration={17} />
               </section>
-              <h3 className="font-montserrat font-[400] text-white uppercase text-[16px] mt-[-10px]">
+              <h3 className="font-montserrat font-[400] text-white uppercase text-[11px] mt-[-10px]">
                 Projects Completed
               </h3>
             </section>
@@ -49,7 +49,7 @@ const AchievementSection = () => {
               <section className="text-white font-gillsans_heavy font-[700] text-[20px]">
                 <CountUp starts={0} end={123} duration={17} />
               </section>
-              <h3 className="font-montserrat font-[300] text-white uppercase text-[10px] mt-[-10px]">
+              <h3 className="font-montserrat font-[300] text-white uppercase text-[11px] mt-[-10px]">
                 Rural Communities Reached
               </h3>
             </section>
@@ -63,7 +63,7 @@ const AchievementSection = () => {
                   suffix="+"
                 />
               </section>
-              <h3 className="font-montserrat font-[300] text-white uppercase text-[10px] mt-[-10px]">
+              <h3 className="font-montserrat font-[300] text-white uppercase text-[11px] mt-[-10px]">
                 Lives Impacted
               </h3>
             </section>

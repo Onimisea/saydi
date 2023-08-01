@@ -8,7 +8,7 @@ const Button = ({ type, click, text, style, hasImgIcon }) => {
   return (
     <motion.button
       type={type}
-      onClick={click}
+      onClick={click && click}
       className={`flex items-center justify-center rounded-[12px] font-[700] leading-[24px] font-montserrat capitalise w-fit duration-500 ${
         style === "primary" &&
         "bg-white text-primary hover:bg-secondary hover:text-white hover:border-[2px] hover:border-primary p-[8px]"

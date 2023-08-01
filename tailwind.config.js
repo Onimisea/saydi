@@ -50,11 +50,16 @@ module.exports = {
         gillsans_bold: ["var(--font-gillsans-bold)"],
         gillsans_heavy: ["var(--font-gillsans-heavy)"],
       },
+      boxShadow: {
+        custom: "0px 8px 12px rgba(52, 87, 140, 0.12)",
+      },
       backgroundImage: {
         "gradient-primary": "linear-gradient(90deg, #000180 0%, #950D95 100%)",
         "gradient-secondary":
           "linear-gradient(180deg, #D65F1B 0%, #DEB30C 100%)",
         "gradient-tertiary": "linear-gradient(90deg, #950D95 0%, #000180 100%)",
+        "gradient-secondary2":
+          "linear-gradient(0deg, #D65F1B 0%, #DEB30C 100%)",
         "hero-section-gf": "url('../public/assets/home/hero_section_gf.png')",
         "our-partners-gf": "url('../public/assets/home/our_partners_gf.png')",
       },

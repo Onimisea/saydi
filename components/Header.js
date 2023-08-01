@@ -114,7 +114,7 @@ const Header = () => {
                         } duration-500`}
                           onClick={() => {
                             console.log(`${link.label} button clicked!`);
-                            router.push(link.url)
+                            router.push(`/${link.url}`)
                           }}
                         >
                           {link.label}

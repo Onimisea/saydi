@@ -18,7 +18,7 @@ const Button = ({ type, click, text, style, hasImgIcon }) => {
       } ${
         style === "other1" &&
         "bg-secondary text-white hover:bg-white hover:text-primary hover:border-[2px] hover:border-primary"
-      } ${hasImgIcon ? "gap-[15px]" : "gap-0"}`}
+      } ${hasImgIcon ? "pl:3 gap-[15px]" : "gap-0"}`}
     >
       <span className="">{text}</span>
       {hasImgIcon && (

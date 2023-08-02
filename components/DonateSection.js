@@ -260,7 +260,7 @@ const DonateSection = () => {
                   <section className="w-full relative flex flex-col gap-2">
                     <label
                       htmlFor="first_name"
-                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase"
+                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
                     >
                       First Name
                     </label>
@@ -282,7 +282,7 @@ const DonateSection = () => {
                   <section className="w-full relative flex flex-col gap-2">
                     <label
                       htmlFor="last_name"
-                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase"
+                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
                     >
                       Last Name
                     </label>
@@ -305,7 +305,7 @@ const DonateSection = () => {
                   <section className="w-full relative flex flex-col gap-2">
                     <label
                       htmlFor="email"
-                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase"
+                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
                     >
                       Email Address
                     </label>
@@ -330,10 +330,10 @@ const DonateSection = () => {
                     )}
                   </section>
 
-                  <section className="w-full relative flex flex-col gap-2">
+                  <section className="w-full relative flex flex-col gap-2 bg-white">
                     <label
                       htmlFor="frequency"
-                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase"
+                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
                     >
                       Frequency
                     </label>

@@ -139,7 +139,7 @@ const DonateSection = () => {
                   <section className="w-full relative flex flex-col gap-2">
                     <label
                       htmlFor="first_name"
-                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase"
+                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
                     >
                       First Name
                     </label>
@@ -184,7 +184,7 @@ const DonateSection = () => {
                   <section className="w-full relative flex flex-col gap-2">
                     <label
                       htmlFor="email"
-                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase"
+                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
                     >
                       Email Address
                     </label>
@@ -212,7 +212,7 @@ const DonateSection = () => {
                   <section className="w-full relative flex flex-col gap-2">
                     <label
                       htmlFor="amount"
-                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase"
+                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
                     >
                       Amount
                     </label>
@@ -343,7 +343,7 @@ const DonateSection = () => {
                       {...register("frequency", {
                         required: "Donation frequency is required",
                       })}
-                      className="w-full px-3 py-2 rounded-lg border-[1.5px] border-[#28374b] focus:outline-none focus:none rounded-[8px]"
+                      className="w-full px-3 py-2 rounded-lg border-[1.5px] border-[#28374b] focus:outline-none focus:none rounded-[8px] appearance-none"
                     >
                       <option value="">Select Frequency</option>
                       <option key={1} value="weekly">
@@ -373,7 +373,7 @@ const DonateSection = () => {
                   <section className="w-full relative flex flex-col gap-2">
                     <label
                       htmlFor="amount"
-                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase"
+                      className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
                     >
                       Amount
                     </label>

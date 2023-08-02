@@ -101,7 +101,7 @@ const AchievementSection = () => {
               <section className="flex flex-col justify-center items-center gap-4 text-center w-[28%] h-full">
                 <section className="text-white font-gillsans_heavy font-[900] text-[30px] md3:text-[36px]">
                   <CountUp
-                    starts={800000}
+                    starts={859800}
                     end={860000}
                     duration={12}
                     suffix="+"

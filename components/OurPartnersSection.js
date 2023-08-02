@@ -18,7 +18,7 @@ const OurPartnersSection = () => {
         alt=""
         width={1200}
         height={100}
-        className="w-full h-[18%] object-fill z-0"
+        className="w-full h-[18%] object-fill mt-[-2px] z-0"
         loading="lazy"
       />
 
@@ -50,7 +50,7 @@ const OurPartnersSection = () => {
         alt=""
         width={1200}
         height={100}
-        className="w-full h-[18%] object-fill z-0"
+        className="w-full h-[18%] object-fill mb-[-2px] z-0"
         loading="lazy"
       />
     </section>

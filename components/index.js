@@ -14,6 +14,9 @@ import AchievementSection from "./AchievementSection";
 import ContactSection from "./ContactSection";
 import DonateSection from "./DonateSection";
 
+import ProductsHeroSection from "./products/ProductsHeroSection";
+import ProductsContent from "./products/ProductsContent";
+
 export {
   Header,
   NavLinks,
@@ -30,4 +33,6 @@ export {
   AchievementSection,
   ContactSection,
   DonateSection,
+  ProductsHeroSection,
+  ProductsContent,
 };

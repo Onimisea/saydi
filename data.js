@@ -39,7 +39,7 @@ export const productsData = [
     slug: "",
   },
   {
-    featured_image: "./public/imgs/products/product_img3.png",,
+    featured_image: "./public/imgs/products/product_img3.png",
     title: "Education-for-all",
     excerpt:
       "The Saving African Youths Dream Initiative uses its community-based alternative education initiative, Education for All, to combat the high rates of females dropping out of school in Nigeria. The objective of Education for All was to provide out-of-school children with the resources required to guarantee a 100% transfer into the formal education system within a 12-month time frame. We therefore collaborated with professionals and other stakeholders in developing a curriculum that covers identified fundamental disciplines (not limted to Literacy, Mathematical abilities, Life skills, Digital proficiency, etc.) in order to meet this goal.",

@@ -20,7 +20,7 @@ const ProductsHeroSection = () => {
         loading="lazy"
       />
 
-      <section className="content__container w-full">
+      <section className="content__container w-full z-20">
         <section className="w-full h-[350px] flex flex-col items-center justify-center mt-[-30px]">
           <h1 className="text-white font-gillsans_heavy font-[900] uppercase text-[20px] md:text-[36px] lg:text-[42px]">
             Products

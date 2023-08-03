@@ -12,13 +12,13 @@ import HeaderDivider from "../HeaderDivider";
 
 const ProductsContent = () => {
   return (
-    <section className="bg-gradient-primary w-full h-auto flex flex-col relative ">
+    <section className="bg-white w-full h-auto flex flex-col relative ">
       
 
       <section className="content__container w-full z-20">
     <section className="flex flex-col items-center justify-center py-12 bg-white gap-8">
     { productsData.map((data, i) => (
-      <section key={i} className="flex items-center justify-center lg:justify-between text-center lg:text-left">
+      <section key={i} className="w-full flex items-center justify-center lg:justify-between text-center lg:text-left">
       <section className="w-full h-auto lg:w-[47%] flex flex-col gap-4 items-center justify-center">
       <section className="w-full flex flex-col items-center justify-center gap-2">
 <h3 className="">{data.title}</h3>

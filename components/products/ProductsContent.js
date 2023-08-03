@@ -16,11 +16,11 @@ const ProductsContent = () => {
       
 
       <section className="content__container w-full z-20">
-    <section className="flex flex-col items-center justify-center py-12 ">
+    <section className="flex flex-col items-center justify-center py-12 bg-white gap-8">
     { productsData.map((data, i) => (
-      <section key={i} className="">
-      <section className="w-full h-auto lg:w-[47%] flex flex-col gap-6">
-      <section className="w-full flex items-center justify-center gap-2">
+      <section key={i} className="flex items-center justify-center lg:justify-between text-center lg:text-left">
+      <section className="w-full h-auto lg:w-[47%] flex flex-col gap-4 items-center justify-center">
+      <section className="w-full flex flex-col items-center justify-center gap-2">
 <h3 className="">{data.title}</h3>
 <HeaderDivider style="secondary" />
 </section>

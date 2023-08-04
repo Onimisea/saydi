@@ -14,10 +14,10 @@ const Button = ({ type, click, text, style, hasImgIcon }) => {
         "bg-white text-primary hover:bg-secondary hover:text-white hover:border-[2px] hover:border-primary p-[8px]"
       } ${
         style === "secondary" &&
-        "bg-secondary text-white hover:bg-white hover:text-primary hover:border-[2px] hover:border-primary px-[24px] py-[14px]"
+        "bg-secondary text-white hover:bg-white hover:text-primary hover:border-[2px] hover:border-primary p-[8px]"
       } ${
         style === "other1" &&
-        "bg-secondary text-white hover:bg-white hover:text-primary hover:border-[2px] hover:border-primary"
+        "bg-secondary text-white hover:bg-white hover:text-primary hover:border-[2px] hover:border-primary p-[8px]"
       } ${hasImgIcon ? "pl-5 gap-[15px]" : "gap-0"}`}
     >
       <span className="">{text}</span>

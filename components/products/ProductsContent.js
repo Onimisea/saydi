@@ -1,14 +1,8 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { productsData } from "../../data";
-import top_bubble from "../../public/assets/products/top_bubble.png";
-import left_bubble from "../../public/assets/products/left_bubble.png";
-import right_bubble from "../../public/assets/products/right_bubble.png";
-// import herobbImg from "../../public/assets/home/hero_section_bb.png";
-import { Button, ProductRow } from "@/components";
-import HeaderDivider from "../HeaderDivider";
+import { AnimatePresence, motion } from "framer-motion";
+import { ProductRow } from "@/components";
 
 import product_img1 from "../../public/imgs/products/product_img1.png";
 import product_img2 from "../../public/imgs/products/product_img2.png";
@@ -20,9 +14,45 @@ import product_img7 from "../../public/imgs/products/product_img7.png";
 import product_img8 from "../../public/imgs/products/product_img8.png";
 import product_img9 from "../../public/imgs/products/product_img9.png";
 
+import left_bubble from "../../public/assets/products/left_bubble.png";
+import right_bubble from "../../public/assets/products/right_bubble.png";
+
 const ProductsContent = () => {
   return (
     <section className="w-full h-auto flex flex-col relative ">
+      <Image
+        src={left_bubble}
+        alt="Left Bubble"
+        width={360}
+        height={640}
+        className="absolute top-[5.5%] sm:top-[3.85%] sm3:top-[3.3%] lg:top-[15%] left-[-10%] sm:left-[-10%] sm3:left-[-6%] md:top-[2%] md:left-[-4%] lg:left-0 w-auto h-[450px] object-fill z-10"
+        loading="lazy"
+      />
+      <Image
+        src={right_bubble}
+        alt="right Bubble"
+        width={360}
+        height={640}
+        className="absolute top-[31.5%] sm:top-[30%] sm3:top-[34%] 2xl:top-[37%] right-[-15%] sm3:right-[-6%] lg:top-[40%] lg:right-0 w-auto h-[550px] object-fill z-10 md:transform-origin-top-left md:rotate-180 "
+        loading="lazy"
+      />
+      <Image
+        src={left_bubble}
+        alt="Left Bubble"
+        width={360}
+        height={640}
+        className="absolute top-[56%] md:top-[66%] xl2:top-[64%] left-[-7%] md:left-[-3%] w-auto h-[550px] object-fill z-10"
+        loading="lazy"
+      />
+      <Image
+        src={right_bubble}
+        alt="right Bubble"
+        width={360}
+        height={640}
+        className="absolute bottom-[17.5%] sm:bottom-[19.3%] sm3:bottom-[21%] sm2:bottom-[23%] md:hidden right-[-15%] sm3:right-[-6%] lg:bottom-[40%] w-auto h-[550px] object-fill z-10 md:transform-origin-bottom-left md:rotate-180 "
+        loading="lazy"
+      />
+
       <section className="content__container w-full z-20">
         <section className="flex flex-col flex-wrap items-start justify-start py-24 gap-16 ">
           <ProductRow

@@ -3,9 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
-import top_bubble from "../../public/assets/products/top_bubble.png";
 import herobbImg from "../../public/assets/home/hero_section_bb.png";
-import { Button } from "@/components";
 import HeaderDivider from "../HeaderDivider";
 
 const ProductsHeroSection = () => {

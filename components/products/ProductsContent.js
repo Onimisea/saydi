@@ -25,7 +25,7 @@ const ProductsContent = () => {
         alt="Left Bubble"
         width={360}
         height={640}
-        className="absolute top-[5.5%] sm:top-[3.85%] sm3:top-[3.3%] lg:top-[15%] left-[-10%] sm:left-[-10%] sm3:left-[-6%] md:top-[2%] md:left-[-4%] lg:left-0 w-auto h-[450px] object-fill z-10"
+        className="absolute top-[5.5%] sm:top-[4%] sm3:top-[3.3%] lg:top-[15%] left-[-10%] sm:left-[-10%] sm3:left-[-6%] md:top-[2%] md:left-[-4%] lg:left-0 w-auto h-[450px] object-fill z-10"
         loading="lazy"
       />
       <Image
@@ -33,7 +33,7 @@ const ProductsContent = () => {
         alt="right Bubble"
         width={360}
         height={640}
-        className="absolute top-[31.5%] sm:top-[30%] sm3:top-[34%] 2xl:top-[37%] right-[-15%] sm3:right-[-6%] lg:top-[40%] lg:right-0 w-auto h-[550px] object-fill z-10 md:transform-origin-top-left md:rotate-180 "
+        className="absolute top-[31.5%] sm:top-[28.5%] sm3:top-[34%] 2xl:top-[37%] right-[-15%] sm3:right-[-6%] lg:top-[40%] lg:right-0 w-auto h-[550px] object-fill z-10 md:transform-origin-top-left md:rotate-180 "
         loading="lazy"
       />
       <Image
@@ -41,7 +41,7 @@ const ProductsContent = () => {
         alt="Left Bubble"
         width={360}
         height={640}
-        className="absolute top-[56%] md:top-[66%] xl2:top-[64%] left-[-7%] md:left-[-3%] w-auto h-[550px] object-fill z-10"
+        className="absolute top-[56%] sm:top-[60] md:top-[66%] xl2:top-[64%] left-[-7%] md:left-[-3%] w-auto h-[550px] object-fill z-10"
         loading="lazy"
       />
       <Image

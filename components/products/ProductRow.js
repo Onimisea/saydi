@@ -6,7 +6,7 @@ const ProductRow = ({ key, content, reverse }) => {
   return (
     <section
       key={key}
-      className={`w-full flex flex-wrap items-center justify-center lg:justify-between text-center lg:text-left gap-4 xl:items-start ${reverse ? "flex-row-reverse" : "flex-row"}`}
+      className={`w-full flex flex-wrap items-center justify-center lg:justify-between text-center lg:text-left gap-4 ${reverse ? "flex-row-reverse" : "flex-row"}`}
     >
       <section className="w-full h-auto lg:w-[47%] flex flex-col gap-6 items-center lg:items-start ">
         <section className="w-fit flex flex-col items-center justify-center lg:items-start lg:justify-start gap-2">

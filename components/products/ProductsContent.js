@@ -20,7 +20,7 @@ import right_bubble from "../../public/assets/products/right_bubble.png";
 const ProductsContent = () => {
   return (
     <section className="w-full h-auto flex flex-col relative ">
-      <Image
+    /*  <Image
         src={left_bubble}
         alt="Left Bubble"
         width={360}
@@ -51,7 +51,7 @@ const ProductsContent = () => {
         height={640}
         className="absolute bottom-[17.5%] sm:bottom-[19.3%] sm3:bottom-[21%] sm2:bottom-[23%] md:hidden right-[-15%] sm3:right-[-6%] lg:bottom-[40%] w-auto h-[550px] object-fill z-10 md:transform-origin-bottom-left md:rotate-180 "
         loading="lazy"
-      />
+      /> */
 
       <section className="content__container w-full z-20">
         <section className="flex flex-col flex-wrap items-start justify-start py-24 gap-16 ">

@@ -102,41 +102,27 @@ const Header = () => {
               {navLinks.map((link, index) => {
                 // console.log(link);
 
-                if (link.label === "Contact" || link.label === "Donate") {
+                if (
+                  link.label === "About" ||
+                  link.label === "Opportunities" ||
+                  link.label === "Our Stories"
+                ) {
                   return (
                     <li key={index} className="relative group">
-                                            <button
-                          key={index}
-                          className={`px-6 py-3 inline-flex gap-2 items-center justify-center ${
-                          link.is_active
-                            ? "bg-tertiary text-white hover:bg-primary"
-                            : "bg-transparent text-secondary hover:bg-[#14579E] hover:text-white"
-                        } duration-500`}
-                          onClick={() => {
-                            console.log(`${link.label} button clicked!`);
-                            router.push(`/${link.url}`)
-                          }}
-                        >
-                          {link.label}
-                        </button>
-                    </li>)
-                } else {
-                  return (
-                    <li key={index} className="relative group">
-                      <Link
-                        href={link.url}
-                        className={`px-6 py-3 inline-flex gap-2 items-center justify-center ${
+                      <button
+                        key={index}
+                        className={`px-6 py-3 inline-flex gap-2 items-center justi   fy-center ${
                           link.is_active
                             ? "bg-tertiary text-white hover:bg-primary"
                             : "bg-transparent text-secondary hover:bg-[#14579E] hover:text-white"
                         } duration-500`}
                       >
                         {link.label}
-                      </Link>
+                      </button>
 
                       {link.submenu && (
                         <AnimatePresence>
-                          <section className="absolute hidden group-hover:flex group-hover:flex-col w-[120%] pt-4 ml-[-10px] ">
+                          <section className="absolute hidden group-hover:flex group-hover:flex-col w-[130%] pt-4 ml-[-10px] ">
                             <section className="flex flex-col items-center relative ">
                               <motion.span className="w-[25px] h-[25px] bg-white rounded-lg transform rotate-45 absolute top-[-8px] z-10 "></motion.span>
                               <motion.ul
@@ -149,7 +135,7 @@ const Header = () => {
                                   >
                                     <Link
                                       href={sublink.url}
-                                      className={`p-3 text-secondary duration-500 uppercase leading-[15px] text-[12px] font-[400] w-full text-center duration-500`}
+                                      className={`p-3 text-secondary duration-500 uppercase leading-[15px] text-[12px] font-[400] w-full text-center`}
                                     >
                                       {sublink.label}
                                     </Link>
@@ -163,6 +149,43 @@ const Header = () => {
                           </section>
                         </AnimatePresence>
                       )}
+                    </li>
+                  );
+                } else if (
+                  link.label === "Contact" ||
+                  link.label === "Donate"
+                ) {
+                  return (
+                    <li key={index} className="relative group">
+                      <button
+                        key={index}
+                        className={`px-6 py-3 inline-flex gap-2 items-center justi   fy-center ${
+                          link.is_active
+                            ? "bg-tertiary text-white hover:bg-primary"
+                            : "bg-transparent text-secondary hover:bg-[#14579E] hover:text-white"
+                        } duration-500`}
+                        onClick={() => {
+                          console.log(`${link.label} button clicked!`);
+                          router.push(`/${link.url}`);
+                        }}
+                      >
+                        {link.label}
+                      </button>
+                    </li>
+                  );
+                } else {
+                  return (
+                    <li key={index} className="relative group">
+                      <Link
+                        href={link.url}
+                        className={`px-6 py-3 inline-flex gap-2 items-center justify-center ${
+                          link.is_active
+                            ? "bg-tertiary text-white hover:bg-primary"
+                            : "bg-transparent text-secondary hover:bg-[#14579E] hover:text-white"
+                        } duration-500`}
+                      >
+                        {link.label}
+                      </Link>
                     </li>
                   );
                 }

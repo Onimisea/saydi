@@ -7,7 +7,6 @@ import {
   ProductsHeroSection,
   Sidebar,
 } from "@/components";
-import Image from "next/image";
 
 export default function Products() {
   return (

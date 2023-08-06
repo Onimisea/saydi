@@ -17,6 +17,7 @@ import DonateSection from "./DonateSection";
 import ProductsHeroSection from "./products/ProductsHeroSection";
 import ProductsContent from "./products/ProductsContent";
 import ProductRow from "./products/ProductRow";
+import AboutUsHero from "./about/AboutUsHero";
 
 export {
   Header,
@@ -37,4 +38,5 @@ export {
   ProductsHeroSection,
   ProductsContent,
   ProductRow,
+  AboutUsHero,
 };

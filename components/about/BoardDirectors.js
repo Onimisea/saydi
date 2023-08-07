@@ -24,7 +24,7 @@ const BoardDirectors = () => {
             <HeaderDivider style="primary" />
           </section>
 
-          <section className="w-full flex flex-wrap items-start justify-center gap-8 mt-8">
+          <section className="w-full flex flex-wrap items-start justify-center gap-8 sm:gap-6 mt-8">
             <section className="overflow-hidden relative w-[80%] sm:w-[47%] flex items-center justify-center">
               <Image
                 src={about_img1}

@@ -37,7 +37,7 @@ const BoardDirectors = () => {
 
               <section className="w-[95%] rounded-[8px] bg-white bg-white-opacity-80 shadow-custom p-[10px] absolute bottom-[15px] z-20">
                 <span
-                  className={`font-[700] text-[17px] bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"`}
+                  className={`w-full font-[700] text-[17px] bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text`}
                 >
                   Dr. Amina Salihu
   </span>

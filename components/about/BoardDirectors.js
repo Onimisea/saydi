@@ -25,7 +25,7 @@ const BoardDirectors = () => {
           </section>
 
           <section className="w-full flex flex-wrap items-start justify-center gap-8 mt-8">
-            <section className="overflow-hidden relative w-[47%]">
+            <section className="overflow-hidden relative w-[47%] flex items-center justify-center">
               <Image
                 src={about_img1}
                 alt="Dr. Amina Salihu"
@@ -35,14 +35,14 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
-              <section className="w-full m-4 rounded-[8px] bg-white shadow-custom p-[5px]">
+              <section className="w-full m-4 rounded-[8px] bg-white-opacity-80 shadow-custom p-[5px] absolute bottom-0">
                 <h3
                   className={`font-[700] text-[17px] bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"`}
                 >
                   Dr. Amina Salihu
                 </h3>
-  <span className=""></span>
-  <p className=""></p>
+  <span className="text-[#28374b] text-[10px] uppercase">Senior Director of Program, Macarthur Foundation</span>
+  <p className="text-[16px] text-[]">Board Chair</p>
               </section>
             </section>
           </section>

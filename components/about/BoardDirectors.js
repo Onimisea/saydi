@@ -1,4 +1,4 @@
-"use client";
+7"use client";
 
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
@@ -25,7 +25,7 @@ const BoardDirectors = () => {
           </section>
 
           <section className="w-full flex flex-wrap items-start justify-center gap-8 mt-8">
-            <section className="overflow-hidden relative w-[47%] flex items-center justify-center">
+            <section className="overflow-hidden relative w-[70%] flex items-center justify-center">
               <Image
                 src={about_img1}
                 alt="Dr. Amina Salihu"
@@ -35,7 +35,7 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
-              <section className="w-full m-4 rounded-[8px] bg-white-opacity-80 shadow-custom p-[5px] absolute bottom-0 z-20">
+              <section className="w-full m-8 rounded-[8px] bg-white bg-white-opacity-80 shadow-custom p-[5px] absolute bottom-0 z-20">
                 <h3
                   className={`font-[700] text-[17px] bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"`}
                 >

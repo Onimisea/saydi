@@ -18,6 +18,10 @@ import ProductsHeroSection from "./products/ProductsHeroSection";
 import ProductsContent from "./products/ProductsContent";
 import ProductRow from "./products/ProductRow";
 import AboutUsHero from "./about/AboutUsHero";
+import AboutLongMission from "./about/AboutLongMission";
+import AboutObjectives from "./about/AboutObjectives";
+import BoardDirectors from "./about/BoardDirectors";
+import KeyDrivers from "./about/KeyDrivers";
 
 export {
   Header,
@@ -39,4 +43,8 @@ export {
   ProductsContent,
   ProductRow,
   AboutUsHero,
+  AboutLongMission,
+  AboutObjectives,
+  KeyDrivers,
+  BoardDirectors,
 };

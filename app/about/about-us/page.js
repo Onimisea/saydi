@@ -1,7 +1,15 @@
 "use client";
 
-import { AboutUsHero, Footer, Header, Sidebar } from "@/components";
-import Image from "next/image";
+import {
+  AboutLongMission,
+  AboutObjectives,
+  AboutUsHero,
+  BoardDirectors,
+  Footer,
+  Header,
+  KeyDrivers,
+  Sidebar,
+} from "@/components";
 
 export default function About() {
   return (
@@ -10,6 +18,10 @@ export default function About() {
       <Sidebar />
       <main className="w-full bg-white flex flex-col flex-1 relative overflow-hidden">
         <AboutUsHero />
+        <AboutLongMission />
+        <AboutObjectives />
+        <KeyDrivers />
+        <BoardDirectors />
       </main>
       <Footer />
     </section>

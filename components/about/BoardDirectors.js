@@ -35,16 +35,14 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
-              <section className="w-full m-4 rounded-[16px] bg-white shadow-custom p-6">
-                <span
-                  className={`font-[700] text-[17px] ${
-                    donateType === 0
-                      ? "bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"
-                      : "text-white"
-                  }`}
+              <section className="w-full m-4 rounded-[8px] bg-white shadow-custom p-[5px]">
+                <h3
+                  className={`font-[700] text-[17px] bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"`}
                 >
-                  Give Once
-                </span>
+                  Dr. Amina Salihu
+                </h3>
+  <span className=""></span>
+  <p className=""></p>
               </section>
             </section>
           </section>

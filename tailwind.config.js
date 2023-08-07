@@ -43,6 +43,8 @@ module.exports = {
         // Add more custom colors here
         tertiary: "#14579E",
         tertiary2: "#D65F1B",
+        white50: "rgba(255, 255, 255, 0.5)",
+        white80: "rgba(255, 255, 255, 0.8)",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

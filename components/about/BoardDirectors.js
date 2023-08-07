@@ -25,7 +25,7 @@ const BoardDirectors = () => {
           </section>
 
           <section className="w-full flex flex-wrap items-start justify-center gap-8 mt-8">
-            <section className="overflow-hidden relative w-[70%] flex items-center justify-center">
+            <section className="overflow-hidden relative w-[80%] flex items-center justify-center">
               <Image
                 src={about_img1}
                 alt="Dr. Amina Salihu"
@@ -35,7 +35,7 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
-              <section className="w-full m-[15px] rounded-[8px] bg-white bg-white-opacity-80 shadow-custom p-[10px] absolute bottom-0 z-20">
+              <section className="w-[95%] rounded-[8px] bg-white bg-white-opacity-80 shadow-custom p-[10px] absolute bottom-[15px] z-20">
                 <span
                   className={`font-[700] text-[17px] bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"`}
                 >

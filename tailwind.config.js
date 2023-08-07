@@ -44,7 +44,7 @@ module.exports = {
         tertiary: "#14579E",
         tertiary2: "#D65F1B",
         white50: "rgba(255, 255, 255, 0.5)",
-        white80: "rgba(255, 255, 255, 0.8)",
+        white90: "rgba(255, 255, 255, 0.9)",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

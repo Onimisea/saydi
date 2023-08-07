@@ -6,7 +6,7 @@ const AboutObjectives = () => {
   return (
     <section className="w-full h-auto flex flex-col relative ">
       <section className="w-full bg-gradient-tertiary">
-        <section className="content__container w-full z-20">
+        <section className="content__container w-full sm2:w-[70%] md2:w-[50%] z-20">
           <section className="w-full h-auto flex flex-col items-center justify-center py-10">
             <h1 className="text-white font-gillsans_bold font-[700] uppercase text-[16px] ">
               Our Vision
@@ -24,8 +24,9 @@ const AboutObjectives = () => {
           </section>
         </section>
       </section>
+                
       <section className="w-full bg-white">
-        <section className="content__container w-full z-20">
+        <section className="content__container w-full sm2:w-[70%] md2:w-[50%] z-20">
           <section className="w-full h-auto flex flex-col items-center justify-center pt-6 pb-12">
             <h1 className="text-[#333333] font-gillsans_bold font-[700] uppercase text-[16px] ">
               Our Mission
@@ -42,8 +43,9 @@ const AboutObjectives = () => {
           </section>
         </section>
       </section>
+                
       <section className="w-full bg-gradient-tertiary">
-        <section className="content__container w-full z-20">
+        <section className="content__container w-full sm2:w-[80%] md2:w-[60%] z-20">
           <section className="w-full h-auto flex flex-col items-center justify-center py-10">
             <h1 className="text-white font-gillsans_bold font-[700] uppercase text-[16px] ">
               Our Objectives

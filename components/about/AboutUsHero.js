@@ -13,8 +13,8 @@ const AboutUsHero = () => {
       <Image
         src={herobbImg}
         alt="Hero Bubble"
-        width={600}
-        height={600}
+        width={800}
+        height={800}
         className="absolute top-[-5px] right-[-30%] w-[200%] sm:w-[120%] sm3:w-[100%] md:w-[50%] h-auto object-fill z-10"
         loading="lazy"
       />

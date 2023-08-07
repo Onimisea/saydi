@@ -50,8 +50,8 @@ const BoardDirectors = () => {
 
             <section className="overflow-hidden relative w-[80%] flex items-center justify-center">
               <Image
-                src={about_img1}
-                alt="Dr. Amina Salihu"
+                src={about_img2}
+                alt="Abdullateef O. Abdulkareem"
                 width={600}
                 height={600}
                 className="w-full h-auto object-contain z-10"
@@ -63,18 +63,18 @@ const BoardDirectors = () => {
                 <span
                   className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary"
                 >
-                  Dr. Amina Salihu
+                  Abdullateef O. Abdulkareem
                   </span></section>
 
-  <p className="text-[#28374b] text-[11px] uppercase my-1">Senior Director of Program, Macarthur Foundation</p>
-  <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
+  <p className="text-[#28374b] text-[11px] uppercase my-1">Founder, Saving African Youths Dream Initiative SAYDI</p>
+  <p className="text-[13px] text-tertiary2 font-[600]">Board Secretary</p>
               </section>
             </section>
 
             <section className="overflow-hidden relative w-[80%] flex items-center justify-center">
               <Image
-                src={about_img1}
-                alt="Dr. Amina Salihu"
+                src={about_img3}
+                alt="Prof. Suleiman Folorunsho Ambali"
                 width={600}
                 height={600}
                 className="w-full h-auto object-contain z-10"
@@ -86,18 +86,18 @@ const BoardDirectors = () => {
                 <span
                   className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary"
                 >
-                  Dr. Amina Salihu
+                  Prof. Suleiman Folorunsho Ambali
                   </span></section>
 
-  <p className="text-[#28374b] text-[11px] uppercase my-1">Senior Director of Program, Macarthur Foundation</p>
-  <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
+  <p className="text-[#28374b] text-[11px] uppercase my-1"> Deputy Vice Chancellor, Management, University of Ilorin</p>
+  <p className="text-[13px] text-tertiary2 font-[600]">Board Member</p>
               </section>
             </section>
 
             <section className="overflow-hidden relative w-[80%] flex items-center justify-center">
               <Image
-                src={about_img1}
-                alt="Dr. Amina Salihu"
+                src={about_img4}
+                alt="Prof. Mashood Mustapha Keke"
                 width={600}
                 height={600}
                 className="w-full h-auto object-contain z-10"
@@ -109,18 +109,18 @@ const BoardDirectors = () => {
                 <span
                   className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary"
                 >
-                  Dr. Amina Salihu
+                  Prof. Mashood Mustapha Keke
                   </span></section>
 
-  <p className="text-[#28374b] text-[11px] uppercase my-1">Senior Director of Program, Macarthur Foundation</p>
-  <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
+  <p className="text-[#28374b] text-[11px] uppercase my-1">Zoology Department, University of ilorin.</p>
+  <p className="text-[13px] text-tertiary2 font-[600]">Board Member</p>
               </section>
             </section>
 
                                 <section className="overflow-hidden relative w-[80%] flex items-center justify-center">
               <Image
-                src={about_img1}
-                alt="Dr. Amina Salihu"
+                src={about_img5}
+                alt="Abdullahi Tunde Aborede"
                 width={600}
                 height={600}
                 className="w-full h-auto object-contain z-10"
@@ -132,11 +132,34 @@ const BoardDirectors = () => {
                 <span
                   className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary"
                 >
-                  Dr. Amina Salihu
+                  Abdullahi Tunde Aborede
                   </span></section>
 
-  <p className="text-[#28374b] text-[11px] uppercase my-1">Senior Director of Program, Macarthur Foundation</p>
-  <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
+  <p className="text-[#28374b] text-[11px] uppercase my-1">Researcher, University of State Mississippi, USA</p>
+  <p className="text-[13px] text-tertiary2 font-[600]">Board Member</p>
+              </section>
+            </section>
+
+                    <section className="overflow-hidden relative w-[80%] flex items-center justify-center">
+              <Image
+                src={about_img6}
+                alt="Funmi Omisope"
+                width={600}
+                height={600}
+                className="w-full h-auto object-contain z-10"
+                loading="lazy"
+              />
+
+              <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom p-[13px] absolute bottom-[15px] z-20">
+                  <section className="block text-[15px] font-[700] ">
+                <span
+                  className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary"
+                >
+                  Funmi Omisope
+                  </span></section>
+
+  <p className="text-[#28374b] text-[11px] uppercase my-1"></p>
+  <p className="text-[13px] text-tertiary2 font-[600]">Board Member</p>
               </section>
             </section>
                     

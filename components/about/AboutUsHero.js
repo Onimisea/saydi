@@ -15,7 +15,7 @@ const AboutUsHero = () => {
         alt="Hero Bubble"
         width={800}
         height={800}
-        className="absolute top-[-5px] right-[-30%] w-[130%] sm:w-[110%] sm3:w-[100%] sm2:w-[] md:w-[50%] h-full md:h-auto object-fill z-10"
+        className="absolute top-[-5px] right-[-30%] w-[130%] sm:w-[110%] sm3:w-[100%] h-full md:h-auto object-fill z-10"
         loading="lazy"
       />
 

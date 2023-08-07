@@ -24,8 +24,8 @@ const BoardDirectors = () => {
             <HeaderDivider style="primary" />
           </section>
 
-          <section className="w-full flex flex-wrap items-start justify-center gap-8 sm:gap-6 mt-8">
-            <section className="overflow-hidden relative w-[80%] sm:w-[47%] flex items-center justify-center">
+          <section className="w-full flex flex-wrap items-start justify-center gap-8 mt-8">
+            <section className="overflow-hidden relative w-[80%] sm3:w-[47%] flex items-center justify-center">
               <Image
                 src={about_img1}
                 alt="Dr. Amina Salihu"
@@ -48,7 +48,7 @@ const BoardDirectors = () => {
               </section>
             </section>
 
-            <section className="overflow-hidden relative w-[80%] sm:w-[47%] flex items-center justify-center">
+            <section className="overflow-hidden relative w-[80%] sm3:w-[47%] flex items-center justify-center">
               <Image
                 src={about_img2}
                 alt="Abdullateef O. Abdulkareem"
@@ -71,7 +71,7 @@ const BoardDirectors = () => {
               </section>
             </section>
 
-            <section className="overflow-hidden relative w-[80%] sm:w-[47%] flex items-center justify-center">
+            <section className="overflow-hidden relative w-[80%] sm3:w-[47%] flex items-center justify-center">
               <Image
                 src={about_img3}
                 alt="Prof. Suleiman Folorunsho Ambali"
@@ -94,7 +94,7 @@ const BoardDirectors = () => {
               </section>
             </section>
 
-            <section className="overflow-hidden relative w-[80%] sm:w-[47%] flex items-center justify-center">
+            <section className="overflow-hidden relative w-[80%] sm3:w-[47%] flex items-center justify-center">
               <Image
                 src={about_img4}
                 alt="Prof. Mashood Mustapha Keke"
@@ -117,7 +117,7 @@ const BoardDirectors = () => {
               </section>
             </section>
 
-                                <section className="overflow-hidden relative w-[80%] sm:w-[47%] flex items-center justify-center">
+                                <section className="overflow-hidden relative w-[80%] sm3:w-[47%] flex items-center justify-center">
               <Image
                 src={about_img5}
                 alt="Abdullahi Tunde Aborede"
@@ -140,7 +140,7 @@ const BoardDirectors = () => {
               </section>
             </section>
 
-                    <section className="overflow-hidden relative w-[80%] sm:w-[47%] flex items-center justify-center">
+                    <section className="overflow-hidden relative w-[80%] sm3:w-[47%] flex items-center justify-center">
               <Image
                 src={about_img6}
                 alt="Funmi Omisope"

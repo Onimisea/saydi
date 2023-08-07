@@ -41,6 +41,10 @@ const BoardDirectors = () => {
                 >
                   Dr. Amina Salihu
                   </section>
+                    <span className="text-transparent bg-gradient-to-r bg-clip-text from-purple-500 to-blue-500">
+  Gradient Text
+</span>
+
   <p className="text-[#28374b] text-[11px] uppercase my-1">Senior Director of Program, Macarthur Foundation</p>
   <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
               </section>

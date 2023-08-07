@@ -35,14 +35,14 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
-              <section className="w-[95%] rounded-[8px] bg-white bg-white-opacity-80 shadow-custom p-[10px] absolute bottom-[15px] z-20">
-                <h3
-                  className={`w-full font-[700] text-[17px] bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text`}
+              <section className="w-[95%] rounded-[8px] bg-white-opacity-80 shadow-custom p-[13px] absolute bottom-[15px] z-20">
+                <section
+                  className={`w-full font-[700] text-[15px] bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text`}
                 >
                   Dr. Amina Salihu
-  </h3>
-  <p className="text-[#28374b] text-[11px] uppercase my-3">Senior Director of Program, Macarthur Foundation</p>
-  <p className="text-[15px] text-tertiary2 font-[600]">Board Chair</p>
+                  </section>
+  <p className="text-[#28374b] text-[11px] uppercase my-1">Senior Director of Program, Macarthur Foundation</p>
+  <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
               </section>
             </section>
           </section>

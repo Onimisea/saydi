@@ -16,7 +16,7 @@ const BoardDirectors = () => {
   return (
     <section className="w-full h-auto flex flex-col relative ">
       <section className="content__container w-full z-20">
-        <section className="w-full h-auto flex flex-col items-center justify-start py-12">
+        <section className="w-full h-auto flex flex-col items-center justify-center py-12">
           <h1 className="text-secondary font-gillsans_heavy font-[900] uppercase text-[20px] md:text-[36px] lg:text-[42px]">
             Board of Directors
           </h1>

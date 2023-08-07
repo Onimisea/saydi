@@ -7,14 +7,14 @@ const AboutLongMission = () => {
     <section className="w-full h-auto flex flex-col relative ">
       <section className="content__container w-full z-20">
         <section className="w-full h-auto flex flex-col items-center justify-center pt-6 pb-12">
-          <h1 className="text-[#333333] font-gillsans_bold font-[700] uppercase text-[16px] ">
+          <h1 className="text-[#333333] font-gillsans_bold font-[700] uppercase text-[16px] sm2:text-[24px] md2:text-[32px]">
             Our Mission
           </h1>
           <section className="w-[30%] md:w-[20%] lg:w-[15%]">
             <HeaderDivider style="primary" />
           </section>
 
-          <p className="text-[#28374b] text-[14px] font-[400] leading-[21px] w-full text-center mt-6">
+          <p className="text-[#28374b] text-[14px] font-[400] leading-[21px] w-[90%] text-center mt-6 sm2:text-[16px] sm2:leading-[30px] sm3:w-[80%] md:w-[75%]">
             A non-governmental organization in West Africa, Nigeria with the
             mandate to promote equitable quality education; campaign against
             gender disparity and civic engagement apathy; and advocacy for the

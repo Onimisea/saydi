@@ -35,7 +35,7 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
-              <section className="w-[95%] rounded-[8px] bg-white-opacity-80 shadow-custom p-[13px] absolute bottom-[15px] z-20">
+              <section className="w-[95%] rounded-[8px] bg-white80 shadow-custom p-[13px] absolute bottom-[15px] z-20">
                 <section
                   className={`w-full font-[700] text-[15px] bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text`}
                 >

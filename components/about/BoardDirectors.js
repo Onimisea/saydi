@@ -47,6 +47,99 @@ const BoardDirectors = () => {
   <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
               </section>
             </section>
+
+            <section className="overflow-hidden relative w-[80%] flex items-center justify-center">
+              <Image
+                src={about_img1}
+                alt="Dr. Amina Salihu"
+                width={600}
+                height={600}
+                className="w-full h-auto object-contain z-10"
+                loading="lazy"
+              />
+
+              <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom p-[13px] absolute bottom-[15px] z-20">
+                  <section className="block text-[15px] font-[700] ">
+                <span
+                  className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary"
+                >
+                  Dr. Amina Salihu
+                  </span></section>
+
+  <p className="text-[#28374b] text-[11px] uppercase my-1">Senior Director of Program, Macarthur Foundation</p>
+  <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
+              </section>
+            </section>
+
+            <section className="overflow-hidden relative w-[80%] flex items-center justify-center">
+              <Image
+                src={about_img1}
+                alt="Dr. Amina Salihu"
+                width={600}
+                height={600}
+                className="w-full h-auto object-contain z-10"
+                loading="lazy"
+              />
+
+              <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom p-[13px] absolute bottom-[15px] z-20">
+                  <section className="block text-[15px] font-[700] ">
+                <span
+                  className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary"
+                >
+                  Dr. Amina Salihu
+                  </span></section>
+
+  <p className="text-[#28374b] text-[11px] uppercase my-1">Senior Director of Program, Macarthur Foundation</p>
+  <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
+              </section>
+            </section>
+
+            <section className="overflow-hidden relative w-[80%] flex items-center justify-center">
+              <Image
+                src={about_img1}
+                alt="Dr. Amina Salihu"
+                width={600}
+                height={600}
+                className="w-full h-auto object-contain z-10"
+                loading="lazy"
+              />
+
+              <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom p-[13px] absolute bottom-[15px] z-20">
+                  <section className="block text-[15px] font-[700] ">
+                <span
+                  className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary"
+                >
+                  Dr. Amina Salihu
+                  </span></section>
+
+  <p className="text-[#28374b] text-[11px] uppercase my-1">Senior Director of Program, Macarthur Foundation</p>
+  <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
+              </section>
+            </section>
+
+                                <section className="overflow-hidden relative w-[80%] flex items-center justify-center">
+              <Image
+                src={about_img1}
+                alt="Dr. Amina Salihu"
+                width={600}
+                height={600}
+                className="w-full h-auto object-contain z-10"
+                loading="lazy"
+              />
+
+              <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom p-[13px] absolute bottom-[15px] z-20">
+                  <section className="block text-[15px] font-[700] ">
+                <span
+                  className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary"
+                >
+                  Dr. Amina Salihu
+                  </span></section>
+
+  <p className="text-[#28374b] text-[11px] uppercase my-1">Senior Director of Program, Macarthur Foundation</p>
+  <p className="text-[13px] text-tertiary2 font-[600]">Board Chair</p>
+              </section>
+            </section>
+                    
           </section>
         </section>
       </section>

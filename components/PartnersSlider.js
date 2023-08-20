@@ -62,7 +62,7 @@ const PartnersSlider = () => {
         slidesPerView={"auto"}
         spaceBetween={20}
         modules={[FreeMode]}
-        className="rounded-[25]"
+        className="rounded-[25px]"
       >
         {partnerSliderImages.map((image, i) => {
           return (

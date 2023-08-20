@@ -62,6 +62,8 @@ module.exports = {
         "gradient-tertiary": "linear-gradient(90deg, #950D95 0%, #000180 100%)",
         "gradient-secondary2":
           "linear-gradient(0deg, #D65F1B 0%, #DEB30C 100%)",
+        "keydriver-gradient":
+          "linear-gradient(127deg, #FCD9FC 0%, #D6D7FF 100%)",
         "hero-section-gf": "url('../public/assets/home/hero_section_gf.png')",
         "our-partners-gf": "url('../public/assets/home/our_partners_gf.png')",
       },

@@ -17,7 +17,7 @@ const CareersContent = () => {
       <section className="content__container w-full z-20">
         
 
-<section className="w-full flex flex-wrap items-center justify-center py-24 gap-8 relative">
+<section className="w-full flex flex-wrap items-center justify-center py-20 gap-10 relative">
           
     <section className="w-[95%] sm2:w-[47%] md2:w-[32%] lg:w-[20%] flex flex-col items-center justify-center z-20 rounded-[10px] bg-white shadow-md overflow-hidden">
               <Image
@@ -257,7 +257,7 @@ const CareersContent = () => {
 
                   
 
-<section className="w-fit mx-auto">
+<section className="w-fit mx-auto mb-6">
             <Button
               type="button"
               text="Load more"

@@ -27,7 +27,7 @@ const CareersContent = () => {
                 loading="lazy"
               />
 
-              <section className="w-full flex items-start justify-start">
+              <section className="w-full flex items-start justify-start p-4 gap-4">
 <Image
                 src={onimisea}
                 alt="Admin"
@@ -37,7 +37,7 @@ const CareersContent = () => {
                 loading="lazy"
               />
 
-                <section className="flex flex-col gap-2 text-[#1e1e1e] text-[13px] mt-6 p-4">
+                <section className="flex flex-col gap-2 text-[#1e1e1e] text-[13px] mt-6">
                   <h4 className="uppercase font-[600] text-[15px]">Sales Associate</h4>
                   <p>XYZ COMPANY</p>
                   <p>LAGOS, NIGERIA</p>

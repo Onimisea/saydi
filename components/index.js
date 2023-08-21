@@ -23,6 +23,9 @@ import AboutObjectives from "./about/AboutObjectives";
 import BoardDirectors from "./about/BoardDirectors";
 import KeyDrivers from "./about/KeyDrivers";
 
+import WhatWeDoHero from "./whatwedo/WhatWeDoHero";
+import WhatWeDoContent from "./whatwedo/WhatWeDoContent";
+
 export {
   Header,
   NavLinks,
@@ -47,4 +50,6 @@ export {
   AboutObjectives,
   KeyDrivers,
   BoardDirectors,
+  WhatWeDoHero,
+  WhatWeDoContent,
 };

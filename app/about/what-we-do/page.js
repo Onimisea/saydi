@@ -1,12 +1,21 @@
-import { Footer, Header } from "@/components";
-import Image from "next/image";
+"use client";
+
+import {
+  WhatWeDoHero,
+  Footer,
+  Header,
+  Sidebar,
+  WhatWeDoContent,
+} from "@/components";
 
 export default function WhatWeDo() {
   return (
     <section className="body__container">
       <Header />
-      <main className="w-full bg-slate-300 flex flex-col flex-1 py-20">
-        <section className="font-gillsans_heavy text-4xl">What We Do Section</section>
+      <Sidebar />
+      <main className="w-full bg-white flex flex-col flex-1 relative overflow-hidden">
+        <WhatWeDoHero />
+        <WhatWeDoContent />
       </main>
       <Footer />
     </section>

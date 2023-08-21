@@ -81,7 +81,7 @@ const KeyDrivers = () => {
               {driverSliderImages.map((image, i) => {
                 return (
                   <SwiperSlide key={i} className="transition-all duration-500">
-                    <section className="rounded-[24.6px] flex flex-col items-start justify-center gap-8 bg-white text-red-500 h-[150px] p-[20px]">
+                    <section className="rounded-[24.6px] flex flex-col items-start justify-center gap-8 bg-white h-[150px] p-[20px] border-[1px] border-[#DCDFEF] shadow-sm mb-[5px]">
                       <section className="rounded-[24.6px] flex items-start justify-start overflow-hidden">
                         <Image
                           src={image.image}

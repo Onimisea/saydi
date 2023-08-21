@@ -26,6 +26,10 @@ import KeyDrivers from "./about/KeyDrivers";
 import WhatWeDoHero from "./whatwedo/WhatWeDoHero";
 import WhatWeDoContent from "./whatwedo/WhatWeDoContent";
 
+import OpportunitiesHero from "./opportunities/OpportunitiesHero";
+import CareersContent from "./opportunities/CareersContent";
+import VolunteersContent from "./opportunities/VolunteersContent";
+
 export {
   Header,
   NavLinks,
@@ -52,4 +56,7 @@ export {
   BoardDirectors,
   WhatWeDoHero,
   WhatWeDoContent,
+  OpportunitiesHero,
+  CareersContent,
+  VolunteersContent,
 };

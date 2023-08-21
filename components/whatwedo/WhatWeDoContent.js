@@ -20,7 +20,7 @@ const WhatWeDoContent = () => {
           >
             <section className="w-full h-auto lg:w-[47%] flex flex-col gap-6 items-center lg:items-start ">
               <section className="w-fit flex flex-col items-center justify-center lg:items-start lg:justify-start gap-2">
-                <h3 className="w-full font-gillsans_bold capitalise font-[600] text-[16px] lg:font-[700] lg:text-[20px] lg:leading-[30px] text-[#333333]">
+                <h3 className="w-full font-gillsans_bold capitalize font-[600] text-[16px] lg:font-[700] lg:text-[20px] lg:leading-[30px] text-[#333333]">
                   Education
                 </h3>
                 <section className="w-[95%] md:w-[85%] lg:w-[75%]">
@@ -67,7 +67,7 @@ const WhatWeDoContent = () => {
           >
             <section className="w-full h-auto lg:w-[47%] flex flex-col gap-6 items-center lg:items-start ">
               <section className="w-fit flex flex-col items-center justify-center lg:items-start lg:justify-start gap-2">
-                <h3 className="w-full font-gillsans_bold capitalise font-[600] text-[16px] lg:font-[700] lg:text-[20px] lg:leading-[30px] text-[#333333]">
+                <h3 className="w-full font-gillsans_bold capitalize font-[600] text-[16px] lg:font-[700] lg:text-[20px] lg:leading-[30px] text-[#333333]">
                   Gender
                 </h3>
                 <section className="w-[95%] md:w-[85%] lg:w-[75%]">
@@ -107,8 +107,8 @@ const WhatWeDoContent = () => {
           >
             <section className="w-full h-auto lg:w-[47%] flex flex-col gap-6 items-center lg:items-start ">
               <section className="w-fit flex flex-col items-center justify-center lg:items-start lg:justify-start gap-2">
-                <h3 className="w-full font-gillsans_bold capitalise font-[600] text-[16px] lg:font-[700] lg:text-[20px] lg:leading-[30px] text-[#333333]">
-                  Accountability, transparency, & good governance
+                <h3 className="w-full font-gillsans_bold capitalize font-[600] text-[16px] lg:font-[700] lg:text-[20px] lg:leading-[30px] text-[#333333]">
+                  Accountability, transparency and good governance
                 </h3>
                 <section className="w-[95%] md:w-[85%] lg:w-[75%]">
                   <HeaderDivider style="primary" />
@@ -142,7 +142,7 @@ const WhatWeDoContent = () => {
           >
             <section className="w-full h-auto lg:w-[47%] flex flex-col gap-6 items-center lg:items-start ">
               <section className="w-fit flex flex-col items-center justify-center lg:items-start lg:justify-start gap-2">
-                <h3 className="w-full font-gillsans_bold capitalise font-[600] text-[16px] lg:font-[700] lg:text-[20px] lg:leading-[30px] text-[#333333]">
+                <h3 className="w-full font-gillsans_bold capitalize font-[600] text-[16px] lg:font-[700] lg:text-[20px] lg:leading-[30px] text-[#333333]">
                   Investment in Youth Development and Economic Empowerment
                 </h3>
                 <section className="w-[95%] md:w-[85%] lg:w-[75%]">
@@ -175,7 +175,7 @@ const WhatWeDoContent = () => {
           >
             <section className="w-full h-auto lg:w-[47%] flex flex-col gap-6 items-center lg:items-start ">
               <section className="w-fit flex flex-col items-center justify-center lg:items-start lg:justify-start gap-2">
-                <h3 className="w-full font-gillsans_bold capitalise font-[600] text-[16px] lg:font-[700] lg:text-[20px] lg:leading-[30px] text-[#333333]">
+                <h3 className="w-full font-gillsans_bold capitalize font-[600] text-[16px] lg:font-[700] lg:text-[20px] lg:leading-[30px] text-[#333333]">
                   Sustainable Development Goals (SGDs)
                 </h3>
                 <section className="w-[95%] md:w-[85%] lg:w-[75%]">

@@ -35,7 +35,14 @@ const Header = () => {
     {
       label: "About",
       url: "/about",
-      is_active: pathname === "/about" ? true : false,
+      is_active:
+        pathname === "/about"
+          ? true
+          : pathname === "/about/about-us"
+          ? true
+          : pathname === "/about/what-we-do"
+          ? true
+          : false,
       submenu: true,
       sublinks: [
         { label: "About Us", url: "/about/about-us" },
@@ -45,7 +52,14 @@ const Header = () => {
     {
       label: "Opportunities",
       url: "/opportunities",
-      is_active: pathname === "/opportunities" ? true : false,
+      is_active:
+        pathname === "/opportunities"
+          ? true
+          : pathname === "/opportunities/careers"
+          ? true
+          : pathname === "/opportunities/volunteers"
+          ? true
+          : false,
       submenu: true,
       sublinks: [
         { label: "Careers", url: "/opportunities/careers" },
@@ -55,7 +69,20 @@ const Header = () => {
     {
       label: "Our Stories",
       url: "/our-stories",
-      is_active: pathname === "/our-stories" ? true : false,
+      is_active:
+        pathname === "/our-stories"
+          ? true
+          : pathname === "/our-stories/policy-brief"
+          ? true
+          : pathname === "/our-stories/press-release"
+          ? true
+          : pathname === "/our-stories/blog-post"
+          ? true
+          : pathname === "/our-stories/annual-report"
+          ? true
+          : pathname === "/our-stories/financial-report"
+          ? true
+          : false,
       submenu: true,
       sublinks: [
         { label: "Policy Brief", url: "/our-stories/policy-brief" },

@@ -4,10 +4,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
 import herobbImg from "../../public/assets/home/hero_section_bb.png";
-import about_hero from "../../public/imgs/about/about_hero.png";
 import HeaderDivider from "../HeaderDivider";
 
-const WhatWeDoHero = () => {
+const OpportunitiesHero = ({ heading, text }) => {
   return (
     <section className="w-full h-auto flex flex-col relative ">
       <Image
@@ -21,21 +20,21 @@ const WhatWeDoHero = () => {
 
       <section className="w-full z-10 bg-gradient-primary py-12">
         <section className="w-full max-w-[90%] mx-auto flex flex-col items-center justify-center text-white text-center">
-          <h1 className="font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px]">
-            What we do at SAYDi
-          </h1>
-          <section className="w-[50%] md:w-[40%] lg:w-[25%]">
-            <HeaderDivider style="secondary" />
+          <section className="w-fit flex flex-col items-center justify-center gap-2">
+            <h1 className="font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px]">
+              {heading}
+            </h1>
+            <section className="w-[95%] md:w-[80%] lg:w-[65%]">
+              <HeaderDivider style="secondary" />
+            </section>
           </section>
 
           <p className="text-[16px] md:text-[18px] lg:text-[20px] font-montserrat mt-4 leading-8 mx-auto w-[90%] sm:w-[80%] sm2:w-[80%]">
-            We enhance effective and efficient education, promote democratic
-            governance, gender inclusion, and social justice, SAYDi creates an
-            interface between citizens and the government.
+            {text}
           </p>
         </section>
       </section>
     </section>
   );
 };
-export default WhatWeDoHero;
+export default OpportunitiesHero;

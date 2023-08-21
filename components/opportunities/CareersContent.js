@@ -19,13 +19,13 @@ const CareersContent = () => {
 
 <section className="w-full flex flex-wrap items-center justify-center py-24 gap-6 relative">
           
-    <section className="w-[95%] sm2:w-[47%] md2:w-[32%] lg:w-[20%] flex flex-col items-center justify-center gap-4 z-20 rounded-[10px] bg-white shadow-md overflow-hidden">
+    <section className="w-[95%] sm2:w-[47%] md2:w-[32%] lg:w-[20%] flex flex-col items-center justify-center z-20 rounded-[10px] bg-white shadow-md overflow-hidden">
               <Image
                 src={hiring}
                 alt="We are hiring"
                 width={600}
                 height={600}
-                className="w-full h-[230px] object-fill z-10 rounded-tl-[10px] rounded-tr-[10px]"
+                className="w-full h-[250px] object-fill z-10 rounded-tl-[10px] rounded-tr-[10px]"
                 loading="lazy"
               />
 
@@ -48,13 +48,13 @@ const CareersContent = () => {
           </section>
 
 
-                      <section className="w-[95%] sm2:w-[47%] md2:w-[32%] lg:w-[20%] flex flex-col items-center justify-center gap-4 z-20 rounded-[10px] bg-white shadow-md overflow-hidden">
+                      <section className="w-[95%] sm2:w-[47%] md2:w-[32%] lg:w-[20%] flex flex-col items-center justify-center z-20 rounded-[10px] bg-white shadow-md overflow-hidden">
               <Image
                 src={hiring}
                 alt="We are hiring"
                 width={600}
                 height={600}
-                className="w-full h-[230px] object-fill z-10 rounded-tl-[10px] rounded-tr-[10px]"
+                className="w-full h-[250px] object-fill z-10 rounded-tl-[10px] rounded-tr-[10px]"
                 loading="lazy"
               />
 

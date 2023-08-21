@@ -17,7 +17,7 @@ const CareersContent = () => {
       <section className="content__container w-full z-20">
         <section className="flex flex-wrap items-start justify-center px-4 py-24 gap-8 relative">
           <section className="w-full flex flex-wrap gap-6 items-start justify-center">
-            <section className="w-[95%] sm3:w-[47%] md:w-[32%] md2:w-[20%] flex flex-col items-center justify-center gap-6 z-20 rounded-[10px] bg-white shadow-md overflow-hidden">
+            <section className="w-[95%] sm2:w-[47%] md2:w-[32%] lg:w-[20%] flex flex-col items-center justify-center gap-8 z-20 rounded-[10px] bg-white shadow-md overflow-hidden">
               <Image
                 src={hiring}
                 alt="We are hiring"
@@ -37,7 +37,7 @@ const CareersContent = () => {
                 loading="lazy"
               />
 
-                <section className="flex flex-col gap-2 text-[#1e1e1e] text-[13px] mt-6">
+                <section className="flex flex-col gap-2 text-[#1e1e1e] text-[13px]">
                   <h4 className="uppercase font-[600] text-[15px]">Sales Associate</h4>
                   <p>XYZ COMPANY</p>
                   <p>LAGOS, NIGERIA</p>

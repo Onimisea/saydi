@@ -20,7 +20,7 @@ const BoardDirectors = () => {
           <h1 className="text-secondary font-gillsans_heavy font-[900] uppercase text-[16px] sm2:text-[24px]">
             Board of Directors
           </h1>
-          <section className="w-[50%] md:w-[25%] lg:w-[15%]">
+          <section className="w-[35%] md:w-[20%] lg:w-[15%]">
             <HeaderDivider style="primary" />
           </section>
 

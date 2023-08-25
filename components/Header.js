@@ -55,7 +55,7 @@ const Header = () => {
       is_active:
         pathname === "/opportunities"
           ? true
-          : pathname === "/opportunities/careers"
+          : pathname.includes("/opportunities/careers")
           ? true
           : pathname === "/opportunities/volunteers"
           ? true

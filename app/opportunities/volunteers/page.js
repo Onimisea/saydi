@@ -18,7 +18,7 @@ export default function Volunteers() {
           heading="Become a Volunteer"
           text="Join the train of youths who are making a great impact in their communities and state through our volunteering program."
         />
-        <VolunteersContent />
+        <VolunteersContent /> 
       </main>
       <Footer />
     </section>

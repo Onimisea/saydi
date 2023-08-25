@@ -27,9 +27,9 @@ const Hero = () => {
     reset();
   };
 
-  useEffect(() => {
-    console.log(search);
-  }, [search]);
+  // useEffect(() => {
+  //   console.log(search);
+  // }, [search]);
 
   return (
     <section className="bg-gradient-primary w-full h-auto flex flex-col">

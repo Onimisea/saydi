@@ -28,6 +28,7 @@ import WhatWeDoContent from "./whatwedo/WhatWeDoContent";
 
 import OpportunitiesHero from "./opportunities/OpportunitiesHero";
 import CareersContent from "./opportunities/CareersContent";
+import JobContent from "./opportunities/JobContent";
 import VolunteersContent from "./opportunities/VolunteersContent";
 
 export {
@@ -59,4 +60,5 @@ export {
   OpportunitiesHero,
   CareersContent,
   VolunteersContent,
+  JobContent,
 };

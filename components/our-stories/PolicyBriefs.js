@@ -4,45 +4,24 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-import HeaderDivider from "./HeaderDivider";
-import ourStoriesBb from "../public/assets/home/our_stories_bb.png";
-import Button from "./Button";
+import Button from "../Button";
 
-import ourStoriesImg1 from "../public/imgs/home/our_stories_img1.png";
-import ourStoriesImg2 from "../public/imgs/home/our_stories_img2.png";
-import ourStoriesImg3 from "../public/imgs/home/our_stories_img3.png";
-import ourStoriesImg4 from "../public/imgs/home/our_stories_img4.png";
-import ourStoriesImg5 from "../public/imgs/home/our_stories_img5.png";
-import ourStoriesImg6 from "../public/imgs/home/our_stories_img6.png";
+import ourStoriesImg1 from "../../public/imgs/home/our_stories_img1.png";
+import ourStoriesImg2 from "../../public/imgs/home/our_stories_img2.png";
+import ourStoriesImg3 from "../../public/imgs/home/our_stories_img3.png";
+import ourStoriesImg4 from "../../public/imgs/home/our_stories_img4.png";
+import ourStoriesImg5 from "../../public/imgs/home/our_stories_img5.png";
+import ourStoriesImg6 from "../../public/imgs/home/our_stories_img6.png";
 
-import { ourStories } from "../data"; 
-
-const OurStoriesSection = () => {
+const PolicyBriefs = () => {
   const loadMoreStories = () => {
     console.log("loading more stories...");
   };
 
   return (
-    <section className="bg-white w-full h-auto flex flex-col lg:flex-row relative pt-4 pb-16">
-      <Image
-        src={ourStoriesBb}
-        alt="Our Stories Bubble"
-        width={200}
-        height={270}
-        className="absolute w-[100px] md:w-[200px] lg2:w-[350px] h-auto top-[1%] md:top-[25%] lg2:top-[10%] right-0 object-fill z-10"
-        loading="lazy"
-      />
-
+    <section className="bg-white w-full h-auto flex flex-col lg:flex-row relative py-16">
       <section className="content__container w-full">
         <section className="flex flex-col items-center justify-center py-2 text-center">
-          <h1 className="text-secondary font-gillsans_heavy font-[900] uppercase text-[20px] md:text-[36px] lg:text-[48px]">
-            Our Stories
-          </h1>
-
-          <section className="w-[30%] md:w-[18%]">
-            <HeaderDivider style="primary" />
-          </section>
-
           <section className="w-[95%] sm2:w-full flex flex-wrap items-center justify-center my-4 py-6 gap-12 z-20">
             <section className="w-full bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center shadow-lg drop-shadow-xl md:w-[46%] lg:w-[30%]">
               <Image
@@ -223,4 +202,4 @@ const OurStoriesSection = () => {
     </section>
   );
 };
-export default OurStoriesSection;
+export default PolicyBriefs;

@@ -31,6 +31,10 @@ import CareersContent from "./opportunities/CareersContent";
 import JobContent from "./opportunities/JobContent";
 import VolunteersContent from "./opportunities/VolunteersContent";
 
+import PressReleases from "./our-stories/PressReleases";
+import BlogPosts from "./our-stories/BlogPosts";
+import PolicyBriefs from "./our-stories/PolicyBriefs";
+
 export {
   Header,
   NavLinks,
@@ -61,4 +65,7 @@ export {
   CareersContent,
   VolunteersContent,
   JobContent,
+  PressReleases,
+  BlogPosts,
+  PolicyBriefs,
 };

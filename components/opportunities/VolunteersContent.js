@@ -136,7 +136,7 @@ const VolunteersContent = () => {
   return (
     <section className="w-full h-auto relative ">
       <section className="content__container w-full z-20">
-        <section className="w-full flex flex-col items-center justify-center py-20 gap-10 relative">
+        <section className="w-full flex flex-col items-center justify-center py-16 gap-10 relative">
           <section className="flex flex-col items-center justify-center gap-2 text-center">
             <h3 className="text-secondary text-[32px] leading-[48px] font-[500] font-gillsans_bold">
               Volunteer Form

@@ -63,7 +63,7 @@ const ContactSection = () => {
                           type="text"
                           id="first_name"
                           placeholder="First Name"
-                          className="w-full px-3 py-2 rounded-lg border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                          className="w-full px-3 py-2 border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
                         />
                         {errors.first_name && (
                           <p className="text-red-500 text-sm mt-1">
@@ -93,7 +93,7 @@ const ContactSection = () => {
                           type="text"
                           id="last_name"
                           placeholder="Last Name"
-                          className="w-full px-3 py-2 rounded-lg border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                          className="w-full px-3 py-2 border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
                         />
                         {errors.last_name && (
                           <p className="text-red-500 text-sm mt-1">
@@ -132,7 +132,7 @@ const ContactSection = () => {
                         type="email"
                         id="email"
                         placeholder="Email Address"
-                        className="w-full px-3 py-2 rounded-lg border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                        className="w-full px-3 py-2 border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
                       />
                       {errors.email && (
                         <p className="text-red-500 text-sm mt-1">
@@ -145,7 +145,7 @@ const ContactSection = () => {
               </section>
 
               {/* Third row */}
-              <section className="mb-1 flex flex-col w-full px-3 py-2 rounded-lg border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 hover:outline-none hover:ring hover:border-none hover:ring-tertiary2 rounded-[16px]">
+              <section className="mb-1 flex flex-col w-full px-3 py-2 border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 hover:outline-none hover:ring hover:border-none hover:ring-tertiary2 rounded-[16px]">
                 <Controller
                   name="subject"
                   control={control}
@@ -158,7 +158,7 @@ const ContactSection = () => {
                         type="text"
                         id="subject"
                         placeholder="Subject"
-                        className="w-full px-3 py-2 rounded-lg focus:outline-none focus:border-none focus:none focus:border-none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                        className="w-full px-3 py-2 focus:outline-none focus:border-none focus:none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
                       />
                     </section>
                   )}
@@ -178,7 +178,7 @@ const ContactSection = () => {
                         id="message"
                         rows="6"
                         placeholder="Message"
-                        className="w-full px-3 py-2 rounded-lg focus:outline-none focus:border-none focus:none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b] resize-none"
+                        className="w-full px-3 py-2 focus:outline-none focus:border-none focus:none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b] resize-none"
                       />
                     </section>
                   )}
@@ -253,7 +253,7 @@ const ContactSection = () => {
                             type="text"
                             id="first_name"
                             placeholder="First Name"
-                            className="w-full px-3 py-2 rounded-lg border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                            className="w-full px-3 py-2 border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
                           />
                           {errors.first_name && (
                             <p className="text-red-500 text-sm mt-1">
@@ -283,7 +283,7 @@ const ContactSection = () => {
                             type="text"
                             id="last_name"
                             placeholder="Last Name"
-                            className="w-full px-3 py-2 rounded-lg border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                            className="w-full px-3 py-2 border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
                           />
                           {errors.last_name && (
                             <p className="text-red-500 text-sm mt-1">
@@ -322,7 +322,7 @@ const ContactSection = () => {
                           type="email"
                           id="email"
                           placeholder="Email Address"
-                          className="w-full px-3 py-2 rounded-lg border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                          className="w-full px-3 py-2 border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
                         />
                         {errors.email && (
                           <p className="text-red-500 text-sm mt-1">
@@ -335,7 +335,7 @@ const ContactSection = () => {
                 </section>
 
                 {/* Third row */}
-                <section className="mb-5 flex flex-col w-full px-3 py-2 rounded-lg border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 hover:outline-none hover:ring hover:border-none hover:ring-tertiary2 rounded-[16px]">
+                <section className="mb-5 flex flex-col w-full px-3 py-2 border border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-tertiary2 hover:outline-none hover:ring hover:border-none hover:ring-tertiary2 rounded-[16px]">
                   <Controller
                     name="subject"
                     control={control}
@@ -348,7 +348,7 @@ const ContactSection = () => {
                           type="text"
                           id="subject"
                           placeholder="Subject"
-                          className="w-full px-3 py-2 rounded-lg focus:outline-none focus:border-none focus:none focus:border-none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                          className="w-full px-3 py-2 focus:outline-none focus:border-none focus:none focus:border-none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
                         />
                       </section>
                     )}
@@ -368,7 +368,7 @@ const ContactSection = () => {
                           id="message"
                           rows="6"
                           placeholder="Message"
-                          className="w-full px-3 py-2 rounded-lg focus:outline-none focus:border-none focus:none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b] resize-none"
+                          className="w-full px-3 py-2 focus:outline-none focus:border-none focus:none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b] resize-none"
                         />
                         {errors.subject && (
                           <p className="text-red-500 text-sm mt-1 mb-3">

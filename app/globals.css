@@ -83,3 +83,12 @@ div > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullet
   position: absolute;
   bottom: 0;
 }
+
+
+select {
+  width: 100% !important;
+}
+
+option {
+  width: fit-content !important;
+}

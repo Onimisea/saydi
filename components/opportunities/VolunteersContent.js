@@ -238,25 +238,25 @@ const VolunteersContent = () => {
                         <select
                           {...field}
                           id="gender"
-                          className="w-full text-secondary px-3 py-2 border-[1px] border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-secondary rounded-[8px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                          className="w-full text-secondary px-3 py-2 border-[1px] border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-secondary rounded-[8px] placeholder:text-[14px] bg-white placeholder:text-[#28374b]"
                         >
                           <option
                             key=""
                             value=""
-                            className="w-fit rounded-md appearance-none"
+                            className="w-fit rounded-md appearance-none bg-white"
                           ></option>
 
                           <option
                             key="male"
                             value="Male"
-                            className="w-fit rounded-md appearance-none"
+                            className="w-fit rounded-md appearance-none bg-white"
                           >
                             Male
                           </option>
                           <option
                             key="female"
                             value="Female"
-                            className="w-fit rounded-md appearance-none"
+                            className="w-fit rounded-md appearance-none bg-white"
                           >
                             Female
                           </option>
@@ -370,12 +370,12 @@ const VolunteersContent = () => {
                           <select
                             {...field}
                             id="state"
-                            className="w-full text-secondary px-3 py-2 border-[1px] border-[#28374b] focus:outline-none focus:ring-secondary  rounded-[8px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                            className="w-full text-secondary px-3 py-2 bg-white border-[1px] border-[#28374b] focus:outline-none focus:ring-secondary  rounded-[8px] placeholder:text-[14px] placeholder:text-[#28374b]"
                           >
-                            <option key="" value="" className=""></option>
+                            <option key="" value="" className="bg-white"></option>
 
                             {states.map((option, i) => (
-                              <option key={i} value={option} className="">
+                              <option key={i} value={option} className="bg-white">
                                 {option}
                               </option>
                             ))}
@@ -411,12 +411,12 @@ const VolunteersContent = () => {
                           <select
                             {...field}
                             id="lga"
-                            className="w-full text-secondary px-3 py-2 border-[1px] border-[#28374b] focus:outline-none focus:ring-secondary  rounded-[8px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                            className="w-full bg-white text-secondary px-3 py-2 border-[1px] border-[#28374b] focus:outline-none focus:ring-secondary  rounded-[8px] placeholder:text-[14px] placeholder:text-[#28374b]"
                           >
-                            <option key="" value="" className=""></option>
+                            <option key="" value="" className="bg-white"></option>
 
                             {lgas.map((option, i) => (
-                              <option key={i} value={option} className="">
+                              <option key={i} value={option} className="bg-white">
                                 {option}
                               </option>
                             ))}

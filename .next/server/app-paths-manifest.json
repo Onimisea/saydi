@@ -1,0 +1,14 @@
+{
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/_not-found": "app/_not-found.js",
+  "/products/page": "app/products/page.js",
+  "/about/about-us/page": "app/about/about-us/page.js",
+  "/about/what-we-do/page": "app/about/what-we-do/page.js",
+  "/opportunities/volunteers/page": "app/opportunities/volunteers/page.js",
+  "/opportunities/careers/page": "app/opportunities/careers/page.js",
+  "/our-stories/blog-post/page": "app/our-stories/blog-post/page.js",
+  "/our-stories/policy-brief/page": "app/our-stories/policy-brief/page.js",
+  "/our-stories/press-release/page": "app/our-stories/press-release/page.js",
+  "/opportunities/careers/[job]/page": "app/opportunities/careers/[job]/page.js"
+}

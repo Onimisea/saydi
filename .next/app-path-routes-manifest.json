@@ -1,0 +1,14 @@
+{
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/_not-found": "/_not-found",
+  "/products/page": "/products",
+  "/about/about-us/page": "/about/about-us",
+  "/about/what-we-do/page": "/about/what-we-do",
+  "/opportunities/volunteers/page": "/opportunities/volunteers",
+  "/opportunities/careers/page": "/opportunities/careers",
+  "/our-stories/blog-post/page": "/our-stories/blog-post",
+  "/our-stories/policy-brief/page": "/our-stories/policy-brief",
+  "/our-stories/press-release/page": "/our-stories/press-release",
+  "/opportunities/careers/[job]/page": "/opportunities/careers/[job]"
+}

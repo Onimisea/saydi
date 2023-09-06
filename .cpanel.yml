@@ -1,0 +1,6 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sayduntb/public_html/
+    - /bin/cp * $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
+    

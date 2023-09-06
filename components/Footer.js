@@ -12,18 +12,49 @@ import email_icon from "../public/icons/email_icon.svg";
 import location_icon from "../public/icons/location_icon.svg";
 import gdsc_logo from "../public/icons/gdsc_logo.svg";
 import quick_links_icon from "../public/icons/quick_links_icon.svg";
-// import { MdChevronRight } from "react-icons/md";
+import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 
 const Footer = () => {
   const {
     register,
-    handleSubmit,
+    handleSubmit, reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
-    // console.log(data);
+
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch("https://api.saydi.org/v1/newsletter/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const responseData = await response.json();
+      console.log(response.success);
+
+      if (responseData.success) {
+        toast.success(responseData.success, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+        reset();
+      } else {
+        console.error("API error:", error);
+        // You can handle error or display an error message here
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+      // You can handle error or display an error message here
+    }
   };
 
   return (
@@ -36,7 +67,7 @@ const Footer = () => {
                 Connect with us on social media
               </p>
               <section className="w-fit flex items-center justify-center gap-2">
-                <Link href="#">
+                <Link href="https://www.linkedin.com/in/saving-african-youths-dream-initiative-6b6579216">
                   <Image
                     src={linkedIn_icon}
                     width={24}
@@ -44,7 +75,7 @@ const Footer = () => {
                     loading="lazy"
                   />
                 </Link>
-                <Link href="#">
+                <Link href="https://instagram.com/saydinitiative?igshid=OGQ5ZDc2ODk2ZA==">
                   <Image
                     src={instagram_icon}
                     width={24}
@@ -52,7 +83,7 @@ const Footer = () => {
                     loading="lazy"
                   />
                 </Link>
-                <Link href="#">
+                <Link href="https://twitter.com/SAYDinitiative?s=09">
                   <Image
                     src={twitter_icon}
                     width={24}
@@ -60,7 +91,7 @@ const Footer = () => {
                     loading="lazy"
                   />
                 </Link>
-                <Link href="#">
+                <Link href="https://www.facebook.com/profile.php?id=100064456255545&mibextid=LQQJ4d">
                   <Image
                     src={facebook_icon}
                     width={24}
@@ -74,9 +105,9 @@ const Footer = () => {
         </section>
 
         <section className="bg-[#191A8D]">
-          <section className="content__container">
-            <section className="w-full flex items-start justify-start lg:justify-center flex-wrap space-y-12 lg:space-y-0 lg:gap-6 py-[117px]">
-              <section className="w-full flex flex-col items-start lg:w-[24%] font-normal text-[#C9CDD2] space-y-6">
+          <section className="content__container ">
+            <section className="w-full flex items-start justify-start lg:justify-between flex-wrap space-y-12 lg:space-y-0 lg:gap-4 py-[117px]">
+              <section className="w-full flex flex-col items-start lg:w-[22%] font-normal text-[#C9CDD2] space-y-6">
                 <Link href="/" className="mb-4">
                   <Image src={saydi_logo} width={0} height={0} loading="lazy" />
                 </Link>
@@ -118,14 +149,14 @@ const Footer = () => {
                 </Link>
               </section>
 
-              <section className="w-full flex flex-col items-start justify-start sm:w-[47%] lg:w-[18%] font-normal text-[#C9CDD2]">
+              <section className="w-full flex flex-col items-start justify-start sm:w-[47%] lg:w-[13%] font-normal text-[#C9CDD2] ">
                 <h5 className="text-white uppercase font-[600] text-[16px] leading-[24px] mb-6">
                   quick links
                 </h5>
                 <ul className="list-none flex flex-col items-start justify-start space-y-6">
                   <li className="block">
                     <Link
-                      href="#"
+                      href="/"
                       className="flex items-center justify-center space-x-2 hover:text-primary hover:font-bold"
                     >
                       <Image
@@ -139,7 +170,7 @@ const Footer = () => {
                   </li>
                   <li className="block">
                     <Link
-                      href="#"
+                      href="/products"
                       className="flex items-center justify-center space-x-2 hover:text-primary hover:font-bold"
                     >
                       <Image
@@ -153,7 +184,7 @@ const Footer = () => {
                   </li>
                   <li className="block">
                     <Link
-                      href="#"
+                      href="/about/about-us"
                       className="flex items-center justify-center space-x-2 hover:text-primary hover:font-bold"
                     >
                       <Image
@@ -167,7 +198,7 @@ const Footer = () => {
                   </li>
                   <li className="block">
                     <Link
-                      href="#"
+                      href="/opportunities/careers"
                       className="flex items-center justify-center space-x-2 hover:text-primary hover:font-bold"
                     >
                       <Image
@@ -181,7 +212,7 @@ const Footer = () => {
                   </li>
                   <li className="block">
                     <Link
-                      href="#"
+                      href="/our-stories/press-release"
                       className="flex items-center justify-center space-x-2 hover:text-primary hover:font-bold"
                     >
                       <Image
@@ -195,7 +226,7 @@ const Footer = () => {
                   </li>
                   <li className="block">
                     <Link
-                      href="#"
+                      href="/#donate"
                       className="flex items-center justify-center space-x-2 hover:text-primary hover:font-bold"
                     >
                       <Image
@@ -209,7 +240,7 @@ const Footer = () => {
                   </li>
                   <li className="block">
                     <Link
-                      href="#"
+                      href="/#contact"
                       className="flex items-center justify-center space-x-2 hover:text-primary hover:font-bold"
                     >
                       <Image
@@ -224,7 +255,7 @@ const Footer = () => {
                 </ul>
               </section>
 
-              <section className="w-full flex flex-col items-start justify-start sm:w-[47%] lg:w-[18%] font-normal text-[#C9CDD2]">
+              <section className="w-full flex flex-col items-start justify-start sm:w-[47%] lg:w-[14%] font-normal text-[#C9CDD2] ">
                 <h5 className="text-white uppercase font-[600] text-[16px] leading-[24px] mb-6">
                   business hours
                 </h5>
@@ -250,7 +281,7 @@ const Footer = () => {
                 </ul>
               </section>
 
-              <section className="w-full bg-white lg:w-[24%] rounded-[16px] flex flex-col items-start px-[48px] py-[32px] gap-[10px]">
+              <section className="w-full lg:w-[40%] rounded-[16px] flex flex-col items-start px-[25px] py-[25px] gap-[10px] bg-white">
                 <h5 className="uppercase font-[600] text-[16px] leading-[24px] text-secondary">
                   subscribe to our newsletter
                 </h5>
@@ -259,7 +290,7 @@ const Footer = () => {
                   receive informational email from us.
                 </p>
 
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form onSubmit={handleSubmit(onSubmit)} className="w-full">
                   <section className="flex items-center justify-between rounded-[8px] border-[0.5px] border-[#283748] p-1">
                     <input
                       type="email"
@@ -271,7 +302,7 @@ const Footer = () => {
                           message: "Invalid email format",
                         },
                       })}
-                      className="w-[65%] placeholder-[#28374B] placeholder:text-[12.5px] placeholder:uppercase placeholder:font-[300] rounded-[8px] bg-white  px-[13px] py-[11px]"
+                      className="w-[75%] placeholder-[#28374B] placeholder:text-[12.5px] placeholder:uppercase placeholder:font-[300] rounded-[8px] bg-white  px-[13px] py-[11px] focus:border-none"
                     />
 
                     <button

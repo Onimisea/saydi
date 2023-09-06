@@ -45,7 +45,7 @@ const Hero = () => {
 
         <section className="w-full h-fit flex flex-col lg:flex-row items-center lg:justify-between py-8 lg:py-16 z-10">
           <section className="w-full lg:w-[47%] flex flex-col items-center lg:items-start z-20 text-center lg:text-left">
-            <form
+            {/* <form
               onSubmit={handleSubmit(onSubmit)}
               className="w-[70%] hidden lg:block"
             >
@@ -89,7 +89,7 @@ const Hero = () => {
                   {errors.email.message}
                 </span>
               )}
-            </form>
+            </form> */}
 
             <h1 className="text-white font-gillsans_heavy font-[900] uppercase mt-[12%] text-4xl">
               Who We Are
@@ -102,13 +102,13 @@ const Hero = () => {
               everyone has the right to be best they desire.
             </p>
 
-            <Button
+            {/* <Button
               type="button"
               text="Learn More"
               style="primary"
               hasImgIcon={true}
               click={() => console.log("Learn More button clicked!")}
-            />
+            /> */}
           </section>
 
           <HeroSlider />

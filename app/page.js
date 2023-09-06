@@ -12,8 +12,7 @@ import {
   Sidebar,
   ThematicSection,
 } from "@/components";
-import Image from "next/image";
-
+ 
 export default function Home() {
   return (
     <section className={`body__container`}>

@@ -8,19 +8,48 @@ import { useForm, Controller } from "react-hook-form";
 import HeaderDivider from "./HeaderDivider";
 import send_icon from "../public/icons/send_icon.svg";
 import Button from "./Button";
+import { toast } from "react-toastify";
 
 const ContactSection = () => {
   const {
     control,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    // Handle form submission logic here
-    console.log(data);
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch("https://api.saydi.org/v1/contacts/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    reset();
+      const responseData = await response.json();
+
+      if (responseData.success) {
+        toast.success(responseData.success, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+        reset();
+      } else {
+        console.error("API error:", error);
+        // You can handle error or display an error message here
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+      // You can handle error or display an error message here
+    }
   };
 
   return (
@@ -30,12 +59,11 @@ const ContactSection = () => {
     >
       <section className="block lg:hidden">
         <section className="flex flex-col items-start justify-center bg-white w-full overflow-hidden">
-          <section className="bg-gradient-secondary w-full flex flex-col items-center justify-center h-[300px]">
-            <h1 className="text-white font-gillsans_heavy font-[900] uppercase text-[20px] md:text-[36px] lg:text-[42px]">
+          <section className="w-fit flex flex-col items-center justify-center gap-2">
+            <h1 className="text-white font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px] uppercase mt-8">
               Contact Us
             </h1>
-
-            <section className="w-[25%] md:w-[50%]">
+            <section className="w-[95%] md:w-[80%] lg:w-[65%]">
               <HeaderDivider style="tertiary" />
             </section>
           </section>
@@ -191,7 +219,9 @@ const ContactSection = () => {
                 </p>
               )}
               {errors.message && (
-                <p className="text-red-500 text-sm mb-7">{errors.message.message}</p>
+                <p className="text-red-500 text-sm mb-7">
+                  {errors.message.message}
+                </p>
               )}
 
               {/* Fourth row */}
@@ -348,7 +378,7 @@ const ContactSection = () => {
                           type="text"
                           id="subject"
                           placeholder="Subject"
-                          className="w-full px-3 py-2 focus:outline-none focus:border-none focus:none focus:border-none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
+                          className="w-full px-3 py-2 focus:outline-none focus:border-none focus:none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b]"
                         />
                       </section>
                     )}
@@ -370,20 +400,20 @@ const ContactSection = () => {
                           placeholder="Message"
                           className="w-full px-3 py-2 focus:outline-none focus:border-none focus:none rounded-[16px] placeholder:text-[14px] placeholder:text-[#28374b] resize-none"
                         />
-                        {errors.subject && (
-                          <p className="text-red-500 text-sm mt-1 mb-3">
-                            {errors.subject.message}
-                          </p>
-                        )}
-                        {errors.message && (
-                          <p className="text-red-500 text-sm">
-                            {errors.message.message}
-                          </p>
-                        )}
                       </section>
                     )}
                   />
                 </section>
+                {errors.subject && (
+                  <p className="text-red-500 text-sm mt-1 mb-3">
+                    {errors.subject.message}
+                  </p>
+                )}
+                {errors.message && (
+                  <p className="text-red-500 text-sm mb-8">
+                    {errors.message.message}
+                  </p>
+                )}
 
                 {/* Fourth row */}
 

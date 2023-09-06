@@ -24,12 +24,13 @@ const OurPartnersSection = () => {
 
       <section className="content__container w-full">
         <section className="flex flex-col items-center justify-center pb-10 pt-6 md2:pt-0 text-center">
-          <h1 className="text-white font-gillsans_heavy font-[900] uppercase text-[20px] md:text-[36px] lg:text-[48px]">
-            Our Partners
-          </h1>
-
-          <section className="w-[30%] md:w-[18%]">
-            <HeaderDivider style="primary" />
+          <section className="w-fit flex flex-col items-center justify-center gap-2">
+            <h1 className="text-white font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px] uppercase mt-8">
+              Our Partners
+            </h1>
+            <section className="w-[95%] md:w-[80%] lg:w-[65%]">
+              <HeaderDivider style="secondary" />
+            </section>
           </section>
 
           <Image

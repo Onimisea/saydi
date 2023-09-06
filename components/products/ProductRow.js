@@ -22,7 +22,7 @@ const ProductRow = ({ key, content, reverse }) => {
           {content.excerpt}
         </section>
 
-        <section className="w-fit mb-6">
+        {/* <section className="w-fit mb-6">
           <Button
             type="button"
             text="Load more"
@@ -30,7 +30,7 @@ const ProductRow = ({ key, content, reverse }) => {
             style="secondary"
             click={() => router.push("/")}
           />
-        </section>
+        </section> */}
       </section>
 
       <section className="w-full h-auto lg:w-[45%] rounded-tl-[32px] rounded-br-[32px]">

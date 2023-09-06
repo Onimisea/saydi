@@ -13,12 +13,13 @@ const AchievementSection = () => {
     <section className="bg-gradient-primary w-full h-auto flex flex-col lg:flex-row relative py-12">
       <section className="content__container w-full">
         <section className="flex flex-col items-center justify-center">
-          <h1 className="text-white font-gillsans_heavy font-[900] uppercase text-[20px] md:text-[36px] lg:text-[48px]">
-            Achievement
-          </h1>
-
-          <section className="w-[25%] md:w-[18%]">
-            <HeaderDivider style="secondary" />
+          <section className="w-fit flex flex-col items-center justify-center gap-2">
+            <h1 className="text-white font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px] uppercase mt-8">
+              Achievement
+            </h1>
+            <section className="w-[95%] md:w-[80%] lg:w-[65%]">
+              <HeaderDivider style="secondary" />
+            </section>
           </section>
 
           <Image

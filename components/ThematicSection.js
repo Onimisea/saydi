@@ -26,12 +26,13 @@ const ThematicSection = () => {
 
       <section className="content__container w-full">
         <section className="flex flex-col items-center justify-center text-center">
-          <h1 className="text-secondary font-gillsans_heavy font-[900] uppercase mt-8 text-[20px] md:text-[36px] lg:text-[42px]">
-            Our Thematic Areas
-          </h1>
-
-          <section className="w-[50%] md:w-[25%] lg:w-[15%]">
-            <HeaderDivider style="primary" />
+          <section className="w-fit flex flex-col items-center justify-center gap-2">
+            <h1 className="text-secondary font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px] uppercase mt-8">
+              Our Thematic Areas
+            </h1>
+            <section className="w-[95%] md:w-[80%] lg:w-[65%]">
+              <HeaderDivider style="primary" />
+            </section>
           </section>
 
           <section className="w-full flex flex-wrap items-center justify-center mt-10 mb-8 md:mt-14 md:mb-10 md2:mt-16 md2:mb-12 gap-12 md2:gap-6 ">

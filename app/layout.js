@@ -1,4 +1,6 @@
 import AppProvider from "@/context/AppContext";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -38,8 +40,8 @@ export default function RootLayout({ children }) {
       className={`${montserrat.variable} ${montserrat_italic.variable} ${gillsans_bold.variable} ${gillsans_heavy.variable}`}
     >
       <AppProvider>
+        <ToastContainer />
         <body className="">{children}</body>
-        
       </AppProvider>
     </html>
   );

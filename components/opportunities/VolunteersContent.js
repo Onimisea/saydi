@@ -5,6 +5,7 @@ import Select from "react-select";
 import AsyncSelect from "react-select/async";
 import NaijaStates from "naija-state-local-government";
 import send_icon from "../../public/icons/send_icon.svg";
+import { toast } from "react-toastify";
 
 const VolunteersContent = () => {
   const {
@@ -98,7 +99,7 @@ const VolunteersContent = () => {
     }
   };
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     // Handle form submission logic here
 
     const isCorrect = isValidateData(data);
@@ -113,24 +114,57 @@ const VolunteersContent = () => {
         lga: data.lga ? data.lga : "",
         zip: data.zip ? data.zip : "",
         areas_of_interest: tempSI ? tempSI : "",
-        bg_and_skills: data.bg_and_skills ? data.bg_and_skills : "",
+        professional_background: data.professional_background
+          ? data.professional_background
+          : "",
         how_you_find_us: data.how_you_find_us ? data.how_you_find_us : "",
       };
 
       console.log(payload);
+
+      try {
+        const response = await fetch("https://api.saydi.org/v1/volunteers/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        });
+
+        const responseData = response.json();
+
+        console.log(responseData);
+
+        if (responseData.success) {
+          toast.success(responseData.success, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
+
+          reset();
+        } else {
+          toast.error(responseData.error, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
+        }
+      } catch (error) {
+        console.error("Fetch error:", error);
+        // You can handle error or display an error message here
+      }
     }
-
-    // fetch("https://countriesnow.space/api/v0.1/countries")
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //     alert(JSON.stringify(data));
-    //   })
-    //   .catch((error) =>
-    //     console.error("Error fetching countries and their cities:", error)
-    //   );
-
-    // reset();
   };
 
   return (
@@ -372,10 +406,18 @@ const VolunteersContent = () => {
                             id="state"
                             className="w-full text-secondary px-3 py-2 bg-white border-[1px] border-[#28374b] focus:outline-none focus:ring-secondary  rounded-[8px] placeholder:text-[14px] placeholder:text-[#28374b]"
                           >
-                            <option key="" value="" className="bg-white"></option>
+                            <option
+                              key=""
+                              value=""
+                              className="bg-white"
+                            ></option>
 
                             {states.map((option, i) => (
-                              <option key={i} value={option} className="bg-white">
+                              <option
+                                key={i}
+                                value={option}
+                                className="bg-white"
+                              >
                                 {option}
                               </option>
                             ))}
@@ -413,10 +455,18 @@ const VolunteersContent = () => {
                             id="lga"
                             className="w-full bg-white text-secondary px-3 py-2 border-[1px] border-[#28374b] focus:outline-none focus:ring-secondary  rounded-[8px] placeholder:text-[14px] placeholder:text-[#28374b]"
                           >
-                            <option key="" value="" className="bg-white"></option>
+                            <option
+                              key=""
+                              value=""
+                              className="bg-white"
+                            ></option>
 
                             {lgas.map((option, i) => (
-                              <option key={i} value={option} className="bg-white">
+                              <option
+                                key={i}
+                                value={option}
+                                className="bg-white"
+                              >
                                 {option}
                               </option>
                             ))}
@@ -724,7 +774,7 @@ const VolunteersContent = () => {
 
                 <section className="flex flex-col gap-2 w-full items-center justify-center">
                   <label
-                    htmlFor="bg_and_skills"
+                    htmlFor="professional_background"
                     className="text-[#5E6978] text-[17px] font-[700] w-full"
                   >
                     What professional background and skills do you have?
@@ -732,7 +782,7 @@ const VolunteersContent = () => {
                   </label>
 
                   <Controller
-                    name="bg_and_skills"
+                    name="professional_background"
                     control={control}
                     defaultValue=""
                     rules={{ required: "This is required" }}
@@ -740,14 +790,14 @@ const VolunteersContent = () => {
                       <section className="w-full">
                         <textarea
                           {...field}
-                          id="bg_and_skills"
+                          id="professional_background"
                           placeholder=""
                           className="w-full text-secondary px-3 py-2 border-[1px] border-[#28374b] focus:outline-none focus:ring focus:border-none focus:ring-secondary rounded-[8px] placeholder:text-[14px] placeholder:text-[#28374b] resize-none break-word"
                           rows={4}
                         ></textarea>
-                        {errors.bg_and_skills && (
+                        {errors.professional_background && (
                           <p className="text-red-500 mt-2 ml-1">
-                            {errors.bg_and_skills.message}
+                            {errors.professional_background.message}
                           </p>
                         )}
                       </section>

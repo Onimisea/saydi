@@ -6,11 +6,40 @@ import HeaderDivider from "../HeaderDivider";
 import Button from "../Button";
 import hiring from "../../public/assets/opportunities/hiring.png";
 import onimisea from "../../public/onimisea.jpg";
+import { useEffect } from "react";
 
 const CareersContent = () => {
   const loadMoreStories = () => {
     console.log("loading more stories...");
   };
+
+  useEffect(() => {
+    try {
+      const response = fetch("https://api.saydi.org/v1/careers/", {
+        method: "GET",
+        // headers: {
+        //   "Content-Type": "application/json",
+        // },
+        // body: JSON.stringify(data),
+      });
+
+      console.log(response);
+
+      if (response.ok) {
+        const responseData = response.json();
+        console.log("API response:", responseData);
+        // You can handle success or display a success message here
+
+        reset();
+      } else {
+        console.error("API error:", response.statusText);
+        // You can handle error or display an error message here
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+      // You can handle error or display an error message here
+    }
+  }, []);
 
   return (
     <section className="w-full h-auto relative ">

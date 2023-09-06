@@ -7,22 +7,108 @@ import { useEffect, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { BiChevronDown } from "react-icons/bi";
 import Button from "./Button";
+import { toast } from "react-toastify";
+
+import { useRouter } from "next/navigation";
 
 const DonateSection = () => {
+  const router = useRouter();
+
   const [donateType, setDonateType] = useState(0);
+  const [fm, setFm] = useState("");
 
   const {
     handleSubmit,
-    control,
+    setError,
+    clearErrors,
     register,
+    watch,
     formState: { errors },
     reset,
   } = useForm();
 
-  const onSubmit = (data) => {
-    // Handle form submission here
-    console.log(data);
-    reset();
+  let df = watch("frequency");
+
+  useEffect(() => {
+    if (df === "weekly") {
+      setFm(1500);
+    } else if (df === "monthly") {
+      setFm(5000);
+    } else if (df === "quarterly") {
+      setFm(15000);
+    } else if (df === "semi-annually") {
+      setFm(25000);
+    } else if (df === "annually") {
+      setFm(50000);
+    } else {
+      setFm("");
+    }
+  }, [df]);
+
+  useEffect(() => {
+    const returnedUrl =
+      typeof window !== "undefined" ? window.location.href : null;
+
+    if (returnedUrl.includes("trxref") && returnedUrl.includes("reference")) {
+      toast.success("Donation received successfully, thank you.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+
+      router.push("/");
+    }
+  }, []);
+
+  const onSubmit = async (data) => {
+    data.amount = Number(data.amount);
+
+    if (data.frequency) {
+      data.amount = Number(fm);
+    }
+
+    try {
+      const response = await fetch("https://api.saydi.org/v1/donations/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const responseData = await response.json();
+      console.log(responseData);
+
+      if (responseData.checkout_url) {
+        router.push(responseData.checkout_url);
+
+        reset();
+      } else if (responseData.success) {
+        toast.success("Donation received successfully, thank you.", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+
+        reset();
+      } else {
+        console.error("API error:", response.statusText);
+        // You can handle error or display an error message here
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+      // You can handle error or display an error message here
+    }
   };
 
   return (
@@ -44,9 +130,10 @@ const DonateSection = () => {
               />
             </section>
 
-            <h1 className="w-full text-white font-gillsans_heavy font-[900] uppercase text-[20px] md:text-[36px] lg:text-[42px] mt-4 mb-3">
+            <h1 className="text-white font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px] uppercase mt-8">
               Kindly Donate To Our Cause
             </h1>
+
             <p className="w-full text-white text-[16px] font-[400] leading-[24px] mr-[50px]">
               We want to do more to empower more people and communities. Your
               financial donations will go a long way in accomplishing this goal.
@@ -98,7 +185,10 @@ const DonateSection = () => {
                 className={`px-4 py-3 ${
                   donateType === 0 ? "bg-white" : "bg-transparent"
                 } border-none outline-none flex items-center justify-center rounded-tl-[13px] rounded-bl-[13px] transition-all duration-500`}
-                onClick={() => setDonateType(0)}
+                onClick={() => {
+                  setDonateType(0);
+                  reset();
+                }}
               >
                 <span
                   className={`font-[700] text-[17px] ${
@@ -116,7 +206,10 @@ const DonateSection = () => {
                 className={`px-4 py-3 ${
                   donateType === 1 ? "bg-white" : "bg-transparent"
                 } border-none outline-none flex items-center justify-center rounded-tr-[13px] rounded-br-[13px] transition-all duration-500`}
-                onClick={() => setDonateType(1)}
+                onClick={() => {
+                  setDonateType(1);
+                  reset();
+                }}
               >
                 <span
                   className={`font-[700] text-[17px] ${
@@ -136,7 +229,7 @@ const DonateSection = () => {
                   onSubmit={handleSubmit(onSubmit)}
                   className="w-full flex flex-col items-center justify-center gap-4"
                 >
-                  <section className="w-full relative flex flex-col gap-2">
+                  <section className="w-full relative flex flex-col gap-2 items-start justify-start">
                     <label
                       htmlFor="first_name"
                       className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
@@ -158,7 +251,7 @@ const DonateSection = () => {
                       </p>
                     )}
                   </section>
-                  <section className="w-full relative flex flex-col gap-2">
+                  <section className="w-full relative flex flex-col gap-2 items-start justify-start">
                     <label
                       htmlFor="last_name"
                       className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
@@ -181,7 +274,7 @@ const DonateSection = () => {
                     )}
                   </section>
 
-                  <section className="w-full relative flex flex-col gap-2">
+                  <section className="w-full relative flex flex-col gap-2 items-start justify-start">
                     <label
                       htmlFor="email"
                       className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
@@ -209,14 +302,14 @@ const DonateSection = () => {
                     )}
                   </section>
 
-                  <section className="w-full relative flex flex-col gap-2">
+                  <section className="w-full relative flex flex-col gap-2 items-start justify-start">
                     <label
                       htmlFor="amount"
                       className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
                     >
                       Amount
                     </label>
-                    <section className="relative flex items-center justify-between rounded-[8px] border-[1.5px] border-[#28374b]">
+                    <section className="relative flex items-center justify-between rounded-[8px] border-[1.5px] border-[#28374b] w-full">
                       <section className="px-3 py-2 flex items-center justify-center pointer-events-none border-r-[1.5px] border-[#28374b]">
                         <span className="text-[#5e6978] text-[12px]">NGN</span>
                         <BiChevronDown
@@ -257,7 +350,7 @@ const DonateSection = () => {
                   onSubmit={handleSubmit(onSubmit)}
                   className="w-full flex flex-col items-center justify-center gap-4"
                 >
-                  <section className="w-full relative flex flex-col gap-2">
+                  <section className="w-full relative flex flex-col gap-2 items-start justify-start">
                     <label
                       htmlFor="first_name"
                       className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
@@ -279,7 +372,7 @@ const DonateSection = () => {
                       </p>
                     )}
                   </section>
-                  <section className="w-full relative flex flex-col gap-2">
+                  <section className="w-full relative flex flex-col gap-2 items-start justify-start">
                     <label
                       htmlFor="last_name"
                       className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
@@ -302,7 +395,7 @@ const DonateSection = () => {
                     )}
                   </section>
 
-                  <section className="w-full relative flex flex-col gap-2">
+                  <section className="w-full relative flex flex-col gap-2 items-start justify-start">
                     <label
                       htmlFor="email"
                       className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
@@ -330,7 +423,7 @@ const DonateSection = () => {
                     )}
                   </section>
 
-                  <section className="w-full relative flex flex-col gap-2 bg-white">
+                  <section className="w-full relative flex flex-col gap-2 items-start justify-start bg-white">
                     <label
                       htmlFor="frequency"
                       className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
@@ -349,14 +442,14 @@ const DonateSection = () => {
                       <option key={1} value="weekly">
                         Weekly
                       </option>
-                      <option key={2} value="bi-weekly">
-                        Bi-weekly
-                      </option>
-                      <option key={3} value="monthly">
+                      <option key={2} value="monthly">
                         Monthly
                       </option>
-                      <option key={4} value="quarter">
-                        Quarter
+                      <option key={3} value="quarterly">
+                        Quarterly
+                      </option>
+                      <option key={4} value="semi-annually">
+                        Every 6 Months
                       </option>
                       <option key={5} value="annually">
                         Annually
@@ -370,14 +463,14 @@ const DonateSection = () => {
                     )}
                   </section>
 
-                  <section className="w-full relative flex flex-col gap-2">
+                  <section className="w-full relative flex flex-col gap-2 items-start justify-start">
                     <label
                       htmlFor="amount"
                       className="text-[12px] font-[600] leading-[16px] text-[#5e6978] upppercase w-full text-left"
                     >
                       Amount
                     </label>
-                    <section className="relative flex items-center justify-between rounded-[8px] border-[1.5px] border-[#28374b]">
+                    <section className="relative flex items-center justify-between rounded-[8px] border-[1.5px] border-[#28374b] w-full">
                       <section className="px-3 py-2 flex items-center justify-center pointer-events-none border-r-[1.5px] border-[#28374b]">
                         <span className="text-[#5e6978] text-[12px]">NGN</span>
                         <BiChevronDown
@@ -389,17 +482,16 @@ const DonateSection = () => {
                       <input
                         type="number"
                         id="amount"
-                        {...register("amount", {
-                          required: "Amount is required",
-                        })}
-                        className="w-[90%] px-3 py-2 rounded-lg border-none  focus:outline-none focus:none rounded-[8px]"
+                        value={fm}
+                        className="w-full px-3 py-2 rounded-lg border-none  focus:outline-none focus:none rounded-[8px]"
+                        disabled
                       />
                     </section>
-                    {errors.amount && (
+                    {/* {errors.amount && (
                       <p className="text-red-500 text-sm my-1">
                         {errors.amount.message}
                       </p>
-                    )}
+                    )} */}
                   </section>
 
                   <section className="w-fit mt-4 mb-3">

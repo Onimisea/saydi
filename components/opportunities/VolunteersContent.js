@@ -154,7 +154,7 @@ const VolunteersContent = () => {
           });
 
           reset();
-          router.reload();
+          router.refresh();
         } else {
           toast.error(responseData.error, {
             position: "top-center",

@@ -26,7 +26,6 @@ const OurStoriesSection = () => {
     setVisiblePosts(visiblePosts + 3); // Increase by 3 in this example
   };
 
-  useEffect(() => {}, [isAllPosts]);
 
   return (
     <section className="bg-white w-full h-auto flex flex-col lg:flex-row relative pt-4 pb-16">

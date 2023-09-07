@@ -35,64 +35,64 @@ const ThematicSection = () => {
             </section>
           </section>
 
-          <section className="w-full flex flex-wrap items-center justify-center mt-10 mb-8 md:mt-14 md:mb-10 md2:mt-16 md2:mb-12 gap-12 md2:gap-6 ">
-            <section className="rounded-[17.59px] flex flex-col items-center justify-center relative bg-[#ECEFF4] w-[260px] h-[205px]">
-              <section className="rounded-[17.59px] shadow-lg flex flex-col items-start justify-center text-center w-[260px] h-[205px] bg-[#ECEFF4] blur-xl absolute z-0"></section>
-              <section className="text-secondary font-[600] text-[10px] font-montserrat uppercase z-20 flex flex-col items-center">
+          <section className="w-full flex flex-wrap items-center justify-center mt-8 mb-8 md:mt-10 md:mb-10 md2:mt-14 md2:mb-12 gap-6 ">
+            <section className="rounded-[17.59px] flex flex-col items-center justify-center relative bg-[#ECEFF4] w-[90%] sm3:w-[260px] h-[260px]">
+              <section className="rounded-[17.59px] shadow-lg flex flex-col items-start justify-center text-center w-full h-full bg-[#ECEFF4] blur-xl absolute z-0"></section>
+              <section className="text-secondary font-[600] text-[10px] font-montserrat uppercase z-20 flex flex-col items-center w-[90%]">
                 <Image
                   src={our_thematic1}
                   alt="Governance"
                   width={200}
                   height={150}
-                  className="w-[235px] h-[160px] object-cover z-10 rounded-[17.59px]"
+                  className="w-full h-[200px] object-cover z-10 rounded-[17.59px]"
                   loading="lazy"
                 />
-                <p className="mt-2">Governance</p>
+                <p className="mt-3">Governance</p>
               </section>
             </section>
 
-            <section className="rounded-[17.59px] flex flex-col items-center justify-center relative bg-[#ECEFF4] w-[260px] h-[205px]">
-              <section className="rounded-[17.59px] shadow-lg flex flex-col items-start justify-center text-center w-[260px] h-[205px] bg-[#ECEFF4] blur-xl absolute z-0"></section>
-              <section className="text-secondary font-[600] text-[10px] font-montserrat uppercase z-20 flex flex-col items-center">
+            <section className="rounded-[17.59px] flex flex-col items-center justify-center relative bg-[#ECEFF4] w-[90%] sm3:w-[260px] h-[260px]">
+              <section className="rounded-[17.59px] shadow-lg flex flex-col items-start justify-center text-center w-full h-full bg-[#ECEFF4] blur-xl absolute z-0"></section>
+              <section className="text-secondary font-[600] text-[10px] font-montserrat uppercase z-20 flex flex-col items-center w-[90%]">
                 <Image
                   src={our_thematic2}
-                  alt="Governance"
+                  alt="Education"
                   width={200}
                   height={150}
-                  className="w-[235px] h-[160px] object-cover z-10 rounded-[17.59px]"
+                  className="w-full h-[200px] object-cover z-10 rounded-[17.59px]"
                   loading="lazy"
                 />
-                <p className="mt-2">Education</p>
+                <p className="mt-3">Education</p>
               </section>
             </section>
 
-            <section className="rounded-[17.59px] flex flex-col items-center justify-around relative bg-[#ECEFF4] w-[260px] h-[205px]">
-              <section className="rounded-[17.59px] shadow-lg flex flex-col items-start justify-center text-center w-[260px] h-[205px] bg-[#ECEFF4] blur-xl absolute z-0"></section>
-              <section className="text-secondary font-[600] text-[10px] font-montserrat uppercase z-20 flex flex-col items-center">
+            <section className="rounded-[17.59px] flex flex-col items-center justify-center relative bg-[#ECEFF4] w-[90%] sm3:w-[260px] h-[260px]">
+              <section className="rounded-[17.59px] shadow-lg flex flex-col items-start justify-center text-center w-full h-full bg-[#ECEFF4] blur-xl absolute z-0"></section>
+              <section className="text-secondary font-[600] text-[10px] font-montserrat uppercase z-20 flex flex-col items-center w-[90%]">
                 <Image
                   src={our_thematic3}
-                  alt="Governance"
+                  alt="Gender"
                   width={200}
                   height={150}
-                  className="w-[235px] h-[160px] object-cover z-10 rounded-[17.59px]"
+                  className="w-full h-[200px] object-cover z-10 rounded-[17.59px]"
                   loading="lazy"
                 />
-                <p className="mt-2">Gender</p>
+                <p className="mt-3">Gender</p>
               </section>
             </section>
 
-            <section className="rounded-[17.59px] flex flex-col items-center justify-around relative bg-[#ECEFF4] w-[260px] h-[205px]">
-              <section className="rounded-[17.59px] shadow-lg flex flex-col items-start justify-center text-center w-[260px] h-[205px] bg-[#ECEFF4] blur-xl absolute z-0"></section>
-              <section className="text-secondary font-[600] text-[10px] font-montserrat uppercase z-20 flex flex-col items-center">
+            <section className="rounded-[17.59px] flex flex-col items-center justify-center relative bg-[#ECEFF4] w-[90%] sm3:w-[260px] h-[260px]">
+              <section className="rounded-[17.59px] shadow-lg flex flex-col items-start justify-center text-center w-full h-full bg-[#ECEFF4] blur-xl absolute z-0"></section>
+              <section className="text-secondary font-[600] text-[10px] font-montserrat uppercase z-20 flex flex-col items-center w-[90%]">
                 <Image
                   src={our_thematic4}
-                  alt="Governance"
+                  alt="SDGs"
                   width={200}
                   height={150}
-                  className="w-[235px] h-[160px] object-cover z-10 rounded-[17.59px]"
+                  className="w-full h-[200px] object-cover z-10 rounded-[17.59px]"
                   loading="lazy"
                 />
-                <p className="mt-2">SDGs</p>
+                <p className="mt-3">SDGs</p>
               </section>
             </section>
           </section>

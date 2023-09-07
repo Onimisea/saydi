@@ -161,6 +161,7 @@ const Footer = () => {
                     >
                       <Image
                         src={quick_links_icon}
+                        alt="icon"
                         width={0}
                         height={0}
                         loading="lazy"
@@ -175,6 +176,7 @@ const Footer = () => {
                     >
                       <Image
                         src={quick_links_icon}
+                        alt="icon"
                         width={0}
                         height={0}
                         loading="lazy"
@@ -189,6 +191,7 @@ const Footer = () => {
                     >
                       <Image
                         src={quick_links_icon}
+                        alt="icon"
                         width={0}
                         height={0}
                         loading="lazy"
@@ -203,6 +206,7 @@ const Footer = () => {
                     >
                       <Image
                         src={quick_links_icon}
+                        alt="icon"
                         width={0}
                         height={0}
                         loading="lazy"
@@ -217,6 +221,7 @@ const Footer = () => {
                     >
                       <Image
                         src={quick_links_icon}
+                        alt="icon"
                         width={0}
                         height={0}
                         loading="lazy"
@@ -231,6 +236,7 @@ const Footer = () => {
                     >
                       <Image
                         src={quick_links_icon}
+                        alt="icon"
                         width={0}
                         height={0}
                         loading="lazy"
@@ -245,6 +251,7 @@ const Footer = () => {
                     >
                       <Image
                         src={quick_links_icon}
+                        alt="icon"
                         width={0}
                         height={0}
                         loading="lazy"

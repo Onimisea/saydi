@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { useForm, Controller } from "react-hook-form";
 import { useEffect, useState } from "react";
-import Select from "react-select";
-import AsyncSelect from "react-select/async";
+import { useRouter } from "next/navigation";
 import NaijaStates from "naija-state-local-government";
 import send_icon from "../../public/icons/send_icon.svg";
 import { toast } from "react-toastify";
 
 const VolunteersContent = () => {
+  const router = useRouter();
+
   const {
     handleSubmit,
     register,
@@ -24,6 +25,7 @@ const VolunteersContent = () => {
   const [lgas, setLgas] = useState([]);
   const [selectedInterests, setSelectedInterests] = useState([]);
   const [tempSI, setTempSI] = useState([]);
+  const [si, setSi] = useState(null);
   const selectedState = watch("state");
 
   // const gos = [
@@ -66,6 +68,13 @@ const VolunteersContent = () => {
     }
   };
 
+  useEffect(() => {
+    if (tempSI.length > 0 && !si) {
+      const aoi = tempSI.map((item) => item.name).join(", ");
+      setSi(aoi);
+    }
+  }, [tempSI.length, si]);
+
   const isValidateData = (data) => {
     let isError = false;
 
@@ -84,6 +93,8 @@ const VolunteersContent = () => {
     if (tempSI.length > 0) {
       clearErrors("areas_of_interest");
       isError = false;
+      const aoi = tempSI.map((item) => item.name).join(", ");
+      setSi(aoi);
     } else {
       setError("areas_of_interest", {
         type: "Required",
@@ -112,15 +123,12 @@ const VolunteersContent = () => {
         email: data.email ? data.email : "",
         state: data.state ? data.state : "",
         lga: data.lga ? data.lga : "",
-        zip: data.zip ? data.zip : "",
-        areas_of_interest: tempSI ? tempSI : "",
+        areas_of_interest: si,
         professional_background: data.professional_background
           ? data.professional_background
           : "",
         how_you_find_us: data.how_you_find_us ? data.how_you_find_us : "",
       };
-
-      console.log(payload);
 
       try {
         const response = await fetch("https://api.saydi.org/v1/volunteers/", {
@@ -131,9 +139,7 @@ const VolunteersContent = () => {
           body: JSON.stringify(payload),
         });
 
-        const responseData = response.json();
-
-        console.log(responseData);
+        const responseData = await response.json();
 
         if (responseData.success) {
           toast.success(responseData.success, {
@@ -148,6 +154,7 @@ const VolunteersContent = () => {
           });
 
           reset();
+          router.reload();
         } else {
           toast.error(responseData.error, {
             position: "top-center",
@@ -282,14 +289,14 @@ const VolunteersContent = () => {
 
                           <option
                             key="male"
-                            value="Male"
+                            value="male"
                             className="w-fit rounded-md appearance-none bg-white"
                           >
                             Male
                           </option>
                           <option
                             key="female"
-                            value="Female"
+                            value="female"
                             className="w-fit rounded-md appearance-none bg-white"
                           >
                             Female

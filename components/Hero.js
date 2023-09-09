@@ -99,7 +99,7 @@ const Hero = () => {
 
             <p className="text-white text-[14px] lg:text-[16px] font-[600] font-montserrat py-[24px]">
               We take on the crusade of social inclusion and justice where
-              everyone has the right to be best they desire.
+              everyone has the right to be the best they desire.
             </p>
 
             {/* <Button

@@ -9,6 +9,7 @@ import { AppContext } from "@/context/AppContext";
 import HeaderDivider from "./HeaderDivider";
 import ourStoriesBb from "../public/assets/home/our_stories_bb.png";
 import Button from "./Button";
+import { format } from "date-fns";
 
 const OurStoriesSection = () => {
   const { allOurStories } = useContext(AppContext);
@@ -20,6 +21,7 @@ const OurStoriesSection = () => {
   const isButton = postsToShow.length === visiblePosts ? true : false;
 
   const imgHost = "https://res.cloudinary.com/deneyjtsc";
+  const date_format = "dd MMMM, yyyy h:mm a";
 
   const loadMoreStories = () => {
     // Increase the number of visible posts by a certain amount
@@ -70,7 +72,7 @@ const OurStoriesSection = () => {
 
                     <section className="w-full bg-white p-4 flex flex-col items-start justify-start text-left">
                       <span className="text-[#28374B] text-[10px] font-[400] ">
-                        {post.published}
+                        {format(new Date(post.published), date_format)}
                       </span>
                       <p className="uppercase text-[#28374B] text-[16px] font-[500] my-2">
                         {post.title}

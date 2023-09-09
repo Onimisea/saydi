@@ -60,11 +60,11 @@ const ContactSection = () => {
       <section className="block lg:hidden">
         <section className="flex flex-col items-start justify-center bg-white w-full overflow-hidden">
           <section className="w-fit flex flex-col items-center justify-center gap-2">
-            <h1 className="text-white font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px] uppercase mt-8">
+            <h1 className="text-secondary font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px] uppercase mt-8">
               Contact Us
             </h1>
             <section className="w-[95%] md:w-[80%] lg:w-[65%]">
-              <HeaderDivider style="tertiary" />
+              <HeaderDivider style="primary" />
             </section>
           </section>
 

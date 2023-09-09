@@ -118,11 +118,11 @@ const Header = () => {
                     <li key={index} className="relative group">
                       <button
                         key={index}
-                        className={`px-6 py-3 inline-flex gap-2 items-center justi   fy-center ${
+                        className={`px-6 py-3 inline-flex gap-2 items-center justify-center ${
                           link.is_active
                             ? "bg-tertiary text-white hover:bg-primary"
                             : "bg-transparent text-secondary hover:bg-[#14579E] hover:text-white"
-                        } duration-500`}
+                        } duration-500 uppercase`}
                       >
                         {link.label}
                       </button>
@@ -170,7 +170,7 @@ const Header = () => {
                           link.is_active
                             ? "bg-tertiary text-white hover:bg-primary"
                             : "bg-transparent text-secondary hover:bg-[#14579E] hover:text-white"
-                        } duration-500`}
+                        } duration-500 uppercase`}
                         onClick={() => {
                           console.log(`${link.label} button clicked!`);
                           router.push(`/${link.url}`);

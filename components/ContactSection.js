@@ -59,7 +59,8 @@ const ContactSection = () => {
     >
       <section className="block lg:hidden">
         <section className="flex flex-col items-start justify-center bg-white w-full overflow-hidden">
-          <section className="w-full flex flex-col items-center justify-center gap-2">
+          <section className="w-full mt-6 flex flex-col items-center justify-center">
+        <section className="w-fit flex flex-col items-center justify-center gap-2">
             <h1 className="text-secondary font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px] uppercase mt-8">
               Contact Us
             </h1>
@@ -67,6 +68,8 @@ const ContactSection = () => {
               <HeaderDivider style="primary" />
             </section>
           </section>
+        </section>
+        
 
           <section className="bg-white w-full p-14">
             <form onSubmit={handleSubmit(onSubmit)} className="w-full">

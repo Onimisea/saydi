@@ -86,10 +86,14 @@ const Sidebar = () => {
   const [activeMenu, setActiveMenu] = useState("");
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      alert(window.location.href)
+      
+    }
     if (navOpen) {
       setNavOpen(false);
     }
-  }, [pathname]);
+  }, [pathname, activeMenu]);
 
   return (
     <AnimatePresence>

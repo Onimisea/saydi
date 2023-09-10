@@ -134,14 +134,17 @@ const Sidebar = () => {
                     } else if (activeMenu === link.label) {
                       setActiveMenu("");
                     } else if (activeMenu === "Home") {
-                      setNavOpen(false);
+                      
                       router.push("/");
+                      setNavOpen(false);
                     } else if (activeMenu === "Contact") {
-                      setNavOpen(false);
+                      
                       router.push("/#contact");
-                    } else if (activeMenu === "Donate") {
                       setNavOpen(false);
+                    } else if (activeMenu === "Donate") {
+                      
                       router.push("/#donate");
+                      setNavOpen(false);
                     } else {
                       setActiveMenu(link.label);
                     }

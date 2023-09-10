@@ -99,7 +99,7 @@ const Sidebar = () => {
     if (navOpen) {
       setNavOpen(false);
     }
-  }, [pathname, activeMenu]);
+  }, []);
 
   return (
     <AnimatePresence>

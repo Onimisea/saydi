@@ -138,8 +138,6 @@ const Sidebar = () => {
                     } else if (activeMenu === link.label) {
                       setActiveMenu("");
                     } else if (activeMenu === "Home") {
-                      
-                      router.push("/");
                       setNavOpen(false);
                     } else if (activeMenu === "Contact") {
                       

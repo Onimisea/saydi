@@ -89,17 +89,13 @@ const Sidebar = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       setUrl(window.location.href)
-      
-      if (navOpen) {
-      setNavOpen(false);
-      }
     }
   }, []);
 
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      if (url === "https://www.saydi.org" || url === "https://www.saydi.org/#donate" || url === "https://www.saydi.org/contact") {
+      if (url === "https://www.saydi.org" || url === "https://www.saydi.org/#donate" || url === "https://www.saydi.org/#contact") {
         if (navOpen) {
       setNavOpen(false);
       }

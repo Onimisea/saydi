@@ -22,7 +22,7 @@ export default function AnnualReport() {
   useEffect(() => {
     if (allOurStories) {
       const filter = allOurStories.filter(
-        (item) => item.type === "annual_report"
+        (item) => item.type === "financial_report"
       );
 
       setAnnualReport(filter[0]);
@@ -41,7 +41,7 @@ export default function AnnualReport() {
         {!annualReport && (
           <section className="w-full flex flex-col items-center justify-center bg-white py-16 px-10">
             <h1 className="text-red-600 font-bold text-center font-gillsans_bold">
-              Please upload an annual report...
+              Please upload a financial report...
             </h1>
           </section>
         )}

@@ -93,7 +93,7 @@ const Sidebar = () => {
       if (navOpen) {
       setNavOpen(false);
       }
-    
+    }
   }, []);
 
 
@@ -107,7 +107,7 @@ const Sidebar = () => {
       }
       }
       
-      
+     
     }
   }, [pathname, activeMenu, url]);
 

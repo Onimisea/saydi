@@ -101,7 +101,7 @@ const Sidebar = () => {
     if (typeof window !== "undefined") {
       setUrl("window.location.href")
       
-      if (url === "https://www.saydi.com") || url === "https://www.saydi.com/#donate") || url === "https://www.saydi.org/contact") {
+      if (url === "https://www.saydi.com" || url === "https://www.saydi.com/#donate" || url === "https://www.saydi.org/contact") {
         if (navOpen) {
       setNavOpen(false);
       }

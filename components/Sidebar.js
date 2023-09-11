@@ -99,9 +99,10 @@ const Sidebar = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      if (url === "https://www.saydi.com" || url === "https://www.saydi.com/#donate" || url === "https://www.saydi.org/contact") {
-        alert(navOpen)
+      alert(navOpen)
         alert(url)
+      if (url === "https://www.saydi.com" || url === "https://www.saydi.com/#donate" || url === "https://www.saydi.org/contact") {
+        
         if (navOpen) {
       setNavOpen(false);
       }

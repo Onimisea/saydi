@@ -84,16 +84,24 @@ const Sidebar = () => {
   const { navOpen, setNavOpen } = useContext(AppContext);
 
   const [activeMenu, setActiveMenu] = useState("");
+  const [url, setUrl] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const url = window.location.href
+      setUrl("window.location.href")
       
       if (navOpen) {
       setNavOpen(false);
       }
+    
+  }, []);
+
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setUrl("window.location.href")
       
-      if (url.includes("#donate") || url.includes("#contact") || url === "https://www.saydi.org") {
+      if (url === "https://www.saydi.com") || url === "https://www.saydi.com/#donate") || url === "https://www.saydi.org/contact") {
         if (navOpen) {
       setNavOpen(false);
       }
@@ -101,9 +109,7 @@ const Sidebar = () => {
       
       
     }
-    
-    
-  }, []);
+  }, [pathname, activeMenu, url]);
 
   return (
     <AnimatePresence>

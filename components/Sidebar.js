@@ -88,7 +88,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setUrl("window.location.href")
+      setUrl(window.location.href)
       
       if (navOpen) {
       setNavOpen(false);
@@ -99,10 +99,9 @@ const Sidebar = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setUrl(window.location.href)
-      
       if (url === "https://www.saydi.com" || url === "https://www.saydi.com/#donate" || url === "https://www.saydi.org/contact") {
         alert(navOpen)
+        alert(url)
         if (navOpen) {
       setNavOpen(false);
       }

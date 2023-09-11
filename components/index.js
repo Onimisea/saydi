@@ -34,6 +34,7 @@ import VolunteersContent from "./opportunities/VolunteersContent";
 import PressReleases from "./our-stories/PressReleases";
 import BlogPosts from "./our-stories/BlogPosts";
 import PolicyBriefs from "./our-stories/PolicyBriefs";
+import StoriesHero from "./our-stories/StoriesHero";
 
 export {
   Header,
@@ -68,4 +69,5 @@ export {
   PressReleases,
   BlogPosts,
   PolicyBriefs,
+  StoriesHero,
 };

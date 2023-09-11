@@ -119,7 +119,9 @@ const DonateSection = () => {
       <section className="content__container w-full">
         <section className="flex flex-col flex-wrap items-center justify-center lg:flex-row lg:justify-between text-center">
           <section className="w-full lg:w-[47%] flex flex-col items-center justify-center">
+
             <section className="w-full flex flex-col items-center justify-center ">
+
               <Image
                 src={donate_ill}
                 alt="Donate"
@@ -130,6 +132,7 @@ const DonateSection = () => {
               />
             </section>
 
+
               <h1 className="text-white font-gillsans_heavy font-[900] text-[20px] md:text-[27px] lg:text-[36px] uppercase mt-8">
                 Kindly Donate To Our Cause
               </h1>
@@ -139,6 +142,7 @@ const DonateSection = () => {
                 financial donations will go a long way in accomplishing this
                 goal.
               </p>
+
 
             <section className="w-fit bg-transparent rounded-[16px] flex items-center justify-between border-[2px] border-solid border-white transition-all duration-500 mt-12 mb-8 lg:hidden">
               <button

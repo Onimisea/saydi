@@ -35,17 +35,21 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
+
               <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom px-[10px] py-[5px] absolute bottom-[7px] z-20">
                 <section className="block text-[13px] font-[700] ">
+
                   <span className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary">
                     Dr. Amina Salihu
                   </span>
                 </section>
 
+
                 <p className="text-[#28374b] text-[10px] uppercase my-[1px]">
                   Senior Director of Program, Macarthur Foundation
                 </p>
                 <p className="text-[12px] text-tertiary2 font-[600]">
+
                   Board Chair
                 </p>
               </section>
@@ -61,17 +65,21 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
+
               <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom px-[10px] py-[5px] absolute bottom-[7px] z-20">
                 <section className="block text-[13px] font-[700] ">
+
                   <span className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary">
                     Abdullateef O. Abdulkareem
                   </span>
                 </section>
 
+
                 <p className="text-[#28374b] text-[10px] uppercase my-[1px]">
                   Founder, Saving African Youths Dream Initiative SAYDI
                 </p>
                 <p className="text-[12px] text-tertiary2 font-[600]">
+
                   Board Secretary
                 </p>
               </section>
@@ -89,16 +97,19 @@ const BoardDirectors = () => {
 
               <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom px-[10px] py-[5px] absolute bottom-[7px] z-20">
                 <section className="block text-[13px] font-[700] ">
+
                   <span className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary">
                     Prof. Suleiman Folorunsho Ambali
                   </span>
                 </section>
+
 
                 <p className="text-[#28374b] text-[10px] uppercase my-[1px]">
                   {" "}
                   Deputy Vice Chancellor, Management, University of Ilorin
                 </p>
                 <p className="text-[12px] text-tertiary2 font-[600]">
+
                   Board Member
                 </p>
               </section>
@@ -114,17 +125,21 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
+
               <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom px-[10px] py-[5px] absolute bottom-[7px] z-20">
                 <section className="block text-[13px] font-[700] ">
+
                   <span className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary">
                     Prof. Mashood Mustapha Keke
                   </span>
                 </section>
 
+
                 <p className="text-[#28374b] text-[10px] uppercase my-[1px]">
                   Zoology Department, University of ilorin.
                 </p>
                 <p className="text-[12px] text-tertiary2 font-[600]">
+
                   Board Member
                 </p>
               </section>
@@ -140,6 +155,7 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
+
               <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom px-[10px] py-[5px] absolute bottom-[7px] z-20">
                 <section className="block text-[13px] font-[700] ">
                   <span className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary">
@@ -147,10 +163,12 @@ const BoardDirectors = () => {
                   </span>
                 </section>
 
+
                 <p className="text-[#28374b] text-[10px] uppercase my-[1px]">
                   Researcher, University of State Mississippi, USA
                 </p>
                 <p className="text-[12px] text-tertiary2 font-[600]">
+
                   Board Member
                 </p>
               </section>
@@ -166,15 +184,19 @@ const BoardDirectors = () => {
                 loading="lazy"
               />
 
+
               <section className="w-[95%] rounded-[8px] bg-white90 shadow-custom px-[10px] py-[5px] absolute bottom-[7px] z-20">
                 <section className="block text-[13px] font-[700] ">
+
                   <span className="text-transparent bg-gradient-to-r bg-clip-text from-secondary to-primary">
                     Funmi Omisope
                   </span>
                 </section>
 
+
                 <p className="text-[#28374b] text-[10px] uppercase my-[1px]"></p>
                 <p className="text-[12px] text-tertiary2 font-[600]">
+
                   Board Member
                 </p>
               </section>

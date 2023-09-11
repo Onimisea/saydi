@@ -1,6 +1,6 @@
 "use client";
 
-import HeaderDivider from "../HeaderDivider";
+
 
 const AboutLongMission = () => {
   return (
@@ -8,10 +8,12 @@ const AboutLongMission = () => {
       <section className="content__container w-full z-20">
         <section className="w-full h-auto flex flex-col items-center justify-center pt-6 pb-12">
           {/* <h1 className="text-[#333333] font-gillsans_bold font-[700] uppercase text-[16px] sm2:text-[24px] md2:text-[32px]">
+
             Our Mission
           </h1>
           <section className="w-[30%] md:w-[20%] lg:w-[15%]">
             <HeaderDivider style="primary" />
+
           </section> */}
 
           <p className="text-[#28374b] text-[14px] font-[400] leading-[21px] w-[90%] text-center mt-6 sm2:text-[16px] sm2:leading-[30px] sm3:w-[80%] md:w-[75%]">
@@ -21,6 +23,7 @@ const AboutLongMission = () => {
             civic engagement apathy; and advocacy for the achievement of
             Sustainable Development Goals (SDGs) in immediate communities and
             beyond. <br />
+
             <br />
             SAYDi was launched as a student organization in 2020 at the
             University of Ilorin, Ilorin, Nigeria and was officially registered

@@ -4,6 +4,7 @@ import { useEffect, useContext, useState } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 import Image from "next/image";
+
 import chevron_down_icon from "../public/icons/chevron_down_icon.svg";
 import Link from "next/link";
 import { AppContext } from "@/context/AppContext";

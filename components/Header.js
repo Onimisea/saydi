@@ -216,6 +216,7 @@ const Header = () => {
               />
             </button>
             {/* <button
+
               type="button"
               className=""
               // onClick={() => setToggleNav(!toggleNav)}
@@ -226,6 +227,7 @@ const Header = () => {
                 width={24}
                 height={24}
               />
+
             </button> */}
           </section>
 

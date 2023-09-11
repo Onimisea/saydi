@@ -99,7 +99,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      if (url === "https://www.saydi.com" || url === "https://www.saydi.com/#donate" || url === "https://www.saydi.org/contact") {
+      if (url === "https://www.saydi.org" || url === "https://www.saydi.org/#donate" || url === "https://www.saydi.org/contact") {
         if (navOpen) {
       setNavOpen(false);
       }
@@ -144,9 +144,9 @@ const Sidebar = () => {
                     } else if (activeMenu === link.label) {
                       setActiveMenu("");
                     } else if (activeMenu === "Home") {
-                      router.push("https://www.saydi.com");
+                      
                       if (navOpen) {
-                        router.push("https://www.saydi.com");
+                        router.push("https://www.saydi.org");
       setNavOpen(false);
                     }
                     } else if (activeMenu === "Contact") {

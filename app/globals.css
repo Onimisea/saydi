@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "GillSansBold";
+  src: url("../public/fonts/GillSansBold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GillSansHeavy";
+  src: url("../public/fonts/GillSansHeavy.otf");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Italic";
+  src: url("../public/fonts/Montserrat-Italic-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional Resets (Optional) */
+
+/* Add a global box-sizing rule */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+/* Apply a basic CSS reset to the root element */
+html,
+body {
+  box-sizing: border-box;
+  background: #ffffff;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: nromal;
+  background: linear-gradient(90deg, #000180 0%, #950d95 100%);
+}
+
+.body__container {
+  display: block;
+  max-width: 1440px;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.content__container {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+div
+  > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  bottom: 0;
+}
+
+select {
+  width: 100% !important;
+}
+
+option {
+  width: fit-content !important;
+}

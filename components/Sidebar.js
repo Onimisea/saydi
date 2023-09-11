@@ -137,31 +137,37 @@ const Sidebar = () => {
                       : "bg-transparent"
                   }`}
                   onClick={() => {
-                    if (navOpen) {
-      setNavOpen(false);
-                    }
+                    
                     
                     if (activeMenu === "") {
                       setActiveMenu(link.label);
                     } else if (activeMenu === link.label) {
                       setActiveMenu("");
                     } else if (activeMenu === "Home") {
-                      setNavOpen(false);
+                      router.push("https://www.saydi.com");
+                      if (navOpen) {
+                        router.push("https://www.saydi.com");
+      setNavOpen(false);
+                    }
                     } else if (activeMenu === "Contact") {
                       
                       router.push("/#contact");
-                      setNavOpen(false);
+                      if (navOpen) {
+                        router.push("/#contact");
+      setNavOpen(false);
+                    }
                     } else if (activeMenu === "Donate") {
                       
                       router.push("/#donate");
-                      setNavOpen(false);
+                      if (navOpen) {
+                        router.push("/#donate");
+      setNavOpen(false);
+                    }
                     } else {
                       setActiveMenu(link.label);
                     }
 
-                    if (navOpen) {
-      setNavOpen(false);
-      }
+                    
                   }}
                 >
                   {link.submenu ? (

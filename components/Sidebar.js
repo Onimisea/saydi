@@ -99,14 +99,10 @@ const Sidebar = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      alert(navOpen)
-        alert(url)
       if (url === "https://www.saydi.com" || url === "https://www.saydi.com/#donate" || url === "https://www.saydi.org/contact") {
-        
         if (navOpen) {
       setNavOpen(false);
       }
-        setNavOpen(false);
       }
       
      
@@ -141,6 +137,10 @@ const Sidebar = () => {
                       : "bg-transparent"
                   }`}
                   onClick={() => {
+                    if (navOpen) {
+      setNavOpen(false);
+                    }
+                    
                     if (activeMenu === "") {
                       setActiveMenu(link.label);
                     } else if (activeMenu === link.label) {
@@ -158,6 +158,10 @@ const Sidebar = () => {
                     } else {
                       setActiveMenu(link.label);
                     }
+
+                    if (navOpen) {
+      setNavOpen(false);
+      }
                   }}
                 >
                   {link.submenu ? (

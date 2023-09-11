@@ -88,17 +88,21 @@ const Sidebar = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const url = window.location.href
-      alert(url)
+      
+      if (navOpen) {
+      setNavOpen(false);
+      }
+      
       if (url.includes("#donate") || url.includes("#contact") || url === "https://www.saydi.org") {
-        setNavOpen(false);
+        if (navOpen) {
+      setNavOpen(false);
+      }
       }
       
       
     }
     
-    if (navOpen) {
-      setNavOpen(false);
-    }
+    
   }, []);
 
   return (

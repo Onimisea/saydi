@@ -102,9 +102,11 @@ const Sidebar = () => {
       setUrl("window.location.href")
       
       if (url === "https://www.saydi.com" || url === "https://www.saydi.com/#donate" || url === "https://www.saydi.org/contact") {
+        alert(navOpen)
         if (navOpen) {
       setNavOpen(false);
       }
+        setNavOpen(false);
       }
       
      

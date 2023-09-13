@@ -346,14 +346,14 @@ const Footer = () => {
 
             <span className="hidden text-white lg:flex ">|</span>
 
-            <section className="w-full flex items-center justify-center md2:flex md2:w-fit text-center">
+            <section className="w-full flex items-center justify-center md2:flex md2:w-fit text-center space-x-2">
               <p className="md2:mx-3">Designed by</p>
               <Link
                 href="#"
-                className="flex items-center justify-center space-x-2 hover:text-primary hover:font-bold"
+                className="flex items-center justify-center hover:text-primary hover:font-bold"
               >
                 <Image src={azooz} width={24} height={24} loading="lazy" />
-                <p className=""></p>
+                {/* <p className=""></p> */}
               </Link>
             </section>
           </section>

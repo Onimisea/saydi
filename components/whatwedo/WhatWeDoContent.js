@@ -29,24 +29,26 @@ const WhatWeDoContent = () => {
               </section>
 
               <section className="text-justify break-words font-[400] text-[14px] text-[#333333] lg:leading-[24px]">
-                In the areas of education, we have organized several educational
-                development programs in the States which include setting up the
-                Saving Leaders of Tomorrow Club (SLTC) in collaboration with the
-                Kwara State Ministry of Education, channeled across secondary
-                schools in the state. <br />
-                <br />
-                SLTC is a club that is aimed at promoting reading, writing, and
-                speaking skills as well as improving the academic performances
-                of secondary school students, through engagements designed to
-                improve their intellectual capabilities.
+                We are on a mission to transform the educational landscape, in
+                Nigeria and across Africa. We firmly believe that education
+                remains the cornerstone of progress and development, and it
+                should be accessible to all, without discrimination, location
+                and barriers
                 <br />
                 <br />
-                Through the sustainability actactivities of SLTC, we have
-                gathered 35 students' short stories and we have identified and
-                supported a student that is set to show the world an alternative
-                way to generate power with manure while over 10,000
-                beneficiaries across the state have understood what the British
-                parliamentary style of debating is.
+                We work towards a society where every individual, regardless of
+                their background, has equal access to quality education. We
+                envision a future where educational opportunities are not
+                determined by geographic location, socio-economic status, or
+                gender but are available to all, promoting balance and
+                inclusiveness.
+                <br />
+                <br />
+                We collaborate with local communities, educators, and
+                policymakers to develop sustainable solutions that address the
+                unique challenges of education. The mission is to break down
+                barriers and create a brighter, more inclusive future where
+                education is a beacon of hope and opportunity for all.
               </section>
             </section>
 

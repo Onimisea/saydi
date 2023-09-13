@@ -14,11 +14,13 @@ import gdsc_logo from "../public/icons/gdsc_logo.svg";
 import quick_links_icon from "../public/icons/quick_links_icon.svg";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
+import azooz from "../public/imgs/home/partner_slider_img4.png";
 
 const Footer = () => {
   const {
     register,
-    handleSubmit, reset,
+    handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -344,16 +346,14 @@ const Footer = () => {
 
             <span className="hidden text-white lg:flex ">|</span>
 
-            <section className="w-full block md2:flex md2:w-fit text-center">
+            <section className="w-full flex items-center justify-center md2:flex md2:w-fit text-center">
               <p className="md2:mx-3">Designed by</p>
               <Link
                 href="#"
                 className="flex items-center justify-center space-x-2 hover:text-primary hover:font-bold"
               >
-                <Image src={gdsc_logo} width={24} height={24} loading="lazy" />
-                <p className="">
-                  Google Developer Student Clubs, University of Ilorin
-                </p>
+                <Image src={azooz} width={24} height={24} loading="lazy" />
+                <p className=""></p>
               </Link>
             </section>
           </section>
@@ -362,4 +362,5 @@ const Footer = () => {
     </section>
   );
 };
+
 export default Footer;

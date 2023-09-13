@@ -24,8 +24,10 @@ import partSlider9 from "../public/imgs/home/partner_slider_img9.png";
 import partSlider10 from "../public/imgs/home/partner_slider_img10.png";
 import partSlider11 from "../public/imgs/home/partner_slider_img11.png";
 import partSlider12 from "../public/imgs/home/partner_slider_img12.png";
+import partSlider13 from "../public/imgs/home/partner_slider_img13.jpg";
 
 const partnerSliderImages = [
+  { image: partSlider13, name: "heda resource centre" },
   { image: partSlider1, name: "hadis foundation" },
   { image: partSlider2, name: "gdsc unilorin" },
   { image: partSlider3, name: "spotlight" },

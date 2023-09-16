@@ -121,7 +121,7 @@ export default function Post() {
                       </h2>
 
                       {relatedContent.length > 0 ? (
-                        <section className="w-full flex flex items-center justify-center gap-3">
+                        <section className="w-full flex flex-col items-center justify-center gap-3 md:flex-row">
                           
                       
                       {relatedContent.map((c, i) => (

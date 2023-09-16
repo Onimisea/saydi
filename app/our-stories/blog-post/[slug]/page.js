@@ -15,7 +15,7 @@ export default function Post() {
 
   const [post, setpost] = useState(null);
   const [content, setContent] = useState("");
-  const [relatedContent, setRelatedContent] = useState(null);
+  const [relatedContent, setRelatedContent] = useState([]);
   const [comments, setComments] = useState(null);
 
   useEffect(() => {
@@ -57,10 +57,9 @@ export default function Post() {
 
       if (post.related_contents.length > 0) {
         const rc = post.related_contents;
+        const rcArr = [rc[0], rc[1]];
 
-        for (let i = 0; i < 2; i++) {
-          setRelatedContent([...relatedContent, rc[i]]);
-        }
+        setRelatedContent(rcArr);
       }
 
       if (post.comments.length > 0) {
@@ -70,6 +69,7 @@ export default function Post() {
   }, [post]);
 
   console.log(post);
+  console.log(relatedContent);
 
   return (
     <section className="body__container">
@@ -118,11 +118,41 @@ export default function Post() {
                         Related
                       </h2>
 
-                      {relatedContent ? (
+                      {relatedContent.length > 0 ? (
                         <section className="w-full">
-                          <section className="w-full bg-red-500">A</section>
-                          <section className="w-full sm:w-[1px] h-[1px] sm:h-full bg-[#28374B]"></section>
-                          <section className="w-full bg-red-600">B</section>
+                          {relatedContent.map((c, i) => {
+                            if (i < relatedContent.length) {
+                              return (
+                                <>
+                                  <section className="w-full flex items-center justify-center gap-3">
+                                    <Image
+                                      src={
+                                        post
+                                          ? `${imgHost}/${post.featured_image}`
+                                          : ""
+                                      }
+                                      alt={post ? post.title : ""}
+                                      width={200}
+                                      height={200}
+                                      className="w-[200px] h-[200px] object-fill z-10 rounded-full"
+                                      loading="lazy"
+                                    />
+
+                                    <section className=""></section>
+                                  </section>
+                                  <section className="w-full sm:w-[1px] h-[1px] sm:h-full bg-[#28374B]"></section>
+                                </>
+                              );
+                            } else {
+                              return (
+                                <section className="w-full ">
+                                  A{" "}
+                                </section>
+                              );
+                            }
+                          })}
+
+                          {/* <section className="w-full bg-red-600">B</section> */}
                         </section>
                       ) : (
                         <p className="text-red-600 text-center w-full">

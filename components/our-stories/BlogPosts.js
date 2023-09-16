@@ -10,7 +10,7 @@ import { format } from "date-fns";
 
 const BlogPosts = () => {
   const { allOurStories } = useContext(AppContext);
-  const [visiblePosts, setVisiblePosts] = useState(1);
+  const [visiblePosts, setVisiblePosts] = useState(3);
   const [policyBriefs, setPolicyBriefs] = useState(null);
   const [postsToShow, setPostsToShow] = useState(0);
   const [isButton, setIsButton] = useState(false);
@@ -23,7 +23,7 @@ const BlogPosts = () => {
 
   const loadMoreStories = () => {
     // Increase the number of visible posts by a certain amount
-    setVisiblePosts(visiblePosts + 1); // Increase by 3 in this example
+    setVisiblePosts(visiblePosts + 3); // Increase by 3 in this example
   };
 
   useEffect(() => {

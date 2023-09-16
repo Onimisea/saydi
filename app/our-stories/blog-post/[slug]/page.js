@@ -120,11 +120,11 @@ export default function Post() {
 
                       {relatedContent.length > 0 ? (
                         <section className="w-full">
-                          {relatedContent.map((c, i) => {
-                            if (i < relatedContent.length) {
-                              return (
-                                <>
-                                  <section className="w-full flex items-center justify-center gap-3">
+                          
+                      
+                      {relatedContent.map((c, i) => (
+                        <section className="w-full flex flex-col items-center justify-center gap-3">
+<section className="w-full flex items-center justify-center gap-3">
                                     <Image
                                       src={
                                         post
@@ -134,26 +134,22 @@ export default function Post() {
                                       alt={post ? post.title : ""}
                                       width={200}
                                       height={200}
-                                      className="w-[200px] h-[200px] object-fill z-10 rounded-full"
+                                      className="w-[100px] h-[100px] object-fill z-10 rounded-full"
                                       loading="lazy"
                                     />
 
-                                    <section className=""></section>
+                                    <section className=""> {post.title}</section>
                                   </section>
-                                  <section className="w-full sm:w-[1px] h-[1px] sm:h-full bg-[#28374B]"></section>
-                                </>
-                              );
-                            } else {
-                              return (
-                                <section className="w-full ">
-                                  A{" "}
-                                </section>
-                              );
-                            }
-                          })}
 
-                          {/* <section className="w-full bg-red-600">B</section> */}
+                        {i !== relatedContent.length - 1 && (
+                             <section className="w-full sm:w-[1px] h-[1px] sm:h-full bg-[#28374B]"></section>
+                        )}
+                        
                         </section>
+                      ))}
+
+                    
+                    </section>
                       ) : (
                         <p className="text-red-600 text-center w-full">
                           No related posts.

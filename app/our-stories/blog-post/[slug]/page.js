@@ -58,7 +58,7 @@ export default function Post() {
 
       if (post.related_contents.length > 0) {
         const rc = post.related_contents;
-        alert(JSON.stringify(rc[0]))
+      
         const rcArr = [rc[0], rc[1]];
 
         setRelatedContent(rcArr);
@@ -121,7 +121,7 @@ export default function Post() {
                       </h2>
 
                       {relatedContent.length > 0 ? (
-                        <section className="w-full flex flex-col items-center justify-center gap-3 md:flex-row">
+                        <section className="w-full flex flex-col items-center justify-center gap-6 md:flex-row">
                           
                       
                       {relatedContent.map((c, i) => (

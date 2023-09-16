@@ -124,7 +124,7 @@ export default function Post() {
                           
                       
                       {relatedContent.map((c, i) => (
-                        <section key={c.id} className="w-full flex flex-col items-center justify-center gap-4">
+                        <section key={c.id} className="w-full flex flex-col items-center justify-center gap-8">
 <Link
                     href={`/our-stories/blog-post/${c.slug}`}
                     
@@ -132,23 +132,19 @@ export default function Post() {
                   >
                     
                       <Image
-                                      src={
-                                        c
-                                          ? `${imgHost}/${c.featured_image}`
-                                          : ""
-                                      }
-                                      alt={c ? c.title : ""}
+                                      src={`${imgHost}/${c.featured_image}`}
+                                      alt={c.title}
                                       width={200}
                                       height={200}
                                       className="w-[100px] h-[100px] object-fill z-10 rounded-full"
                                       loading="lazy"
                                     />
 
-                      <section className="w-full p-1 flex flex-col items-start justify-start text-left">
-                          <p className="uppercase text-[#28374B] text-[16px] font-[500] my-2">
+                      <section className="w-full p-1 flex flex-col items-start justify-start text-left gap-1">
+                          <p className="uppercase text-[#28374B] text-[16px] font-[500] w-full text-justify">
                           {c.title}
                         </p>
-                                        <span className="text-[#d65f1b] text-[10px] font-[400] ">
+                                        <span className="text-[#d65f1b] text-[14px] font-[400] ">
                           {format(new Date(c.published), date_format)}
                         </span>
                       
@@ -159,7 +155,7 @@ export default function Post() {
 
                                         
 
-                        {i !== 1 && (
+                        {i !== 2 && (
                              <section className="w-full sm:w-[1px] h-[1px] sm:h-full bg-[#28374B]"></section>
                         )}
                         

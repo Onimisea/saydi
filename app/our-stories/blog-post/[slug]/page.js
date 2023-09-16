@@ -58,6 +58,7 @@ export default function Post() {
 
       if (post.related_contents.length > 0) {
         const rc = post.related_contents;
+        alert(JSON.stringify(rc[0]))
         const rcArr = [rc[0], rc[1]];
 
         setRelatedContent(rcArr);

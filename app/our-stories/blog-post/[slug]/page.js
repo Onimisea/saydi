@@ -125,7 +125,7 @@ export default function Post() {
                           
                       
                       {relatedContent.map((c, i) => (
-                        <section key={c.id} className="w-full md:w-[47%] flex flex-col md:flex-row items-center justify-center md:justify-between md:h-[200px] gap-3">
+                        <section key={c.id} className="w-full md:w-[47%] flex flex-col md:flex-row items-center justify-center md:justify-between md:h-[150px] gap-3">
 <Link
                     href={`/our-stories/blog-post/${c.slug}`}
                     
@@ -137,7 +137,7 @@ export default function Post() {
                                       alt={c.title}
                                       width={200}
                                       height={200}
-                                      className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] object-fill z-10 rounded-full"
+                                      className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] object-fill z-10 rounded-full"
                                       loading="lazy"
                                     />
 
@@ -156,7 +156,7 @@ export default function Post() {
                   </Link>         
 
                         {i !== 1 && (
-                             <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B] mx-0 my-6 md:mx-3 md:my-0"></section>
+                             <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B] mx-0 my-6 md:mx-6 md:my-0"></section>
                         )}
                         
                         </section>

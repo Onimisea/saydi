@@ -125,7 +125,7 @@ export default function Post() {
                           
                       
                       {relatedContent.map((c, i) => (
-                        <section key={c.id} className="w-full md:w-[47%] flex flex-col md:flex-row items-center justify-center gap-3">
+                        <section key={c.id} className="w-full md:w-[45%] flex flex-col md:flex-row items-center justify-center md:justify-between gap-3">
 <Link
                     href={`/our-stories/blog-post/${c.slug}`}
                     
@@ -156,7 +156,7 @@ export default function Post() {
                   </Link>         
 
                         {i !== 1 && (
-                             <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B] mx-0 my-6 md:mx-6 md:my-0"></section>
+                             <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B] mx-0 my-6 md:mx-0 md:my-0"></section>
                         )}
                         
                         </section>

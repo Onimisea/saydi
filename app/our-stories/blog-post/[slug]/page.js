@@ -121,7 +121,7 @@ export default function Post() {
                       </h2>
 
                       {relatedContent.length > 0 ? (
-                        <section className="w-full flex flex-col items-center justify-center gap-6 md:flex-row">
+                        <section className="w-full flex flex-col items-center justify-center md:flex-row">
                           
                       
                       {relatedContent.map((c, i) => (
@@ -156,7 +156,7 @@ export default function Post() {
                   </Link>         
 
                         {i !== 1 && (
-                             <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B]"></section>
+                             <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B] px-0 py-6 md:px-6 md:py-0"></section>
                         )}
                         
                         </section>

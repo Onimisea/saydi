@@ -46,7 +46,7 @@ const BlogPosts = () => {
     }
   }, [policyBriefs, visiblePosts]);
 
-  console.log(allOurStories);
+  console.log(policyBriefs);
 
   return (
     <section className="bg-white w-full h-auto flex flex-col lg:flex-row relative py-16">

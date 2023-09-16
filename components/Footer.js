@@ -350,10 +350,11 @@ const Footer = () => {
               <p className="md2:mx-3">Designed by</p>
               <Link
                 href="#"
-                className="flex items-center justify-center hover:text-primary hover:font-bold"
+                className="flex items-center justify-center hover:text-primary hover:font-bold gap-2"
               >
+                  <p className="">Azooz</p> 
                 <Image src={azooz} width={24} height={24} loading="lazy" />
-                {/* <p className=""></p> */}
+                
               </Link>
             </section>
           </section>

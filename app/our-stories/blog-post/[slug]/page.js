@@ -121,15 +121,15 @@ export default function Post() {
                       </h2>
 
                       {relatedContent.length > 0 ? (
-                        <section className="w-full">
+                        <section className="w-full flex flex items-center justify-center gap-3">
                           
                       
                       {relatedContent.map((c, i) => (
-                        <section key={c.id} className="w-full flex flex-col items-center justify-center gap-4">
+                        <section key={c.id} className="w-full flex flex-col items-center justify-center gap-3">
 <Link
                     href={`/our-stories/blog-post/${c.slug}`}
                     
-                    className="w-full overflow-hidden flex items-center justify-center gap-4"
+                    className="w-full overflow-hidden flex items-center justify-center gap-3"
                   >
                     
                       <Image
@@ -142,20 +142,18 @@ export default function Post() {
                                     />
 
                       <section className="w-full p-1 flex flex-col items-start justify-start text-left gap-2">
-                          <p className="uppercase text-[#28374B] text-[16px] font-[500] w-full text-justify">
+                          <p className="uppercase text-[#28374B] text-[14px] font-[500] w-full text-justify">
                           {c.title}
                         </p>
 
-                                        <span className="text-[#d65f1b] text-[14px] font-[400] ">
+                                        <span className="text-[#d65f1b] text-[12px] font-[400] ">
                           {format(new Date(c.published), date_format)}
                         </span>
                       
                         
                       </section>
                     
-                  </Link>
-
-                             {`${c.featured_image}`}           
+                  </Link>         
 
                         {i !== 1 && (
                              <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B]"></section>

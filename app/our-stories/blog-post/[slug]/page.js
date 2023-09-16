@@ -2,6 +2,7 @@
 
 import { Footer, Header, HeaderDivider, Sidebar } from "@/components";
 import Image from "next/image";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { format } from "date-fns";
@@ -123,30 +124,55 @@ export default function Post() {
                           
                       
                       {relatedContent.map((c, i) => (
-                        <section className="w-full flex flex-col items-center justify-center gap-3">
-<section className="w-full flex items-center justify-center gap-3">
-                                    <Image
+                        <section key={c.id} className="w-full flex flex-col items-center justify-center gap-4">
+<Link
+                    href={`/our-stories/blog-post/${c.slug}`}
+                    
+                    className="w-full overflow-hidden flex items-center justify-center gap-4"
+                  >
+                    
+                      <Image
                                       src={
-                                        post
-                                          ? `${imgHost}/${post.featured_image}`
+                                        c
+                                          ? `${imgHost}/${c.featured_image}`
                                           : ""
                                       }
-                                      alt={post ? post.title : ""}
+                                      alt={c ? c.title : ""}
                                       width={200}
                                       height={200}
                                       className="w-[100px] h-[100px] object-fill z-10 rounded-full"
                                       loading="lazy"
                                     />
 
-                                    <section className=""> {post.title}</section>
-                                  </section>
+                      <section className="w-full p-1 flex flex-col items-start justify-start text-left">
+                          <p className="uppercase text-[#28374B] text-[16px] font-[500] my-2">
+                          {c.title}
+                        </p>
+                                        <span className="text-[#d65f1b] text-[10px] font-[400] ">
+                          {format(new Date(c.published), date_format)}
+                        </span>
+                      
+                        
+                      </section>
+                    
+                  </Link>
 
-                        {i !== relatedContent.length - 1 && (
+                                        
+
+                        {i !== 1 && (
                              <section className="w-full sm:w-[1px] h-[1px] sm:h-full bg-[#28374B]"></section>
                         )}
                         
                         </section>
                       ))}
+
+
+
+
+
+
+
+
 
                     
                     </section>

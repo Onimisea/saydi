@@ -121,7 +121,7 @@ export default function Post() {
                       </h2>
 
                       {relatedContent.length > 0 ? (
-                        <section className="w-full h-auto md:h-[300px] flex flex-col items-center justify-center md:flex-row">
+                        <section className="w-full h-auto md:h-[300px] flex flex-col items-center justify-center md:justify-between md:bg-green-500 md:flex-row">
                           
                       
                       {relatedContent.map((c, i) => (

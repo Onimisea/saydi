@@ -125,7 +125,7 @@ export default function Post() {
                           
                       
                       {relatedContent.map((c, i) => (
-                        <section key={c.id} className="w-full flex flex-col items-center justify-center gap-3">
+                        <section key={c.id} className="w-full md:w-[47%] flex flex-col md:flex-row items-center justify-center gap-3">
 <Link
                     href={`/our-stories/blog-post/${c.slug}`}
                     

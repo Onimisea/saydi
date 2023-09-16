@@ -156,7 +156,7 @@ export default function Post() {
                   </Link>         
 
                         {i !== 1 && (
-                             <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B] px-0 py-6 md:px-6 md:py-0"></section>
+                             <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B] mx-0 my-6 md:mx-6 md:my-0"></section>
                         )}
                         
                         </section>

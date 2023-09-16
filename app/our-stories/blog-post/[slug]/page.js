@@ -144,7 +144,7 @@ export default function Post() {
                           <p className="uppercase text-[#28374B] text-[16px] font-[500] w-full text-justify">
                           {c.title}
                         </p>
-{`${imgHost}/${c.featured_image}`}
+
                                         <span className="text-[#d65f1b] text-[14px] font-[400] ">
                           {format(new Date(c.published), date_format)}
                         </span>
@@ -154,7 +154,7 @@ export default function Post() {
                     
                   </Link>
 
-                                        
+                             {`${c.featured_image}`}           
 
                         {i !== 2 && (
                              <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B]"></section>

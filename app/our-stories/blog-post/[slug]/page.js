@@ -121,11 +121,11 @@ export default function Post() {
                       </h2>
 
                       {relatedContent.length > 0 ? (
-                        <section className="w-full h-auto md:h-[300px] flex flex-col items-center justify-center md:justify-between md:bg-green-500 md:flex-row">
+                        <section className="w-full h-auto flex flex-col items-center justify-center md:flex-row">
                           
                       
                       {relatedContent.map((c, i) => (
-                        <section key={c.id} className="w-full md:w-[45%] flex flex-col md:flex-row items-center justify-center md:justify-between gap-3">
+                        <section key={c.id} className="w-full md:w-[45%] flex flex-col md:flex-row items-center justify-center md:justify-between md:h-[300px] gap-3">
 <Link
                     href={`/our-stories/blog-post/${c.slug}`}
                     

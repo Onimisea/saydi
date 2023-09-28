@@ -71,6 +71,7 @@ const PressReleases = () => {
                         height={235}
                         className="w-full h-[235px] object-fill rounded-tl-2xl rounded-tr-2xl rounded-bl-0 rounded-br-0"
                         loading="lazy"
+                        priority
                       />
 
                       <section className="w-full bg-white p-4 flex flex-col items-start justify-start text-left">

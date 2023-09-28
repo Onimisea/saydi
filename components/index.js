@@ -35,6 +35,7 @@ import PressReleases from "./our-stories/PressReleases";
 import BlogPosts from "./our-stories/BlogPosts";
 import PolicyBriefs from "./our-stories/PolicyBriefs";
 import StoriesHero from "./our-stories/StoriesHero";
+import PostComments from "./our-stories/PostComments";
 
 export {
   Header,
@@ -70,4 +71,5 @@ export {
   BlogPosts,
   PolicyBriefs,
   StoriesHero,
+  PostComments,
 };

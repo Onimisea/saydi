@@ -1,6 +1,12 @@
 "use client";
 
-import { Footer, Header, HeaderDivider, Sidebar } from "@/components";
+import {
+  Footer,
+  Header,
+  HeaderDivider,
+  PostComments,
+  Sidebar,
+} from "@/components";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -187,6 +193,10 @@ export default function Post() {
                             Loop through the comments, if the comment is not the
                             last one, add a divider beneath the comment.
                           </p>
+                        </section>
+
+                        <section className="w-full flex flex-col items-center justify-center">
+                          <PostComments />
                         </section>
                       </section>
                     ) : (

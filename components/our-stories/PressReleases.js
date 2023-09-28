@@ -59,7 +59,7 @@ const PressReleases = () => {
               postsToShow.map((post) => {
                 return (
                   <Link
-                    href={`/our-stories/press_release/${post.slug}`}
+                    href={`/our-stories/press-release/${post.slug}`}
                     key={post.id}
                     className="w-full bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center shadow-lg drop-shadow-xl md:w-[46%] lg:w-[30%]"
                   >

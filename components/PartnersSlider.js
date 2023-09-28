@@ -15,7 +15,6 @@ import "swiper/css/free-mode";
 import partSlider1 from "../public/imgs/home/partner_slider_img1.png";
 import partSlider2 from "../public/imgs/home/partner_slider_img2.png";
 import partSlider3 from "../public/imgs/home/partner_slider_img3.png";
-import partSlider4 from "../public/imgs/home/partner_slider_img4.png";
 import partSlider5 from "../public/imgs/home/partner_slider_img5.png";
 import partSlider6 from "../public/imgs/home/partner_slider_img6.png";
 import partSlider7 from "../public/imgs/home/partner_slider_img7.png";
@@ -31,7 +30,6 @@ const partnerSliderImages = [
   { image: partSlider1, name: "hadis foundation" },
   { image: partSlider2, name: "gdsc unilorin" },
   { image: partSlider3, name: "spotlight" },
-  { image: partSlider4, name: "azooz brand & print" },
   { image: partSlider5, name: "kwara state government" },
   { image: partSlider6, name: "ministry of education" },
   { image: partSlider7, name: "brain builders" },

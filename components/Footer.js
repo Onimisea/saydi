@@ -344,7 +344,6 @@ const Footer = () => {
               </Link>
             </p>
 
-            
           </section>
         </section>
       </section>

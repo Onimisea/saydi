@@ -2,6 +2,7 @@
 
 import { Footer, Header, HeaderDivider, Sidebar } from "@/components";
 import Image from "next/image";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { format } from "date-fns";
@@ -57,6 +58,7 @@ export default function Post() {
 
       if (post.related_contents.length > 0) {
         const rc = post.related_contents;
+      
         const rcArr = [rc[0], rc[1]];
 
         setRelatedContent(rcArr);
@@ -119,41 +121,57 @@ export default function Post() {
                       </h2>
 
                       {relatedContent.length > 0 ? (
-                        <section className="w-full">
-                          {relatedContent.map((c, i) => {
-                            if (i < relatedContent.length) {
-                              return (
-                                <>
-                                  <section className="w-full flex items-center justify-center gap-3">
-                                    <Image
-                                      src={
-                                        post
-                                          ? `${imgHost}/${post.featured_image}`
-                                          : ""
-                                      }
-                                      alt={post ? post.title : ""}
+                        <section className="w-full h-auto flex flex-col items-center justify-center md:flex-row">
+                          
+                      
+                      {relatedContent.map((c, i) => (
+                        <section key={c.id} className="w-full md:w-[48%] flex flex-col md:flex-row items-center justify-center md:justify-between md:h-[125px] gap-3">
+<Link
+                    href={`/our-stories/blog-post/${c.slug}`}
+                    
+                    className="w-full overflow-hidden flex items-center justify-center gap-3"
+                  >
+                    
+                      <Image
+                                      src={`${imgHost}/${c.featured_image}`}
+                                      alt={c.title}
                                       width={200}
                                       height={200}
-                                      className="w-[200px] h-[200px] object-fill z-10 rounded-full"
+                                      className="w-[100px] h-[100px] md:w-[125px] md:h-[125px] object-fill z-10 rounded-full"
                                       loading="lazy"
                                     />
 
-                                    <section className=""></section>
-                                  </section>
-                                  <section className="w-full sm:w-[1px] h-[1px] sm:h-full bg-[#28374B]"></section>
-                                </>
-                              );
-                            } else {
-                              return (
-                                <section className="w-full ">
-                                  A{" "}
-                                </section>
-                              );
-                            }
-                          })}
+                      <section className="w-full p-1 flex flex-col items-start justify-start text-left gap-2">
+                          <p className="uppercase text-[#28374B] text-[14px] font-[500] w-full text-justify">
+                          {c.title}
+                        </p>
 
-                          {/* <section className="w-full bg-red-600">B</section> */}
+                                        <span className="text-[#d65f1b] text-[12px] font-[400] ">
+                          {format(new Date(c.published), date_format)}
+                        </span>
+                      
+                        
+                      </section>
+                    
+                  </Link>         
+
+                        {i !== 1 && (
+                             <section className="w-full md:w-[1px] h-[1px] md:h-full bg-[#28374B] mx-0 my-6 md:mx-6 md:my-0"></section>
+                        )}
+                        
                         </section>
+                      ))}
+
+
+
+
+
+
+
+
+
+                    
+                    </section>
                       ) : (
                         <p className="text-red-600 text-center w-full">
                           No related posts.

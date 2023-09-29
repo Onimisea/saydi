@@ -255,24 +255,7 @@ export default function Post() {
                         </section>
 
 
-                            <section className="w-full flex flex-col items-center justify-center gap-10">
-                      <section className="w-fit flex flex-col items-center justify-center gap-2">
-                        <h3 className="w-full font-gillsans_bold uppercase font-[600] leading-[36px] md:leading-[48px] text-[21px] md:text-[24px] flex items-center justify-center text-black gap-3">
-                          Leave a Comment{" "}
-                        </h3>
-                        <section className="w-[50%] md:w-[40%] lg:w-[30%]">
-                          <HeaderDivider style="primary" />
-                        </section>
-
-                        <p className="text-[#333] text-[16px] font-[400] leading-[24px] mt-2 text-center">
-                          Your email will not be published. All fields are
-                          required{" "}
-                          <span className="text-red-600 font-bold">*</span>
-                        </p>
-                      </section>
-
-                      <PostComments id={post.id} />
-                    </section>
+                            
                       </section>
                     ) : (
                       <section className="flex flex-col items-center justify-center py-4 gap-6 w-full">
@@ -291,7 +274,24 @@ export default function Post() {
                       </section>
                     )}
 
-                    
+                    <section className="w-full flex flex-col items-center justify-center gap-10">
+                      <section className="w-fit flex flex-col items-center justify-center gap-2">
+                        <h3 className="w-full font-gillsans_bold uppercase font-[600] leading-[36px] md:leading-[48px] text-[21px] md:text-[24px] flex items-center justify-center text-black gap-3">
+                          Leave a Comment{" "}
+                        </h3>
+                        <section className="w-[50%] md:w-[40%] lg:w-[30%]">
+                          <HeaderDivider style="primary" />
+                        </section>
+
+                        <p className="text-[#333] text-[16px] font-[400] leading-[24px] mt-2 text-center">
+                          Your email will not be published. All fields are
+                          required{" "}
+                          <span className="text-red-600 font-bold">*</span>
+                        </p>
+                      </section>
+
+                      <PostComments id={post.id} />
+                    </section>
                   </section>
                 )}
               </section>

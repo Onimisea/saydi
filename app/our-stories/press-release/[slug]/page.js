@@ -76,6 +76,145 @@ export default function Post() {
     }
   }, [post]);
 
+  // const getRandomColor = () => {
+  //   const letters = "0123456789ABCDEF";
+  //   let color = "#";
+
+  //   do {
+  //     for (let i = 0; i < 6; i++) {
+  //       color += letters[Math.floor(Math.random() * 16)];
+  //     }
+  //   } while (color === "#FFFFFF" || color === "000000"); // Ensure the color is not white or black
+
+  //   return color;
+  // };
+
+  // Function to generate a random color shade as a hex code
+
+  // Function to convert HSL color to RGB color
+  // function hslToRgb(hue, sat, lit) {
+  //   // Extract hue, saturation, and lightness values from the HSL color string
+  //   // const [hue, saturation, lightness] = hslColor
+  //   //   .substring(4, hslColor.length - 1)
+  //   //   .split(",")
+  //   //   .map((value) => parseFloat(value));
+
+  //   // Convert hue to the 0-1 range
+  //   const h = hue / 360;
+
+  //   // Calculate intermediate variables for the conversion
+  //   const c = (1 - Math.abs(2 * lit - 1)) * sat;
+  //   const x = c * (1 - Math.abs(((h * 6) % 2) - 1));
+  //   const m = lit - c / 2;
+
+  //   let red, green, blue;
+
+  //   if (0 <= h && h < 1 / 6) {
+  //     red = c;
+  //     green = x;
+  //     blue = 0;
+  //   } else if (1 / 6 <= h && h < 2 / 6) {
+  //     red = x;
+  //     green = c;
+  //     blue = 0;
+  //   } else if (2 / 6 <= h && h < 3 / 6) {
+  //     red = 0;
+  //     green = c;
+  //     blue = x;
+  //   } else if (3 / 6 <= h && h < 4 / 6) {
+  //     red = 0;
+  //     green = x;
+  //     blue = c;
+  //   } else if (4 / 6 <= h && h < 5 / 6) {
+  //     red = x;
+  //     green = 0;
+  //     blue = c;
+  //   } else {
+  //     red = c;
+  //     green = 0;
+  //     blue = x;
+  //   }
+
+  //   // Convert RGB values to the 0-255 range
+  //   const r = (red + m) * 255;
+  //   const g = (green + m) * 255;
+  //   const b = (blue + m) * 255;
+
+  //   console.log(`rgb(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)})`);
+
+  //   // Return the RGB color as a string
+  //   return `rgb(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)})`;
+  // }
+
+  // function hslToRgb(h, s, l) {
+  //   // Ensure h is in the range [0, 360], s and l are in the range [0, 100]
+  //   h = ((h % 360) + 360) % 360;
+  //   s = Math.max(0, Math.min(100, s));
+  //   l = Math.max(0, Math.min(100, l));
+
+  //   // Convert HSL to RGB
+  //   const c = (1 - Math.abs(2 * l - 1)) * (s / 100);
+  //   const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+  //   const m = l / 100 - c / 2;
+
+  //   console.log(`(${c}, ${x}, ${m})`);
+
+  //   let r, g, b;
+
+  //   if (0 <= h && h < 60) {
+  //     r = c;
+  //     g = x;
+  //     b = 0;
+  //   } else if (60 <= h && h < 120) {
+  //     r = x;
+  //     g = c;
+  //     b = 0;
+  //   } else if (120 <= h && h < 180) {
+  //     r = 0;
+  //     g = c;
+  //     b = x;
+  //   } else if (180 <= h && h < 240) {
+  //     r = 0;
+  //     g = x;
+  //     b = c;
+  //   } else if (240 <= h && h < 300) {
+  //     r = x;
+  //     g = 0;
+  //     b = c;
+  //   } else {
+  //     r = c;
+  //     g = 0;
+  //     b = x;
+  //   }
+
+  //   r = Math.round((r + m) * 255);
+  //   g = Math.round((g + m) * 255);
+  //   b = Math.round((b + m) * 255);
+
+  //   console.log(`rgb(${r}, ${g}, ${b})`);
+
+  //   return `rgb(${r}, ${g}, ${b})`;
+  // }
+
+  // Function to convert RGB color to hex color code
+  
+  
+  // function rgbToHex(rgbColor) {
+  //   // Extract red, green, and blue values from the RGB color string
+  //   const [r, g, b] = rgbColor
+  //     .substring(4, rgbColor.length - 1)
+  //     .split(",")
+  //     .map((value) => parseInt(value.trim()));
+
+  //   // Convert each color component to a two-digit hexadecimal value
+  //   const redHex = r.toString(16).padStart(2, "0");
+  //   const greenHex = g.toString(16).padStart(2, "0");
+  //   const blueHex = b.toString(16).padStart(2, "0");
+
+  //   // Combine the hexadecimal values to form the hex color code
+  //   return `#${redHex}${greenHex}${blueHex}`;
+  // }
+
   function getRandomShade() {
     // Generate a random hue value between 0 and 360 (degrees)
     const hue = Math.floor(Math.random() * 360);
@@ -253,9 +392,6 @@ export default function Post() {
                             );
                           })}
                         </section>
-
-
-                            
                       </section>
                     ) : (
                       <section className="flex flex-col items-center justify-center py-4 gap-6 w-full">

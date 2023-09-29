@@ -1,6 +1,12 @@
 "use client";
 
-import { Footer, Header, HeaderDivider, PostComments, Sidebar } from "@/components";
+import {
+  Footer,
+  Header,
+  HeaderDivider,
+  PostComments,
+  Sidebar,
+} from "@/components";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -70,8 +76,28 @@ export default function Post() {
     }
   }, [post]);
 
-  // console.log(post);
-  // console.log(relatedContent);
+  function getRandomShade() {
+    // Generate a random hue value between 0 and 360 (degrees)
+    const hue = Math.floor(Math.random() * 360);
+
+    // Generate a random saturation value between 20% and 80%
+    const saturation = Math.floor(Math.random() * 61) + 20;
+
+    // Generate a random lightness value between 20% and 50%
+    const lightness = Math.floor(Math.random() * 31) + 20;
+
+    // Convert HSL (Hue, Saturation, Lightness) values to an HSL color string
+    const hslColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+
+    // console.log(hslColor);
+
+    // Convert HSL color to RGB and then to a hex color code
+    // const rgbColor = hslToRgb(hue, saturation, lightness);
+
+    // const hexColor = rgbToHex(rgbColor);
+
+    return hslColor;
+  }
 
   return (
     <section className="body__container">
@@ -168,8 +194,6 @@ export default function Post() {
 
                 {post && (
                   <section className="w-[90%] mx-auto flex flex-col items-center justify-center mt-4 mb-12 gap-10 relative">
-                    ghjgjhj
-                  
                     {comments ? (
                       <section className="flex flex-col items-center justify-center py-4 gap-6 w-full">
                         <section className="w-fit flex flex-col items-center justify-center gap-2">
@@ -184,12 +208,71 @@ export default function Post() {
                           </section>
                         </section>
 
-                        <section className="w-fit flex flex-col items-center justify-center gap-2">
-                          <p className="text-red-600 text-center w-full mt-2">
-                            Loop through the comments, if the comment is not the
-                            last one, add a divider beneath the comment.
-                          </p>
+                        <section className="w-full md:w-[80%] h-auto max-h-[500px] md:max-h-[800px] overflow-y-scroll flex flex-col items-center justify-center gap-2 mt-2 mb-4">
+                          {comments.map((c, i) => {
+                            const avatarColor = getRandomShade();
+                            console.log(avatarColor);
+                            return (
+                              <section
+                                key={c.id}
+                                className="w-full flex flex-col items-center justify-center gap-3"
+                              >
+                                <section className="w-full flex items-start justify-start gap-6">
+                                  <section
+                                    className={`w-[40px] h-[40px] md:w-[55px] md:h-[55px] lg:w-[72px] lg:h-[72px] rounded-full text-md md:text-[17px] text-white flex items-center justify-center font-bold`}
+                                    style={{
+                                      backgroundColor: avatarColor,
+                                    }}
+                                  >
+                                    {c.name[0].toUpperCase()}
+                                  </section>
+
+                                  <section className="w-[85%] flex flex-col items-start justify-start gap-5">
+                                    <section className="w-full">
+                                      <h3 className="font-[700] leading-[36px] text-[20px] text-[#28374b]">
+                                        {c.name}
+                                      </h3>
+                                      <p className="text-[#d65f1b] text-[14px] font-[300] mt-1">
+                                        {format(
+                                          new Date(c.posted_at),
+                                          date_format
+                                        )}
+                                      </p>
+                                    </section>
+
+                                    <section className="w-full text-md leading-6 font-[300] text-[#5e6978]">
+                                      {c.comment}
+                                    </section>
+                                  </section>
+                                </section>
+
+                                {i !== comments.length - 1 && (
+                                  <section className="w-full h-[1px] bg-[#28374B] mx-0 my-6 "></section>
+                                )}
+                              </section>
+                            );
+                          })}
                         </section>
+
+
+                            <section className="w-full flex flex-col items-center justify-center gap-10">
+                      <section className="w-fit flex flex-col items-center justify-center gap-2">
+                        <h3 className="w-full font-gillsans_bold uppercase font-[600] leading-[36px] md:leading-[48px] text-[21px] md:text-[24px] flex items-center justify-center text-black gap-3">
+                          Leave a Comment{" "}
+                        </h3>
+                        <section className="w-[50%] md:w-[40%] lg:w-[30%]">
+                          <HeaderDivider style="primary" />
+                        </section>
+
+                        <p className="text-[#333] text-[16px] font-[400] leading-[24px] mt-2 text-center">
+                          Your email will not be published. All fields are
+                          required{" "}
+                          <span className="text-red-600 font-bold">*</span>
+                        </p>
+                      </section>
+
+                      <PostComments id={post.id} />
+                    </section>
                       </section>
                     ) : (
                       <section className="flex flex-col items-center justify-center py-4 gap-6 w-full">
@@ -208,26 +291,7 @@ export default function Post() {
                       </section>
                     )}
 
-                    <section className="w-full flex flex-col items-center justify-center">
-                      <section className="w-full flex flex-col items-center justify-center">
-                        <section className="w-fit flex flex-col items-center justify-center gap-2">
-                          <h3 className="w-full font-gillsans_bold uppercase font-[600] leading-[36px] md:leading-[48px] text-[24px] md:text-[36px] flex items-center justify-center text-black gap-3">
-                            Leave a Comment
-                          </h3>
-                          <section className="w-[95%] md:w-[85%] lg:w-[75%]">
-                            <HeaderDivider style="primary" />
-                          </section>
-
-                          <p className="text-center text-[14px]">
-                            Your email will not be published. All fields are
-                            required
-                          </p>
-                        </section>
-                        <PostComments />
-                      </section>
-
-                      <PostComments />
-                    </section>
+                    
                   </section>
                 )}
               </section>
@@ -249,3 +313,4 @@ export default function Post() {
 //     click={loadMoreStories}
 //   />
 // </section>;
+    

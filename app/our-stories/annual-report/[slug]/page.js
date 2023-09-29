@@ -194,10 +194,6 @@ export default function Post() {
                             last one, add a divider beneath the comment.
                           </p>
                         </section>
-
-                        <section className="w-full flex flex-col items-center justify-center">
-                          <PostComments />
-                        </section>
                       </section>
                     ) : (
                       <section className="flex flex-col items-center justify-center py-4 gap-6 w-full">
@@ -215,6 +211,10 @@ export default function Post() {
                         </p>
                       </section>
                     )}
+
+                    <section className="w-full flex flex-col items-center justify-center">
+                      <PostComments />
+                    </section>
                   </section>
                 )}
               </section>

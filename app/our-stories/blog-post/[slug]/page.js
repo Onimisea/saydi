@@ -168,6 +168,8 @@ export default function Post() {
 
                 {post && (
                   <section className="w-[90%] mx-auto flex flex-col items-center justify-center mt-4 mb-12 gap-10 relative">
+                    ghjgjhj
+                  
                     {comments ? (
                       <section className="flex flex-col items-center justify-center py-4 gap-6 w-full">
                         <section className="w-fit flex flex-col items-center justify-center gap-2">
@@ -188,10 +190,6 @@ export default function Post() {
                             last one, add a divider beneath the comment.
                           </p>
                         </section>
-
-                        <section className="w-full flex flex-col items-center justify-center">
-                          <PostComments />
-                        </section>
                       </section>
                     ) : (
                       <section className="flex flex-col items-center justify-center py-4 gap-6 w-full">
@@ -209,6 +207,27 @@ export default function Post() {
                         </p>
                       </section>
                     )}
+
+                    <section className="w-full flex flex-col items-center justify-center">
+                      <section className="w-full flex flex-col items-center justify-center">
+                        <section className="w-fit flex flex-col items-center justify-center gap-2">
+                          <h3 className="w-full font-gillsans_bold uppercase font-[600] leading-[36px] md:leading-[48px] text-[24px] md:text-[36px] flex items-center justify-center text-black gap-3">
+                            Leave a Comment
+                          </h3>
+                          <section className="w-[95%] md:w-[85%] lg:w-[75%]">
+                            <HeaderDivider style="primary" />
+                          </section>
+
+                          <p className="text-center text-[14px]">
+                            Your email will not be published. All fields are
+                            required
+                          </p>
+                        </section>
+                        <PostComments />
+                      </section>
+
+                      <PostComments />
+                    </section>
                   </section>
                 )}
               </section>

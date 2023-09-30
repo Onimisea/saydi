@@ -8,6 +8,12 @@ import {
   Sidebar,
 } from "@/components";
 
+export const metadata = {
+  title: "SAYDi | Our Products",
+  description:
+    "We engage critical stakeholders in the areas of Education, Gender, Governance and Accountability",
+};
+
 export default function Products() {
   return (
     <section className="body__container">

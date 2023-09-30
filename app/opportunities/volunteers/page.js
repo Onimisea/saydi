@@ -8,6 +8,12 @@ import {
   VolunteersContent,
 } from "@/components";
 
+export const metadata = {
+  title: "SAYDi | Become a Volunteer",
+  description:
+    "Join the train of youths who are making a great impact in their communities and state through our volunteering program",
+};
+
 export default function Volunteers() {
   return (
     <section className="body__container">

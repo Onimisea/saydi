@@ -8,6 +8,14 @@ import {
   CareersContent,
 } from "@/components";
 
+export const metadata = {
+  title: "SAYDi | Careers",
+  description:
+    "Advancing the crusades of Education, Gender, Human Capital Development, Civic Training, and Inclusive ecosystem where everyone achieves their dreams",
+};
+
+
+
 export default function Careers() {
   return (
     <section className="body__container">

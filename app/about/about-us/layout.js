@@ -1,38 +1,8 @@
-import AppProvider from "@/context/AppContext";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import "./globals.css";
-import localFont from "next/font/local";
-
-const montserrat = localFont({
-  src: "../public/fonts/Montserrat-VariableFont_wght.ttf",
-  display: "swap",
-  variable: "--font-montserrat",
-});
-
-const montserrat_italic = localFont({
-  src: "../public/fonts/Montserrat-Italic-VariableFont_wght.ttf",
-  display: "swap",
-  variable: "--font-montserrat-italic",
-});
-
-const gillsans_bold = localFont({
-  src: "../public/fonts/GillSansBold.otf",
-  display: "swap",
-  variable: "--font-gillsans-bold",
-});
-
-const gillsans_heavy = localFont({
-  src: "../public/fonts/GillSansHeavy.otf",
-  display: "swap",
-  variable: "--font-gillsans-heavy",
-});
-
 export const metadata = {
-  title: "Saving African Youths Dream Initiative (SAYDi)",
+  title: "About Us | SAYDi",
   description:
     "Saving African Youths Dream Initiative (SAYDi) is a non-governmental organization in West Africa, Nigeria with the mandate to promote equitable quality education; campaign against gender disparity and civic engagement apathy; and advocacy for the achievement of Sustainable Development Goals (SDGs) in immediate communities and beyond",
-  metadataBase: new URL("https://saydi.org"),
+  metadataBase: new URL("https://saydi.org/about/about-us"),
   applicationName: "SAYDi",
   authors: [{ name: "Onimisea", url: "https://onimisea.com" }],
   colorScheme: "light",
@@ -48,23 +18,23 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Saving African Youths Dream Initiative (SAYDi)",
+    title: "About Us | SAYDi",
     description:
       "Saving African Youths Dream Initiative (SAYDi) is a non-governmental organization in West Africa, Nigeria with the mandate to promote equitable quality education; campaign against gender disparity and civic engagement apathy; and advocacy for the achievement of Sustainable Development Goals (SDGs) in immediate communities and beyond",
-    url: "https://saydi.org",
-    siteName: "Saving African Youths Dream Initiative (SAYDi)",
+    url: "https://saydi.org/about/about-us",
+    siteName: "About SAYDi",
     images: [
       {
-        url: "../../public/imgs/home/saydi_home.png",
+        url: "../../public/imgs/about/saydi_about.png",
         width: 800,
         height: 600,
-        alt: "Saving African Youths Dream Initiative (SAYDi)",
+        alt: "About Us | SAYDi",
       },
       {
-        url: "../../public/imgs/home/saydi_home.png",
+        url: "../../public/imgs/about/saydi_about.png",
         width: 1800,
         height: 1600,
-        alt: "Saving African Youths Dream Initiative (SAYDi)",
+        alt: "About Us | SAYDi",
       },
     ],
     locale: "en_US",
@@ -74,12 +44,12 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@SAYDinitiative",
-    title: "Saving African Youths Dream Initiative (SAYDi)",
+    title: "About Us | SAYDi",
     description:
       "Saving African Youths Dream Initiative (SAYDi) is a non-governmental organization in West Africa, Nigeria with the mandate to promote equitable quality education; campaign against gender disparity and civic engagement apathy; and advocacy for the achievement of Sustainable Development Goals (SDGs) in immediate communities and beyond",
     images: {
-      url: "../../public/imgs/home/saydi_home.png",
-      alt: "Saving African Youths Dream Initiative (SAYDi)",
+      url: "../../public/imgs/about/saydi_about.png",
+      alt: "About Us | SAYDi",
     },
   },
 
@@ -102,20 +72,14 @@ export const metadata = {
   },
 
   themeColor: [{ media: "(prefers-color-scheme: light)", color: "white" }],
-  bookmarks: ["https://saydi.org"],
+  bookmarks: ["https://saydi.org/about/about-us"],
   category: "ngo",
 };
 
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${montserrat.variable} ${montserrat_italic.variable} ${gillsans_bold.variable} ${gillsans_heavy.variable}`}
-    >
-      <AppProvider>
-        <ToastContainer />
-        <body className="">{children}</body>
-      </AppProvider>
+    <html lang="en" className={``}>
+      <body className="">{children}</body>
     </html>
   );
 }

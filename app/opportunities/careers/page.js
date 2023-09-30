@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import {
   Footer,
@@ -8,21 +8,16 @@ import {
   CareersContent,
 } from "@/components";
 
-export const metadata = {
-  title: "SAYDi | Careers",
-  description:
-    "Advancing the crusades of Education, Gender, Human Capital Development, Civic Training, and Inclusive ecosystem where everyone achieves their dreams",
-};
-
-
-
 export default function Careers() {
   return (
     <section className="body__container">
       <Header />
       <Sidebar />
       <main className="w-full bg-white flex flex-col flex-1 relative overflow-hidden">
-        <OpportunitiesHero heading="Careers" text="Advancing the crusades of Education, Gender, Human Capital Development, Civic Training, and Inclusive ecosystem  where  everyone achieves their dreams." />
+        <OpportunitiesHero
+          heading="Careers"
+          text="Advancing the crusades of Education, Gender, Human Capital Development, Civic Training, and Inclusive ecosystem  where  everyone achieves their dreams."
+        />
         <CareersContent />
       </main>
       <Footer />

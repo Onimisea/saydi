@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import {
   AchievementSection,
@@ -12,12 +12,6 @@ import {
   Sidebar,
   ThematicSection,
 } from "@/components";
-
-export const metadata = {
-  title: "Saving African Youths Dream Initiative (SAYDi)",
-  description:
-    "Saving African Youths Dream Initiative (SAYDi) is a non-governmental organization in West Africa, Nigeria with the mandate to promote equitable quality education; campaign against gender disparity and civic engagement apathy; and advocacy for the achievement of Sustainable Development Goals (SDGs) in immediate communities and beyond",
-};
 
 export default function Home() {
   return (

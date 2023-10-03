@@ -339,11 +339,24 @@ const Footer = () => {
           <section className="flex flex-col items-center lg:flex-row md2:justify-center shrink-0 text-[#C9CDD2] md2:space-x-4 font-montserrat text-[12px] md2:text-[14px] font-normal py-3 gap-2 lg:gap-0 leading-[16px]">
             <p className="block md2:flex w-full md2:w-fit text-center">
               &copy; Copyright 2023 <span className="mx-3">|</span>{" "}
-              <Link href="/" className="hover:text-primary hover:font-bold">
-                saydi.com
+              <Link
+                href="https://saydi.org"
+                className="hover:text-primary hover:font-bold"
+              >
+                saydi.org
               </Link>
             </p>
-
+            <span className="mx-3 hidden lg:flex">|</span>
+            <p className="block md2:flex w-full md2:w-fit items-center justify-center">
+              <span>Designed by Azooz</span>
+              <Image
+                src={azooz}
+                alt="Azooz Prints & Brands"
+                width={24}
+                height={24}
+                className="ml-2"
+              />
+            </p>
           </section>
         </section>
       </section>

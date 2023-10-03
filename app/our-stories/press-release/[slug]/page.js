@@ -197,8 +197,7 @@ export default function Post() {
   // }
 
   // Function to convert RGB color to hex color code
-  
-  
+
   // function rgbToHex(rgbColor) {
   //   // Extract red, green, and blue values from the RGB color string
   //   const [r, g, b] = rgbColor
@@ -350,7 +349,7 @@ export default function Post() {
                         <section className="w-full md:w-[80%] h-auto max-h-[500px] md:max-h-[800px] overflow-y-scroll flex flex-col items-center justify-center gap-2 mt-2 mb-4">
                           {comments.map((c, i) => {
                             const avatarColor = getRandomShade();
-                            console.log(avatarColor);
+
                             return (
                               <section
                                 key={c.id}
@@ -439,13 +438,3 @@ export default function Post() {
     </section>
   );
 }
-
-// <section className="w-fit mb-6">
-//   <Button
-//     type="button"
-//     text="Load more"
-//     hasImgIcon={false}
-//     style="secondary"
-//     click={loadMoreStories}
-//   />
-// </section>;

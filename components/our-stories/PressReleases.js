@@ -1,5 +1,5 @@
 "use client";
- 
+
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -48,7 +48,7 @@ const PressReleases = () => {
     }
   }, [policyBriefs, visiblePosts]);
 
-  console.log(allOurStories);
+  // console.log(allOurStories);
 
   return (
     <section className="bg-white w-full h-auto flex flex-col lg:flex-row relative py-16">
@@ -70,7 +70,6 @@ const PressReleases = () => {
                         width={250}
                         height={235}
                         className="w-full h-[235px] object-fill rounded-tl-2xl rounded-tr-2xl rounded-bl-0 rounded-br-0"
-                        loading="lazy"
                         priority
                       />
 

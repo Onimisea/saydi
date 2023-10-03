@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/free-mode";
+import "swiper/css/free-mode"; 
 
 import partSlider1 from "../public/imgs/home/partner_slider_img1.png";
 import partSlider2 from "../public/imgs/home/partner_slider_img2.png";

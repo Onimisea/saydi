@@ -50,20 +50,20 @@ const AboutObjectives = () => {
             </section>
 
             <p className="text-white text-[14px] font-[400] leading-[21px] w-full text-center mt-2 sm2:text-[16px] sm2:leading-[30px]">
-              Balance and Inclusiveness in Education, self-discovery, and
-              positive change in the society. <br />
-              <br />
-              Promote gender equity as a principle of human rights and a
-              developmental goal. <br />
-              <br />
-              Advocate gender rebalancing in resource distribution, legal
-              rights, and political participation. <br />
-              <br />
-              Contribute positively to the achievement of good governance,
-              transparency, accountability, and people-friendly legal framework
-              for youth dreams. <br />
-              <br />
-              To encourage youth participation in politics and decision making.
+              Promote equity and stakeholders' inclusion in education development.<br /><br />
+
+Provide support and platforms for societal development through youth empowerment and affairs.<br /><br />
+
+Promote gender equity as a principle of human rights
+and a developmental goal.<br /><br />
+
+Advocate gender rebalancing in resource distribution, legal rights, and political participation.<br /><br />
+
+Contribute positively to the achievement of good governance, transparency, accountability, and a people-friendly legal framework for youth dreams.<br /><br />
+
+Encourage youth participation in politics and decision-making.<br /><br />
+
+Promote Climate Engagements.
             </p>
           </section>
         </section>

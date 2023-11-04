@@ -16,10 +16,7 @@ const AboutObjectives = () => {
             </section>
 
             <p className="text-white text-[14px] font-[400] leading-[21px] w-full text-center mt-2 sm2:text-[16px] sm2:leading-[30px]">
-              To create and advocate for an ecosystem of opportunities where
-              young people and especially the underserved can fully harness
-              their potentials and optimally unlock it to their advantage and
-              that of the entire society.
+              To create an ecosystem of opportunities where young people, especially the underserved can fully harness their potential and optimally unlock it to their advantage and that of the entire society.
             </p>
           </section>
         </section>
@@ -36,9 +33,7 @@ const AboutObjectives = () => {
             </section>
 
             <p className="text-[#28374b] text-[14px] font-[400] leading-[21px] w-full text-center mt-2 sm2:text-[16px] sm2:leading-[30px]">
-              To provide vulnerable people with free educational resources while
-              collaborating with appropriate stakeholders to improve academic
-              performance.
+              We enhance effective and efficient education, promote democratic governance, gender inclusion, and social justice, SAYDi creates an interface between citizens and the government.
             </p>
           </section>
         </section>
